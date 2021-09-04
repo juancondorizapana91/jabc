@@ -36,8 +36,8 @@ class Auth extends Controller
 	{
 		$userSearched = $this->querys->view_users(['nombre_usuario' => trim($user), 'clave_usuario' => md5(trim($password))]);
 
-		var_dump($this->db->getLastQuery());
-		return var_dump($userSearched);
+		// var_dump($this->db->getLastQuercmy());
+		// return var_dump($userSearched);
 		if (count($userSearched) >= 1) {
 			$this->session->set(['id_persona' => $userSearched[0]['id_persona']]);
 			$this->session->set(['nombre_grupo' => $userSearched[0]['nombre_grupo']]);
