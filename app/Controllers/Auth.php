@@ -34,10 +34,10 @@ class Auth extends Controller
 
 	public function authenticate($user, $password)
 	{
-		$userSearched = $this->querys->view_users(['nombre_usuario' => trim($user), 'clave_usuario' => hash("sha512", trim($password))]);
+		$userSearched = $this->querys->view_users(['nombre_usuario' => trim($user), 'clave_usuario' => md5(trim($password))]);
 
-		// var_dump($this->db->getLastQuery());
-		// return var_dump($usuarioBuscar);
+		var_dump($this->db->getLastQuery());
+		return var_dump($userSearched);
 		if (count($userSearched) >= 1) {
 			$this->session->set(['id_persona' => $userSearched[0]['id_persona']]);
 			$this->session->set(['nombre_grupo' => $userSearched[0]['nombre_grupo']]);
