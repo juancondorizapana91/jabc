@@ -333,7 +333,7 @@
                                     <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                         <!--begin::Symbol-->
                                         <div class="symbol symbol-40px me-4">
-                                            <img src="assets/media/avatars/150-1.jpg" alt="" />
+                                            <img src="metronic/assets/media/avatars/150-1.jpg" alt="" />
                                         </div>
                                         <!--end::Symbol-->
                                         <!--begin::Title-->
@@ -348,7 +348,7 @@
                                     <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                         <!--begin::Symbol-->
                                         <div class="symbol symbol-40px me-4">
-                                            <img src="assets/media/avatars/150-3.jpg" alt="" />
+                                            <img src="metronic/assets/media/avatars/150-3.jpg" alt="" />
                                         </div>
                                         <!--end::Symbol-->
                                         <!--begin::Title-->
@@ -363,7 +363,7 @@
                                     <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                         <!--begin::Symbol-->
                                         <div class="symbol symbol-40px me-4">
-                                            <img src="assets/media/avatars/150-8.jpg" alt="" />
+                                            <img src="metronic/assets/media/avatars/150-8.jpg" alt="" />
                                         </div>
                                         <!--end::Symbol-->
                                         <!--begin::Title-->
@@ -378,7 +378,7 @@
                                     <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                         <!--begin::Symbol-->
                                         <div class="symbol symbol-40px me-4">
-                                            <img src="assets/media/avatars/150-11.jpg" alt="" />
+                                            <img src="metronic/assets/media/avatars/150-11.jpg" alt="" />
                                         </div>
                                         <!--end::Symbol-->
                                         <!--begin::Title-->
@@ -393,7 +393,7 @@
                                     <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                         <!--begin::Symbol-->
                                         <div class="symbol symbol-40px me-4">
-                                            <img src="assets/media/avatars/150-12.jpg" alt="" />
+                                            <img src="metronic/assets/media/avatars/150-12.jpg" alt="" />
                                         </div>
                                         <!--end::Symbol-->
                                         <!--begin::Title-->
@@ -412,7 +412,7 @@
                                         <!--begin::Symbol-->
                                         <div class="symbol symbol-40px me-4">
                                             <span class="symbol-label bg-light">
-                                                <img class="w-20px h-20px" src="assets/media/svg/misc/volicity-9.svg" alt="" />
+                                                <img class="w-20px h-20px" src="metronic/assets/media/svg/misc/volicity-9.svg" alt="" />
                                             </span>
                                         </div>
                                         <!--end::Symbol-->
@@ -429,7 +429,7 @@
                                         <!--begin::Symbol-->
                                         <div class="symbol symbol-40px me-4">
                                             <span class="symbol-label bg-light">
-                                                <img class="w-20px h-20px" src="assets/media/svg/misc/tvit.svg" alt="" />
+                                                <img class="w-20px h-20px" src="metronic/assets/media/svg/misc/tvit.svg" alt="" />
                                             </span>
                                         </div>
                                         <!--end::Symbol-->
@@ -446,7 +446,7 @@
                                         <!--begin::Symbol-->
                                         <div class="symbol symbol-40px me-4">
                                             <span class="symbol-label bg-light">
-                                                <img class="w-20px h-20px" src="assets/media/svg/misc/infography.svg" alt="" />
+                                                <img class="w-20px h-20px" src="metronic/assets/media/svg/misc/infography.svg" alt="" />
                                             </span>
                                         </div>
                                         <!--end::Symbol-->
@@ -463,7 +463,7 @@
                                         <!--begin::Symbol-->
                                         <div class="symbol symbol-40px me-4">
                                             <span class="symbol-label bg-light">
-                                                <img class="w-20px h-20px" src="assets/media/svg/misc/leaf.svg" alt="" />
+                                                <img class="w-20px h-20px" src="metronic/assets/media/svg/misc/leaf.svg" alt="" />
                                             </span>
                                         </div>
                                         <!--end::Symbol-->
@@ -480,7 +480,7 @@
                                         <!--begin::Symbol-->
                                         <div class="symbol symbol-40px me-4">
                                             <span class="symbol-label bg-light">
-                                                <img class="w-20px h-20px" src="assets/media/svg/misc/tower.svg" alt="" />
+                                                <img class="w-20px h-20px" src="metronic/assets/media/svg/misc/tower.svg" alt="" />
                                             </span>
                                         </div>
                                         <!--end::Symbol-->
@@ -1140,7 +1140,7 @@
                         <a href="#" class="menu-link px-5">
                             <span class="menu-title position-relative">Language
                                 <span class="fs-8 rounded bg-light px-3 py-2 position-absolute translate-middle-y top-50 end-0">English
-                                    <img class="w-15px h-15px rounded-1 ms-2" src="assets/media/flags/united-states.svg" alt="metronic" /></span></span>
+                                    <img class="w-15px h-15px rounded-1 ms-2" src="metronic/assets/media/flags/united-states.svg" alt="metronic" /></span></span>
                         </a>
                         <!--begin::Menu sub-->
                         <div class="menu-sub menu-sub-dropdown w-175px py-4">
@@ -1148,7 +1148,7 @@
                             <div class="menu-item px-3">
                                 <a href="account/settings.html" class="menu-link d-flex px-5 active">
                                     <span class="symbol symbol-20px me-4">
-                                        <img class="rounded-1" src="assets/media/flags/united-states.svg" alt="metronic" />
+                                        <img class="rounded-1" src="metronic/assets/media/flags/united-states.svg" alt="metronic" />
                                     </span>English</a>
                             </div>
                             <!--end::Menu item-->
@@ -1156,7 +1156,7 @@
                             <div class="menu-item px-3">
                                 <a href="account/settings.html" class="menu-link d-flex px-5">
                                     <span class="symbol symbol-20px me-4">
-                                        <img class="rounded-1" src="assets/media/flags/spain.svg" alt="metronic" />
+                                        <img class="rounded-1" src="metronic/assets/media/flags/spain.svg" alt="metronic" />
                                     </span>Spanish</a>
                             </div>
                             <!--end::Menu item-->
@@ -1164,7 +1164,7 @@
                             <div class="menu-item px-3">
                                 <a href="account/settings.html" class="menu-link d-flex px-5">
                                     <span class="symbol symbol-20px me-4">
-                                        <img class="rounded-1" src="assets/media/flags/germany.svg" alt="metronic" />
+                                        <img class="rounded-1" src="metronic/assets/media/flags/germany.svg" alt="metronic" />
                                     </span>German</a>
                             </div>
                             <!--end::Menu item-->
@@ -1172,7 +1172,7 @@
                             <div class="menu-item px-3">
                                 <a href="account/settings.html" class="menu-link d-flex px-5">
                                     <span class="symbol symbol-20px me-4">
-                                        <img class="rounded-1" src="assets/media/flags/japan.svg" alt="metronic" />
+                                        <img class="rounded-1" src="metronic/assets/media/flags/japan.svg" alt="metronic" />
                                     </span>Japanese</a>
                             </div>
                             <!--end::Menu item-->
@@ -1180,7 +1180,7 @@
                             <div class="menu-item px-3">
                                 <a href="account/settings.html" class="menu-link d-flex px-5">
                                     <span class="symbol symbol-20px me-4">
-                                        <img class="rounded-1" src="assets/media/flags/france.svg" alt="metronic" />
+                                        <img class="rounded-1" src="metronic/assets/media/flags/france.svg" alt="metronic" />
                                     </span>French</a>
                             </div>
                             <!--end::Menu item-->
