@@ -338,249 +338,184 @@
 										<label class="form-label required">Nombre de Programa</label>
 										<select class="form-select form-select-solid" data-control="select2" data-placeholder="Seleccione un programa">
 											<option></option>
-											<option value="1">UPEA</option>
-											<option value="2">UMSA</option>
+											<option value="1">Educación Superior</option>
+											<option value="2">Investigación educativa</option>
 										</select>
 									</div>
 									<!--end::Nombre Programa-->
 
-									<!--begin::Input group-->
-									<div class="fv-row mb-10">
-										<!--begin::Label-->
-										<label class="d-flex align-items-center form-label">
-											<span class="required">Shortened Descriptor</span>
-											<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="popover"
-												data-bs-trigger="hover" data-bs-html="true"
-												data-bs-content="&lt;div class='p-4 rounded bg-light'&gt; &lt;div class='d-flex flex-stack text-muted mb-4'&gt; &lt;i class='fas fa-university fs-3 me-3'&gt;&lt;/i&gt; &lt;div class='fw-bold'&gt;INCBANK **** 1245 STATEMENT&lt;/div&gt; &lt;/div&gt; &lt;div class='d-flex flex-stack fw-bold text-gray-600'&gt; &lt;div&gt;Amount&lt;/div&gt; &lt;div&gt;Transaction&lt;/div&gt; &lt;/div&gt; &lt;div class='separator separator-dashed my-2'&gt;&lt;/div&gt; &lt;div class='d-flex flex-stack text-dark fw-bolder mb-2'&gt; &lt;div&gt;USD345.00&lt;/div&gt; &lt;div&gt;KEENTHEMES*&lt;/div&gt; &lt;/div&gt; &lt;div class='d-flex flex-stack text-muted mb-2'&gt; &lt;div&gt;USD75.00&lt;/div&gt; &lt;div&gt;Hosting fee&lt;/div&gt; &lt;/div&gt; &lt;div class='d-flex flex-stack text-muted'&gt; &lt;div&gt;USD3,950.00&lt;/div&gt; &lt;div&gt;Payrol&lt;/div&gt; &lt;/div&gt; &lt;/div&gt;"></i>
-										</label>
-										<!--end::Label-->
-										<!--begin::Input-->
-										<input name="business_descriptor"
-											class="form-control form-control-lg form-control-solid"
-											value="KEENTHEMES" />
-										<!--end::Input-->
-										<!--begin::Hint-->
-										<div class="form-text">Customers will see this shortened version of your
-											statement descriptor</div>
-										<!--end::Hint-->
+									<!--begin::Grado Académico-->
+									<div class="row mb-10">
+										<div class="col-md-4 fv-row">
+											<label class="d-flex align-items-center form-label">
+												<span>Grado Académico</span>
+											</label>
+											<input name="business_descriptor"
+												class="form-control form-control-lg form-control-solid"
+												value="KEENTHEMES" readonly/>
+										</div>
+										<div class="col-md-4 fv-row">
+											<label class="d-flex align-items-center form-label">
+												<span>Fecha Inicio</span>
+											</label>
+											<input name="business_descriptor"
+												class="form-control form-control-lg form-control-solid"
+												value="KEENTHEMES" readonly/>
+										</div>
+										<div class="col-md-4 fv-row">
+											<label class="d-flex align-items-center form-label">
+												<span>Fecha Fin</span>
+											</label>
+											<input name="business_descriptor"
+												class="form-control form-control-lg form-control-solid"
+												value="KEENTHEMES" readonly/>
+										</div>
 									</div>
-									<!--end::Input group-->
+									<!--end::Grado académico-->
+
 									<!--begin::Input group-->
-									<div class="fv-row mb-10">
-										<!--begin::Label-->
-										<label class="form-label required">Corporation Type</label>
-										<!--end::Label-->
-										<!--begin::Input-->
-										<select name="business_type"
-											class="form-select form-select-lg form-select-solid" data-control="select2"
-											data-placeholder="Select..." data-allow-clear="true"
-											data-hide-search="true">
-											<option></option>
-											<option value="1">S Corporation</option>
-											<option value="1">C Corporation</option>
-											<option value="2">Sole Proprietorship</option>
-											<option value="3">Non-profit</option>
-											<option value="4">Limited Liability</option>
-											<option value="5">General Partnership</option>
-										</select>
-										<!--end::Input-->
-									</div>
-									<!--end::Input group-->
-									<!--begin::Input group-->
-									<div class="fv-row mb-10">
-										<!--end::Label-->
-										<label class="form-label">Business Description</label>
-										<!--end::Label-->
-										<!--begin::Input-->
-										<textarea name="business_description"
-											class="form-control form-control-lg form-control-solid" rows="3"></textarea>
-										<!--end::Input-->
-									</div>
-									<!--end::Input group-->
-									<!--begin::Input group-->
-									<div class="fv-row mb-0">
-										<!--begin::Label-->
-										<label class="fs-6 fw-bold form-label required">Contact Email</label>
-										<!--end::Label-->
-										<!--begin::Input-->
-										<input name="business_email"
-											class="form-control form-control-lg form-control-solid"
-											value="corp@support.com" />
-										<!--end::Input-->
+									<div class="row mb-10">
+										<!--begin::Gestión-->
+										<div class="col-md-6 fv-row">
+											<label class="form-label required">Gestión</label>
+											<select name="business_type"
+												class="form-select form-select-lg form-select-solid" data-control="select2"
+												data-placeholder="Seleccione" data-allow-clear="true"
+												data-hide-search="true">
+												<option></option>
+												<option value="2021">2024</option>
+												<option value="2025">2025</option>
+											</select>
+										</div>
+										<!--end::Gestión-->
+										<!--begin::Mes-->
+										<div class="col-md-6 fv-row">
+											<label class="form-label required">Mes</label>
+											<select name="juan"
+												class="form-select form-select-lg form-select-solid" data-control="select2"
+												data-placeholder="Seleccione" data-allow-clear="true"
+												data-hide-search="true">
+												<option></option>
+												<option value="Enero">Enero</option>
+												<option value="Febrero">Febrero</option>
+											</select>
+										</div>
+										<!--end::Mes-->
 									</div>
 									<!--end::Input group-->
 								</div>
 								<!--end::Wrapper-->
 							</div>
 							<!--end::Step 3-->
+
 							<!--begin::Step 4-->
 							<div data-kt-stepper-element="content">
 								<!--begin::Wrapper-->
 								<div class="w-100">
 									<!--begin::Heading-->
 									<div class="pb-10 pb-lg-15">
-										<!--begin::Title-->
-										<h2 class="fw-bolder text-dark">Billing Details</h2>
-										<!--end::Title-->
-										<!--begin::Notice-->
-										<div class="text-gray-400 fw-bold fs-6">If you need more info, please check out
-											<a href="#" class="text-primary fw-bolder">Help Page</a>.
+										<h2 class="fw-bolder text-dark">Detalles de Pago</h2>
+										<div class="text-gray-400 fw-bold fs-6">Ingrese los detalles de pago
 										</div>
-										<!--end::Notice-->
 									</div>
 									<!--end::Heading-->
-									<!--begin::Input group-->
-									<div class="d-flex flex-column mb-7 fv-row">
-										<!--begin::Label-->
-										<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
-											<span class="required">Name On Card</span>
-											<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip"
-												title="Specify a card holder's name"></i>
-										</label>
-										<!--end::Label-->
-										<input type="text" class="form-control form-control-solid" placeholder=""
-											name="card_name" value="Max Doe" />
-									</div>
-									<!--end::Input group-->
-									<!--begin::Input group-->
-									<div class="d-flex flex-column mb-7 fv-row">
-										<!--begin::Label-->
-										<label class="required fs-6 fw-bold form-label mb-2">Card Number</label>
-										<!--end::Label-->
-										<!--begin::Input wrapper-->
-										<div class="position-relative">
-											<!--begin::Input-->
-											<input type="text" class="form-control form-control-solid"
-												placeholder="Enter card number" name="card_number"
-												value="4111 1111 1111 1111" />
-											<!--end::Input-->
-											<!--begin::Card logos-->
-											<div class="position-absolute translate-middle-y top-50 end-0 me-5">
-												<img src="metronic/assets/media/svg/card-logos/visa.svg" alt="" class="h-25px" />
-												<img src="metronic/assets/media/svg/card-logos/mastercard.svg" alt=""
-													class="h-25px" />
-												<img src="metronic/assets/media/svg/card-logos/american-express.svg" alt=""
-													class="h-25px" />
-											</div>
-											<!--end::Card logos-->
-										</div>
-										<!--end::Input wrapper-->
-									</div>
-									<!--end::Input group-->
+
 									<!--begin::Input group-->
 									<div class="row mb-10">
-										<!--begin::Col-->
-										<div class="col-md-8 fv-row">
-											<!--begin::Label-->
-											<label class="required fs-6 fw-bold form-label mb-2">Expiration Date</label>
-											<!--end::Label-->
-											<!--begin::Row-->
-											<div class="row fv-row">
-												<!--begin::Col-->
-												<div class="col-6">
-													<select name="card_expiry_month"
-														class="form-select form-select-solid" data-control="select2"
-														data-hide-search="true" data-placeholder="Month">
-														<option></option>
-														<option value="1">1</option>
-														<option value="2">2</option>
-														<option value="3">3</option>
-														<option value="4">4</option>
-														<option value="5">5</option>
-														<option value="6">6</option>
-														<option value="7">7</option>
-														<option value="8">8</option>
-														<option value="9">9</option>
-														<option value="10">10</option>
-														<option value="11">11</option>
-														<option value="12">12</option>
-													</select>
-												</div>
-												<!--end::Col-->
-												<!--begin::Col-->
-												<div class="col-6">
-													<select name="card_expiry_year"
-														class="form-select form-select-solid" data-control="select2"
-														data-hide-search="true" data-placeholder="Year">
-														<option></option>
-														<option value="2021">2021</option>
-														<option value="2022">2022</option>
-														<option value="2023">2023</option>
-														<option value="2024">2024</option>
-														<option value="2025">2025</option>
-														<option value="2026">2026</option>
-														<option value="2027">2027</option>
-														<option value="2028">2028</option>
-														<option value="2029">2029</option>
-														<option value="2030">2030</option>
-														<option value="2031">2031</option>
-													</select>
-												</div>
-												<!--end::Col-->
-											</div>
-											<!--end::Row-->
-										</div>
-										<!--end::Col-->
-										<!--begin::Col-->
+										<!--begin::Costo Matrícula-->
 										<div class="col-md-4 fv-row">
-											<!--begin::Label-->
 											<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
-												<span class="required">CVV</span>
-												<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip"
-													title="Enter a card CVV code"></i>
+												<span>Costo Matrícula</span>
 											</label>
-											<!--end::Label-->
-											<!--begin::Input wrapper-->
-											<div class="position-relative">
-												<!--begin::Input-->
-												<input type="text" class="form-control form-control-solid" minlength="3"
-													maxlength="4" placeholder="CVV" name="card_cvv" />
-												<!--end::Input-->
-												<!--begin::CVV icon-->
-												<div class="position-absolute translate-middle-y top-50 end-0 me-3">
-													<!--begin::Svg Icon | path: icons/stockholm/Shopping/Credit-card.svg-->
-													<span class="svg-icon svg-icon-2hx">
-														<svg xmlns="http://www.w3.org/2000/svg"
-															xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
-															height="24px" viewBox="0 0 24 24" version="1.1">
-															<g stroke="none" stroke-width="1" fill="none"
-																fill-rule="evenodd">
-																<rect x="0" y="0" width="24" height="24" />
-																<rect fill="#000000" opacity="0.3" x="2" y="5"
-																	width="20" height="14" rx="2" />
-																<rect fill="#000000" x="2" y="8" width="20"
-																	height="3" />
-																<rect fill="#000000" opacity="0.3" x="16" y="14"
-																	width="4" height="2" rx="1" />
-															</g>
-														</svg>
-													</span>
-													<!--end::Svg Icon-->
-												</div>
-												<!--end::CVV icon-->
-											</div>
-											<!--end::Input wrapper-->
+											<input type="text" class="form-control form-control-solid" placeholder=""
+											name="card_name" value="Bs. 200" readonly/>
 										</div>
-										<!--end::Col-->
+										<!--end::Costo Matrícula-->
+
+										<!--begin::Costo Colegiatura-->
+										<div class="col-md-4 fv-row">
+											<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
+												<span>Costo Colegiatura</span>
+											</label>
+											<input type="text" class="form-control form-control-solid" placeholder=""
+											name="card_name" value="Bs. 2000" readonly/>
+										</div>
+										<!--end::Costo Colegiatura-->
+
+										<!--begin::Costo Colegiatura-->
+										<div class="col-md-4 fv-row">
+											<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
+												<span>Costo Total</span>
+											</label>
+											<input type="text" class="form-control form-control-solid" placeholder=""
+											name="card_name" value="Bs. 2200" readonly/>
+										</div>
+										<!--end::Costo Colegiatura-->
 									</div>
 									<!--end::Input group-->
+
 									<!--begin::Input group-->
-									<div class="d-flex flex-stack">
-										<!--begin::Label-->
-										<div class="me-5">
-											<label class="fs-6 fw-bold form-label">Save Card for further
-												billing?</label>
-											<div class="fs-7 fw-bold text-gray-400">If you need more info, please check
-												budget planning</div>
-										</div>
-										<!--end::Label-->
-										<!--begin::Switch-->
-										<label class="form-check form-switch form-check-custom form-check-solid">
-											<input class="form-check-input" type="checkbox" value="1"
-												checked="checked" />
-											<span class="form-check-label fw-bold text-gray-400">Save Card</span>
+									<div class="fv-row mb-8">
+										<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
+											Imagen Comprobante
 										</label>
-										<!--end::Switch-->
+										<!--begin::Dropzone-->
+										<div class="dropzone" id="kt_modal_create_project_settings_logo">
+											<!--begin::Message-->
+											<div class="dz-message needsclick">
+												<!--begin::Icon-->
+												<!--begin::Svg Icon | path: icons/duotune/files/fil010.svg-->
+												<span class="svg-icon svg-icon-3hx svg-icon-primary">
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+														<path opacity="0.3" d="M19 22H5C4.4 22 4 21.6 4 21V3C4 2.4 4.4 2 5 2H14L20 8V21C20 21.6 19.6 22 19 22ZM16 12.6L12.7 9.3C12.3 8.9 11.7 8.9 11.3 9.3L8 12.6H11V18C11 18.6 11.4 19 12 19C12.6 19 13 18.6 13 18V12.6H16Z" fill="black" />
+														<path d="M15 8H20L14 2V7C14 7.6 14.4 8 15 8Z" fill="black" />
+													</svg>
+												</span>
+												<!--end::Svg Icon-->
+												<!--end::Icon-->
+												<!--begin::Info-->
+												<div class="ms-4">
+													<h4 class="dfs-3 fw-bolder text-gray-900 mb-1">Suelta los archivos aquí o haz clic para subirlos.</h3>
+													<span class="fw-bold fs-4 text-muted">Sube hasta 3 archivos</span>
+												</div>
+												<!--end::Info-->
+											</div>
+										</div>
+										<!--end::Dropzone-->
+									</div>
+									<!--end::Input group-->
+
+									<!--begin::Input group-->
+									<div class="row mb-10">
+										<!--begin::Código pago-->
+										<div class="col-md-4 fv-row">
+											<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
+												<span class="required">Código Pago</span>
+											</label>
+											<input type="text" class="form-control form-control-solid" placeholder=""
+											name="card_name" value="32124" readonly/>
+										</div>
+										<!--end::Código pago-->
+
+										<!--begin::Monto Pago-->
+										<div class="col-md-4 fv-row">
+											<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
+												<span class="required">Monto Pago</span>
+											</label>
+											<input type="text" class="form-control form-control-solid" placeholder=""
+											name="card_name" value="2000" readonly/>
+										</div>
+										<!--end::Monto Pago-->
+
+										<!--begin::Deuda Total-->
+										<div class="col-md-4 fv-row">
+											<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
+												<span>Deuda Total</span>
+											</label>
+											<input type="text" class="form-control form-control-solid bg-danger text-white" placeholder=""
+											name="card_name" value="Bs. 200" readonly/>
+										</div>
+										<!--end::Deuda Total-->
 									</div>
 									<!--end::Input group-->
 								</div>
@@ -594,55 +529,15 @@
 									<!--begin::Heading-->
 									<div class="pb-8 pb-lg-10">
 										<!--begin::Title-->
-										<h2 class="fw-bolder text-dark">Your Are Done!</h2>
+										<h2 class="fw-bolder text-dark">Completado correctamente!</h2>
 										<!--end::Title-->
-										<!--begin::Notice-->
-										<div class="text-gray-400 fw-bold fs-6">If you need more info, please
-											<a href="authentication/sign-in/basic.html"
-												class="link-primary fw-bolder">Sign In</a>.
-										</div>
-										<!--end::Notice-->
 									</div>
 									<!--end::Heading-->
 									<!--begin::Body-->
 									<div class="mb-0">
 										<!--begin::Text-->
-										<div class="fs-6 text-gray-600 mb-5">Writing headlines for blog posts is as much
-											an art as it is a science and probably warrants its own post, but for all
-											advise is with what works for your great &amp; amazing audience.</div>
+										<div class="fs-6 text-gray-600 mb-5">Click en botón Registrar para registrar la inscripción</div>
 										<!--end::Text-->
-										<!--begin::Alert-->
-										<!--begin::Notice-->
-										<div
-											class="notice d-flex bg-light-warning rounded border-warning border border-dashed p-6">
-											<!--begin::Icon-->
-											<!--begin::Svg Icon | path: icons/stockholm/Code/Warning-1-circle.svg-->
-											<span class="svg-icon svg-icon-2tx svg-icon-warning me-4">
-												<svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px"
-													viewBox="0 0 24 24" version="1.1">
-													<circle fill="#000000" opacity="0.3" cx="12" cy="12" r="10" />
-													<rect fill="#000000" x="11" y="7" width="2" height="8" rx="1" />
-													<rect fill="#000000" x="11" y="16" width="2" height="2" rx="1" />
-												</svg>
-											</span>
-											<!--end::Svg Icon-->
-											<!--end::Icon-->
-											<!--begin::Wrapper-->
-											<div class="d-flex flex-stack flex-grow-1">
-												<!--begin::Content-->
-												<div class="fw-bold">
-													<h4 class="text-gray-800 fw-bolder">We need your attention!</h4>
-													<div class="fs-6 text-gray-600">To start using great tools, please,
-														please
-														<a href="#" class="fw-bolder">Create Team Platform</a>
-													</div>
-												</div>
-												<!--end::Content-->
-											</div>
-											<!--end::Wrapper-->
-										</div>
-										<!--end::Notice-->
-										<!--end::Alert-->
 									</div>
 									<!--end::Body-->
 								</div>
@@ -680,7 +575,7 @@
 								<div>
 									<button type="button" class="btn btn-lg btn-primary me-3"
 										data-kt-stepper-action="submit">
-										<span class="indicator-label">Submit
+										<span class="indicator-label">Registrar
 											<!--begin::Svg Icon | path: icons/stockholm/Navigation/Right-2.svg-->
 											<span class="svg-icon svg-icon-3 ms-2 me-0">
 												<svg xmlns="http://www.w3.org/2000/svg"
@@ -700,7 +595,7 @@
 											</span>
 											<!--end::Svg Icon-->
 										</span>
-										<span class="indicator-progress">Please wait...
+										<span class="indicator-progress">Espere por favor...
 											<span
 												class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
 									</button>
