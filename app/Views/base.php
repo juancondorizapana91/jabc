@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="es">
+
 <head>
 	<base href="">
 	<meta charset="utf-8" />
@@ -16,6 +17,7 @@
 	<!--begin::Global Stylesheets Bundle(used by all pages)-->
 	<link href="<?= base_url('metronic/assets/plugins/global/plugins.bundle.css') ?>" rel="stylesheet" type="text/css" />
 	<link href="<?= base_url('metronic/assets/css/style.bundle.css') ?>" rel="stylesheet" type="text/css" />
+	<link href="<?= base_url('metronic/assets/css/datatables.bundle.css') ?>" rel="stylesheet" type="text/css" />
 	<!--end::Global Stylesheets Bundle-->
 	<?php $js = str_replace('\\', '/', FCPATH . 'css/' . strtolower(explode('\\', (\Config\Services::router())->controllerName())[3]) . '/' . (\Config\Services::router())->methodName() . '.css');
 	if (is_file($js)) : ?>
@@ -24,6 +26,7 @@
 </head>
 <!--end::Head-->
 <!--begin::Body-->
+
 <body id="kt_body" class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed toolbar-tablet-and-mobile-fixed aside-enabled aside-fixed" style="--kt-toolbar-height:55px;--kt-toolbar-height-tablet-and-mobile:55px">
 	<!--begin::Main-->
 	<!--begin::Root-->
@@ -108,14 +111,19 @@
 	<script src="<?= base_url('metronic/assets/js/custom/apps/chat/chat.js') ?>"></script>
 	<script src="<?= base_url('metronic/assets/js/custom/modals/create-app.js') ?>"></script>
 	<script src="<?= base_url('metronic/assets/js/custom/modals/upgrade-plan.js') ?>"></script>
-	<script src="<?= base_url('metronic/assets/js/jquery-3.6.0.min.js') ?>"></script>
+	<script src="<?= base_url('metronic/assets/js/jquery-3.6.0.mn.js') ?>"></script>
+	<script src="<?= base_url('metronic/assets/js/datatables.bundle.js') ?>"></script>
+	<script src="<?= base_url('metronic/assets/js/scrollable.js') ?>"></script>
+
+
+
 
 
 	<!--end::Page Custom Javascript-->
 	<!--end::Javascript-->
-	<?php $js = str_replace('\\', '/', FCPATH . 'metronic/assets/js/' . strtolower(explode('\\', (\Config\Services::router())->controllerName())[3]) . '/' . (\Config\Services::router())->methodName() . '.js');
+	<?php $js = str_replace('\\', '/', FCPATH . 'js/' . strtolower(explode('\\', (\Config\Services::router())->controllerName())[3]) . '/' . (\Config\Services::router())->methodName() . '.js');
 	if (is_file($js)) : ?>
-		<script src="<?php echo base_url('metronic/assets/js/' . strtolower(explode('\\', (\Config\Services::router())->controllerName())[3]) . '/' . (\Config\Services::router())->methodName() . '.js'); ?>"></script>
+		<script src="<?php echo base_url('js/' . strtolower(explode('\\', (\Config\Services::router())->controllerName())[3]) . '/' . (\Config\Services::router())->methodName() . '.js'); ?>"></script>
 	<?php endif; ?>
 	<script type="text/javascript">
 		$(function() {
