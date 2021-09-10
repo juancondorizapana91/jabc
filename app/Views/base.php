@@ -17,7 +17,7 @@
 	<!--begin::Global Stylesheets Bundle(used by all pages)-->
 	<link href="<?= base_url('metronic/assets/plugins/global/plugins.bundle.css') ?>" rel="stylesheet" type="text/css" />
 	<link href="<?= base_url('metronic/assets/css/style.bundle.css') ?>" rel="stylesheet" type="text/css" />
-	<link href="<?= base_url('metronic/assets/css/datatables.bundle.css') ?>" rel="stylesheet" type="text/css" />
+	<link href="<?= base_url('metronic/assets/plugins/custom/datatables/datatables.bundle.css') ?>" rel="stylesheet" type="text/css" />
 	<!--end::Global Stylesheets Bundle-->
 	<?php $js = str_replace('\\', '/', FCPATH . 'css/' . strtolower(explode('\\', (\Config\Services::router())->controllerName())[3]) . '/' . (\Config\Services::router())->methodName() . '.css');
 	if (is_file($js)) : ?>
@@ -107,13 +107,9 @@
 	<script src="<?= base_url('metronic/assets/js/scripts.bundle.js') ?>"></script>
 	<!--end::Global Javascript Bundle-->
 	<!--begin::Page Custom Javascript(used by this page)-->
-	<script src="<?= base_url('metronic/assets/js/custom/widgets.js') ?>"></script>
-	<script src="<?= base_url('metronic/assets/js/custom/apps/chat/chat.js') ?>"></script>
-	<script src="<?= base_url('metronic/assets/js/custom/modals/create-app.js') ?>"></script>
-	<script src="<?= base_url('metronic/assets/js/custom/modals/upgrade-plan.js') ?>"></script>
+
 	<script src="<?= base_url('metronic/assets/js/jquery-3.6.0.mn.js') ?>"></script>
-	<script src="<?= base_url('metronic/assets/js/datatables.bundle.js') ?>"></script>
-	<script src="<?= base_url('metronic/assets/js/scrollable.js') ?>"></script>
+	<script src="<?= base_url('metronic/assets/plugins/custom/datatables/datatables.bundle.js') ?>"></script>
 
 
 
