@@ -2,10 +2,6 @@
 
 namespace App\Controllers;
 
-<<<<<<< HEAD
-use App\Libraries\SSP;
-=======
->>>>>>> 6620298e45de9d77d5dd73ae24dc452e6dbb9dd6
 
 class Personal extends BaseController
 {
