@@ -102,13 +102,9 @@
                 </div>
             </div>
             <!--end::Header-->
-            <!--begin::Body-->
             <div class="card-body py-3">
-                <!--begin::Table container-->
                 <div class="table-responsive">
-                    <!--begin::Table-->
                     <table id="table" class="table align-middle gs-0 gy-4">
-                        <!--begin::Table head-->
                         <thead>
                             <tr class="fw-bolder text-muted bg-light">
                                 <th class="ps-4 min-w-300px rounded-start">Agent</th>
@@ -119,8 +115,6 @@
                                 <th class="min-w-200px text-end rounded-end"></th>
                             </tr>
                         </thead>
-                        <!--end::Table head-->
-                        <!--begin::Table body-->
                         <tbody>
                             <tr>
                                 <td>
@@ -224,172 +218,12 @@
                                     <a href="#" class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4">Edit</a>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>
-                                    <div class="d-flex align-items-center">
-                                        <div class="symbol symbol-50px me-5">
-                                            <span class="symbol-label bg-light">
-                                                <img src="assets/media/svg/avatars/006-girl-3.svg" class="h-75 align-self-end" alt="">
-                                            </span>
-                                        </div>
-                                        <div class="d-flex justify-content-start flex-column">
-                                            <a href="#" class="text-dark fw-bolder text-hover-primary mb-1 fs-6">Brad Simmons</a>
-                                            <span class="text-muted fw-bold text-muted d-block fs-7">HTML, JS, ReactJS</span>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <a href="#" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">$8,000,000</a>
-                                    <span class="text-muted fw-bold text-muted d-block fs-7">In Proccess</span>
-                                </td>
-                                <td>
-                                    <a href="#" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">$2,500</a>
-                                    <span class="text-muted fw-bold text-muted d-block fs-7">Rejected</span>
-                                </td>
-                                <td>
-                                    <a href="#" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">RoadGee</a>
-                                    <span class="text-muted fw-bold text-muted d-block fs-7">Paid</span>
-                                </td>
-                                <td>
-                                    <div class="rating">
-                                        <div class="rating-label me-2 checked">
-                                            <i class="bi bi-star-fill fs-5"></i>
-                                        </div>
-                                        <div class="rating-label me-2 checked">
-                                            <i class="bi bi-star-fill fs-5"></i>
-                                        </div>
-                                        <div class="rating-label me-2 checked">
-                                            <i class="bi bi-star-fill fs-5"></i>
-                                        </div>
-                                        <div class="rating-label me-2 checked">
-                                            <i class="bi bi-star-fill fs-5"></i>
-                                        </div>
-                                        <div class="rating-label me-2 checked">
-                                            <i class="bi bi-star-fill fs-5"></i>
-                                        </div>
-                                    </div>
-                                    <span class="text-muted fw-bold text-muted d-block fs-7 mt-1">Best Rated</span>
-                                </td>
-                                <td class="text-end">
-                                    <a href="#" class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4 me-2">View</a>
-                                    <a href="#" class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4">Edit</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="d-flex align-items-center">
-                                        <div class="symbol symbol-50px me-5">
-                                            <span class="symbol-label bg-light">
-                                                <img src="assets/media/svg/avatars/014-girl-7.svg" class="h-75 align-self-end" alt="">
-                                            </span>
-                                        </div>
-                                        <div class="d-flex justify-content-start flex-column">
-                                            <a href="#" class="text-dark fw-bolder text-hover-primary mb-1 fs-6">Natali Trump</a>
-                                            <span class="text-muted fw-bold text-muted d-block fs-7">HTML, JS, ReactJS</span>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <a href="#" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">$700,000</a>
-                                    <span class="text-muted fw-bold text-muted d-block fs-7">Pending</span>
-                                </td>
-                                <td>
-                                    <a href="#" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">$7,760</a>
-                                    <span class="text-muted fw-bold text-muted d-block fs-7">Paid</span>
-                                </td>
-                                <td>
-                                    <a href="#" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">The Hill</a>
-                                    <span class="text-muted fw-bold text-muted d-block fs-7">Insurance</span>
-                                </td>
-                                <td>
-                                    <div class="rating">
-                                        <div class="rating-label me-2 checked">
-                                            <i class="bi bi-star-fill fs-5"></i>
-                                        </div>
-                                        <div class="rating-label me-2 checked">
-                                            <i class="bi bi-star-fill fs-5"></i>
-                                        </div>
-                                        <div class="rating-label me-2 checked">
-                                            <i class="bi bi-star-fill fs-5"></i>
-                                        </div>
-                                        <div class="rating-label me-2">
-                                            <i class="bi bi-star-fill fs-5"></i>
-                                        </div>
-                                        <div class="rating-label me-2">
-                                            <i class="bi bi-star-fill fs-5"></i>
-                                        </div>
-                                    </div>
-                                    <span class="text-muted fw-bold text-muted d-block fs-7 mt-1">Avarage</span>
-                                </td>
-                                <td class="text-end">
-                                    <a href="#" class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4 me-2">View</a>
-                                    <a href="#" class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4">Edit</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="d-flex align-items-center">
-                                        <div class="symbol symbol-50px me-5">
-                                            <span class="symbol-label bg-light">
-                                                <img src="assets/media/svg/avatars/020-girl-11.svg" class="h-75 align-self-end" alt="">
-                                            </span>
-                                        </div>
-                                        <div class="d-flex justify-content-start flex-column">
-                                            <a href="#" class="text-dark fw-bolder text-hover-primary mb-1 fs-6">Jessie Clarcson</a>
-                                            <span class="text-muted fw-bold text-muted d-block fs-7">HTML, JS, ReactJS</span>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <a href="#" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">$1,320,000</a>
-                                    <span class="text-muted fw-bold text-muted d-block fs-7">Pending</span>
-                                </td>
-                                <td>
-                                    <a href="#" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">$6,250</a>
-                                    <span class="text-muted fw-bold text-muted d-block fs-7">Paid</span>
-                                </td>
-                                <td>
-                                    <a href="#" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">Intertico</a>
-                                    <span class="text-muted fw-bold text-muted d-block fs-7">Web, UI/UX Design</span>
-                                </td>
-                                <td>
-                                    <div class="rating">
-                                        <div class="rating-label me-2 checked">
-                                            <i class="bi bi-star-fill fs-5"></i>
-                                        </div>
-                                        <div class="rating-label me-2 checked">
-                                            <i class="bi bi-star-fill fs-5"></i>
-                                        </div>
-                                        <div class="rating-label me-2 checked">
-                                            <i class="bi bi-star-fill fs-5"></i>
-                                        </div>
-                                        <div class="rating-label me-2 checked">
-                                            <i class="bi bi-star-fill fs-5"></i>
-                                        </div>
-                                        <div class="rating-label me-2 checked">
-                                            <i class="bi bi-star-fill fs-5"></i>
-                                        </div>
-                                    </div>
-                                    <span class="text-muted fw-bold text-muted d-block fs-7 mt-1">Best Rated</span>
-                                </td>
-                                <td class="text-end">
-                                    <a href="#" class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4 me-2">View</a>
-                                    <a href="#" class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4">Edit</a>
-                                </td>
-                            </tr>
                         </tbody>
-                        <!--end::Table body-->
                     </table>
-                    <!--end::Table-->
                 </div>
-                <!--end::Table container-->
             </div>
-            <!--begin::Body-->
         </div>
-        <!--end::Tables Widget 12-->
-
     </div>
-    <!--end::Container-->
 </div>
 <div class="modal fade" id="kt_modal_new_target" tabindex="-1" aria-hidden="true">
     <!--begin::Modal dialog-->
