@@ -2,7 +2,6 @@
 
 namespace App\Controllers;
 
-
 class Personal extends BaseController
 {
 	function __construct()
