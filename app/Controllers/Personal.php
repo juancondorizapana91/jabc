@@ -2,7 +2,6 @@
 
 namespace App\Controllers;
 
-use App\Models\PersonalModel;
 
 class Personal extends BaseController
 {
@@ -14,16 +13,5 @@ class Personal extends BaseController
 	public function index()
 	{
 		return $this->templater->view('personal/listarPersonal');
-		$this->data['nombre'] = "edwin";
-		$this->data['paterno'] = "alanoca";
-	}
-	public function crear()
-	{
-		$personal = new PersonalModel();
-		$personal->insert([
-			'nombre' => $this->request->getPost('nombre'),
-			'paterno' => $this->request->getPost('paterno'),
-
-		]);
 	}
 }
