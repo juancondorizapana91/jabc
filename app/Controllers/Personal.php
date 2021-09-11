@@ -3,7 +3,7 @@
 namespace App\Controllers;
 
 use App\Libraries\SSP;
-
+use App\Models\PersonalModel;
 
 class Personal extends BaseController
 {
@@ -47,9 +47,30 @@ class Personal extends BaseController
 		if ($this->request->isAJAX()) {
 			$validation = \Config\Services::validation();
 			if ($this->validate('validarPersonal')) {
+				$personal = new PersonalModel();
+				$idPersona = $personal->insert([
+					'ci' => $this->request->getPost('ci'),
+					'expedido' => $this->request->getPost('expedido'),
+					'paterno' => $this->nuloSiVacio($this->request->getPost('paterno')),
+					'materno' => $this->nuloSiVacio($this->request->getPost('materno')),
+					'nombre' => $this->nuloSiVacio($this->request->getPost('nombre')),
+					'fecha_nacimiento' => $this->request->getPost('fecha_nacimiento'),
+					'genero' => $this->request->getPost('genero'),
+					'estado_civil' => $this->request->getPost('estado_civil'),
+					'domicilio' => $this->nuloSiVacio($this->request->getPost('domicilio')),
+					'lugar_nacimiento' => $this->nuloSiVacio($this->request->getPost('lugar_nacimiento')),
+					'correo' => $this->nuloSiVacio($this->request->getPost('correo')),
+					'celular' => $this->request->getPost('celular'),
+					'estado_persona' => 'REGISTRADO'
+				]);
+				return is_numeric($idPersona) ? $this->response->setJSON(['exito' => 'Persona agregada correctamente, ¿Desea agregarle algun permiso o usuario?']) : $this->response->setJSON(['error' => '¡Oh no ha ocurrido no error al agregar personal!']);
 			} else {
 				return $this->response->setJSON(['error' => $validation->listErrors()]);
 			}
 		}
+	}
+	public function nuloSiVacio($dato)
+	{
+		return is_null($dato) ? null : (empty($dato) ? null : trim($dato));
 	}
 }

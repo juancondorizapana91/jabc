@@ -172,16 +172,15 @@ var KTModalNewTarget = (function () {
 									submitButton.disabled = false;
 									if (typeof r.exito != 'undefined') {
 										Swal.fire({
-											title: '¡Éxito!',
-											text: 'El usuario ha sido creado con éxito',
+											title: r.exito,
 											icon: 'success',
-											buttonsStyling: false,
-											confirmButtonText: 'Ok, entendido!',
-											customClass: {
-												confirmButton: 'btn btn-primary',
-											},
-										}).then(function (result) {
+											showCancelButton: true,
+											confirmButtonText: '¡Si deseo agregar roles!',
+											denyButtonText: `No, mas tarde`,
+										}).then((result) => {
 											if (result.isConfirmed) {
+												Swal.fire('Saved!', '', 'success');
+											} else if (result.isCanceled) {
 												modal.hide();
 											}
 										});

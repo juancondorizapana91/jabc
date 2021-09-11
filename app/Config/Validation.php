@@ -27,11 +27,11 @@ class Validation
 	];
 
 	public $validarPersonal = [
-		'ci' => 'required|min_length[7]|max_length[7]|is_natural_no_zero',
+		'ci' => 'required|min_length[7]|max_length[9]|is_natural_no_zero',
 		'expedido' => 'required',
 		'nombre' => 'required|min_length[3]|max_length[40]|alpha_space',
 		'paterno' => 'required|min_length[3]|max_length[40]|alpha_space',
-		'materno' => 'min_length[3]|max_length[40]|alpha_space',
+		'materno' => 'max_length[40]',
 		'fecha_nacimiento' => 'required|valid_date',
 		'genero' => 'required',
 		'estado_civil' => 'required',
