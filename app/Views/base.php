@@ -106,6 +106,7 @@
 	<!--begin::Page Custom Javascript(used by this page)-->
 
 	<script src="<?= base_url('metronic/assets/plugins/custom/datatables/datatables.bundle.js') ?>"></script>
+	<script src="<?= base_url('metronic/assets/plugins/custom/form/jquery.form.min.js') ?>"></script>
 
 
 
