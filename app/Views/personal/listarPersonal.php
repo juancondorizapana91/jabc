@@ -167,8 +167,8 @@
                             <input id="ci" type="text" class="form-control form-control-solid" name="ci" placeholder="Cedula de Identidad" />
                         </div>
                         <div class="col-md-6">
-                            <label class="required fs-6 fw-bold mb-2">Expedido</label>
-                            <select class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Exp" name="team_assign">
+                            <label for="expedido" class="required fs-6 fw-bold mb-2">Expedido</label>
+                            <select id="expedido" name="expedido" class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Expedido" name="team_assign">
                                 <option value="" selected></option>
                                 <option value="LP">LP</option>
                                 <option value="CH">CH</option>
@@ -213,14 +213,11 @@
                     </div>
                     <div class="row d-flex mb-8 fv-row fv-plugins-icon-container">
                         <div class="col-md-6 fv-row">
-                            <div class="mb-0">
-                                <label for="fecha_nacimiento" class="required fs-6 fw-bold mb-2">Fecha Nacimiento</label>
-                                <div class="position-relative d-flex align-items-center">
-                                    <div class="position-absolute ms-4"><i class="las la-calendar-alt fs-1"></i></div>
-                                    <input id="fecha_nacimiento" class="form-control form-control-solid ps-12 flatpickr-input" placeholder="dia / mes / año" id="fecha_nacimiento" />
-                                </div>
+                            <label for="fecha_nacimiento" class="required fs-6 fw-bold mb-2">Fecha Nacimiento</label>
+                            <div class="position-relative d-flex align-items-center">
+                                <div class="position-absolute ms-4"><i class="las la-calendar-alt fs-1"></i></div>
+                                <input id="fecha_nacimiento" class="form-control form-control-solid ps-12 flatpickr-input" placeholder="dia / mes / año" name="fecha_nacimiento" />
                             </div>
-
                         </div>
 
                         <div class="col-md-5 fv-row">

@@ -56,28 +56,77 @@ var KTModalNewTarget = (function () {
 				ci: {
 					validators: {
 						notEmpty: {
-							message: 'Target title is required',
+							message: 'Cèdula requerida',
 						},
 					},
 				},
-				target_assign: {
+				expedido: {
 					validators: {
 						notEmpty: {
-							message: 'Target assign is required',
+							message: 'Campo requerido',
 						},
 					},
 				},
-				target_due_date: {
+				nombre: {
 					validators: {
 						notEmpty: {
-							message: 'Target due date is required',
+							message: 'Nombre requerido',
 						},
 					},
 				},
-				target_tags: {
+				paterno: {
 					validators: {
 						notEmpty: {
-							message: 'Target tags are required',
+							message: 'Apellido requerido',
+						},
+					},
+				},
+				fecha_nacimiento: {
+					validators: {
+						notEmpty: {
+							message: 'Fecha requerida',
+						},
+					},
+				},
+				genero: {
+					validators: {
+						notEmpty: {
+							message: 'Género requerido',
+						},
+					},
+				},
+				estado_civil: {
+					validators: {
+						notEmpty: {
+							message: 'Estado requerido',
+						},
+					},
+				},
+				domicilio: {
+					validators: {
+						notEmpty: {
+							message: 'Domicilio requerido',
+						},
+					},
+				},
+				correo: {
+					validators: {
+						notEmpty: {
+							message: 'Correo requerido',
+						},
+					},
+				},
+				celular: {
+					validators: {
+						notEmpty: {
+							message: 'Celular requerida',
+						},
+					},
+				},
+				lugar_nacimiento: {
+					validators: {
+						notEmpty: {
+							message: 'Lugar de nacimiento requerido',
 						},
 					},
 				},
