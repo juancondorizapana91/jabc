@@ -103,118 +103,14 @@
                     <table id="table" class="table align-middle gs-0 gy-4">
                         <thead>
                             <tr class="fw-bolder text-muted bg-light">
-                                <th class="ps-4 min-w-300px rounded-start">Agent</th>
-                                <th class="min-w-125px">Earnings</th>
-                                <th class="min-w-125px">Comission</th>
-                                <th class="min-w-200px">Company</th>
-                                <th class="min-w-150px">Rating</th>
-                                <th class="min-w-200px text-end rounded-end"></th>
+                                <th>#</th>
+                                <th>ci</th>
+                                <th>Nombre</th>
+                                <th>Paterno</th>
+                                <th>Materno</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div class="d-flex align-items-center">
-                                        <div class="symbol symbol-50px me-5">
-                                            <span class="symbol-label bg-light">
-                                                <img src="assets/media/svg/avatars/001-boy.svg" class="h-75 align-self-end" alt="">
-                                            </span>
-                                        </div>
-                                        <div class="d-flex justify-content-start flex-column">
-                                            <a href="#" class="text-dark fw-bolder text-hover-primary mb-1 fs-6">Brad Simmons</a>
-                                            <span class="text-muted fw-bold text-muted d-block fs-7">HTML, JS, ReactJS</span>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <a href="#" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">$8,000,000</a>
-                                    <span class="text-muted fw-bold text-muted d-block fs-7">Pending</span>
-                                </td>
-                                <td>
-                                    <a href="#" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">$5,400</a>
-                                    <span class="text-muted fw-bold text-muted d-block fs-7">Paid</span>
-                                </td>
-                                <td>
-                                    <a href="#" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">Intertico</a>
-                                    <span class="text-muted fw-bold text-muted d-block fs-7">Web, UI/UX Design</span>
-                                </td>
-                                <td>
-                                    <div class="rating">
-                                        <div class="rating-label me-2 checked">
-                                            <i class="bi bi-star-fill fs-5"></i>
-                                        </div>
-                                        <div class="rating-label me-2 checked">
-                                            <i class="bi bi-star-fill fs-5"></i>
-                                        </div>
-                                        <div class="rating-label me-2 checked">
-                                            <i class="bi bi-star-fill fs-5"></i>
-                                        </div>
-                                        <div class="rating-label me-2 checked">
-                                            <i class="bi bi-star-fill fs-5"></i>
-                                        </div>
-                                        <div class="rating-label me-2 checked">
-                                            <i class="bi bi-star-fill fs-5"></i>
-                                        </div>
-                                    </div>
-                                    <span class="text-muted fw-bold text-muted d-block fs-7 mt-1">Best Rated</span>
-                                </td>
-                                <td class="text-end">
-                                    <a href="#" class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4 me-2">View</a>
-                                    <a href="#" class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4">Edit</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="d-flex align-items-center">
-                                        <div class="symbol symbol-50px me-5">
-                                            <span class="symbol-label bg-light">
-                                                <img src="assets/media/svg/avatars/047-girl-25.svg" class="h-75 align-self-end" alt="">
-                                            </span>
-                                        </div>
-                                        <div class="d-flex justify-content-start flex-column">
-                                            <a href="#" class="text-dark fw-bolder text-hover-primary mb-1 fs-6">Lebron Wayde</a>
-                                            <span class="text-muted fw-bold text-muted d-block fs-7">PHP, Laravel, VueJS</span>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td>
-                                    <a href="#" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">$8,750,000</a>
-                                    <span class="text-muted fw-bold text-muted d-block fs-7">Paid</span>
-                                </td>
-                                <td>
-                                    <a href="#" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">$7,400</a>
-                                    <span class="text-muted fw-bold text-muted d-block fs-7">Paid</span>
-                                </td>
-                                <td>
-                                    <a href="#" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">Agoda</a>
-                                    <span class="text-muted fw-bold text-muted d-block fs-7">Houses &amp; Hotels</span>
-                                </td>
-                                <td>
-                                    <div class="rating">
-                                        <div class="rating-label me-2 checked">
-                                            <i class="bi bi-star-fill fs-5"></i>
-                                        </div>
-                                        <div class="rating-label me-2 checked">
-                                            <i class="bi bi-star-fill fs-5"></i>
-                                        </div>
-                                        <div class="rating-label me-2 checked">
-                                            <i class="bi bi-star-fill fs-5"></i>
-                                        </div>
-                                        <div class="rating-label me-2 checked">
-                                            <i class="bi bi-star-fill fs-5"></i>
-                                        </div>
-                                        <div class="rating-label me-2">
-                                            <i class="bi bi-star-fill fs-5"></i>
-                                        </div>
-                                    </div>
-                                    <span class="text-muted fw-bold text-muted d-block fs-7 mt-1">Above Avarage</span>
-                                </td>
-                                <td class="text-end">
-                                    <a href="#" class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4 me-2">View</a>
-                                    <a href="#" class="btn btn-bg-light btn-color-muted btn-active-color-primary btn-sm px-4">Edit</a>
-                                </td>
-                            </tr>
-                        </tbody>
+
                     </table>
                 </div>
             </div>

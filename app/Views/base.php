@@ -99,11 +99,7 @@
 		</span>
 		<!--end::Svg Icon-->
 	</div>
-	<!--end::Scrolltop-->
-	<!--end::Main-->
-	<!--begin::Javascript-->
-	<!--begin::Global Javascript Bundle(used by all pages)-->
-	<script src="<?= base_url('metronic/assets/js/jquery-3.6.0.min.js') ?>"></script>
+
 	<script src="<?= base_url('metronic/assets/plugins/global/plugins.bundle.js') ?>"></script>
 	<script src="<?= base_url('metronic/assets/js/scripts.bundle.js') ?>"></script>
 	<!--end::Global Javascript Bundle-->

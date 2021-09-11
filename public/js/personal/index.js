@@ -18,7 +18,7 @@ $('#table').DataTable({
 		lengthMenu: 'Show _MENU_',
 	},
 	dom: "<'row'" + "<'col-sm-6 d-flex align-items-center justify-conten-start'l>" + "<'col-sm-6 d-flex align-items-center justify-content-end'f>" + '>' + "<'table-responsive'tr>" + "<'row'" + "<'col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start'i>" + "<'col-sm-12 col-md-7 d-flex align-items-center justify-content-center justify-content-md-end'p>" + '>',
-	ajax: 'ajaxListarPersonal',
+	ajax: 'personal/ajaxListarPersonal',
 });
 
 // Class definition
@@ -121,21 +121,59 @@ var KTModalNewTarget = (function () {
 							submitButton.disabled = false;
 
 							// Show success message. For more info check the plugin's official documentation: https://sweetalert2.github.io/
-							Swal.fire({
-								text: 'Form has been successfully submitted!',
-								icon: 'success',
-								buttonsStyling: false,
-								confirmButtonText: 'Ok, got it!',
-								customClass: {
-									confirmButton: 'btn btn-primary',
-								},
-							}).then(function (result) {
-								if (result.isConfirmed) {
-									modal.hide();
-								}
+							// Swal.fire({
+							// 	text: 'Form has been successfully submitted!',
+							// 	icon: 'success',
+							// 	buttonsStyling: false,
+							// 	confirmButtonText: 'Ok, got it!',
+							// 	customClass: {
+							// 		confirmButton: 'btn btn-primary',
+							// 	},
+							// }).then(function (result) {
+							// 	if (result.isConfirmed) {
+							// 		modal.hide();
+							// 	}
+							// });
+							$('#kt_modal_new_target_form').on('submit', function (e) {
+								e.preventDefault();
+								$.ajax({
+									url: '/personal/guardarPersonal',
+									type: 'POST',
+									data: new FormData(this),
+									contentType: false,
+									processData: false,
+									success: function (data) {
+										console.log(data);
+										// Swal.fire({
+										// 	text: 'Target has been successfully created!',
+										// 	icon: 'success',
+										// 	buttonsStyling: false,
+										// 	confirmButtonText: 'Ok, got it!',
+										// 	customClass: {
+										// 		confirmButton: 'btn btn-primary',
+										// 	},
+										// }).then(function (result) {
+										// 	if (result.isConfirmed) {
+										// 		modal.hide();
+										// 		location.reload();
+										// 	}
+										// });
+									},
+									error: function (data) {
+										console.log(data);
+										Swal.fire({
+											text: 'Sorry, looks like there are some errors detected, please try again.',
+											icon: 'error',
+											buttonsStyling: false,
+											confirmButtonText: 'Ok, got it!',
+											customClass: {
+												confirmButton: 'btn btn-primary',
+											},
+										});
+									},
+								});
 							});
-
-							//form.submit(); // Submit form
+							form.submit(); // Submit form
 						}, 2000);
 					} else {
 						// Show error message.
@@ -185,7 +223,6 @@ var KTModalNewTarget = (function () {
 			});
 		});
 	};
-
 	return {
 		// Public functions
 		init: function () {
