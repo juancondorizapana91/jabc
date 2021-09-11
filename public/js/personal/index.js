@@ -201,10 +201,10 @@ var KTModalNewTarget = (function () {
 					} else {
 						// Show error message.
 						Swal.fire({
-							text: 'Sorry, looks like there are some errors detected, please try again.',
+							text: 'Lo sentimos, parece que se han detectado algunos errores. Vuelve a intentarlo.',
 							icon: 'error',
 							buttonsStyling: false,
-							confirmButtonText: 'Ok, got it!',
+							confirmButtonText: '¡Ok lo tengo!',
 							customClass: {
 								confirmButton: 'btn btn-primary',
 							},
@@ -218,12 +218,12 @@ var KTModalNewTarget = (function () {
 			e.preventDefault();
 
 			Swal.fire({
-				text: 'Are you sure you would like to cancel?',
+				text: '¿Estás seguro de cancelar?',
 				icon: 'warning',
 				showCancelButton: true,
 				buttonsStyling: false,
-				confirmButtonText: 'Yes, cancel it!',
-				cancelButtonText: 'No, return',
+				confirmButtonText: '¡Sí, cancélalo!',
+				cancelButtonText: 'No, retornar',
 				customClass: {
 					confirmButton: 'btn btn-primary',
 					cancelButton: 'btn btn-active-light',
@@ -232,17 +232,17 @@ var KTModalNewTarget = (function () {
 				if (result.value) {
 					form.reset(); // Reset form
 					modal.hide(); // Hide modal
-				} else if (result.dismiss === 'cancel') {
-					Swal.fire({
-						text: 'Your form has not been cancelled!.',
-						icon: 'error',
-						buttonsStyling: false,
-						confirmButtonText: 'Ok, got it!',
-						customClass: {
-							confirmButton: 'btn btn-primary',
-						},
-					});
-				}
+				} //else if (result.dismiss === 'cancel') {
+				// 	Swal.fire({
+				// 		text: '¡Tu formulario no ha sido cancelado!',
+				// 		icon: 'error',
+				// 		buttonsStyling: false,
+				// 		confirmButtonText: '¡Ok lo tengo!',
+				// 		customClass: {
+				// 			confirmButton: 'btn btn-primary',
+				// 		},
+				// 	});
+				// }
 			});
 		});
 	};
