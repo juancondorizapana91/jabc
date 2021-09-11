@@ -52,92 +52,92 @@ var KTModalNewTarget = (function () {
 
 		// Init form validation rules. For more info check the FormValidation plugin's official documentation:https://formvalidation.io/
 		validator = FormValidation.formValidation(form, {
-			// fields: {
-			// 	ci: {
-			// 		validators: {
-			// 			notEmpty: {
-			// 				message: 'Cédula requerida',
-			// 			},
-			// 		},
-			// 	},
-			// 	expedido: {
-			// 		validators: {
-			// 			notEmpty: {
-			// 				message: 'Campo requerido',
-			// 			},
-			// 		},
-			// 	},
-			// 	nombre: {
-			// 		validators: {
-			// 			notEmpty: {
-			// 				message: 'Nombre requerido',
-			// 			},
-			// 		},
-			// 	},
-			// 	paterno: {
-			// 		validators: {
-			// 			notEmpty: {
-			// 				message: 'Apellido requerido',
-			// 			},
-			// 		},
-			// 	},
-			// 	fecha_nacimiento: {
-			// 		validators: {
-			// 			notEmpty: {
-			// 				message: 'Fecha requerida',
-			// 			},
-			// 		},
-			// 	},
-			// 	genero: {
-			// 		validators: {
-			// 			notEmpty: {
-			// 				message: 'Género requerido',
-			// 			},
-			// 		},
-			// 	},
-			// 	estado_civil: {
-			// 		validators: {
-			// 			notEmpty: {
-			// 				message: 'Estado requerido',
-			// 			},
-			// 		},
-			// 	},
-			// 	domicilio: {
-			// 		validators: {
-			// 			notEmpty: {
-			// 				message: 'Domicilio requerido',
-			// 			},
-			// 		},
-			// 	},
-			// 	correo: {
-			// 		validators: {
-			// 			notEmpty: {
-			// 				message: 'Correo requerido',
-			// 			},
-			// 		},
-			// 	},
-			// 	celular: {
-			// 		validators: {
-			// 			notEmpty: {
-			// 				message: 'Celular requerida',
-			// 			},
-			// 		},
-			// 	},
-			// 	lugar_nacimiento: {
-			// 		validators: {
-			// 			notEmpty: {
-			// 				message: 'Lugar de nacimiento requerido',
-			// 			},
-			// 		},
-			// 	},
-			// 	'targets_notifications[]': {
-			// 		validators: {
-			// 			notEmpty: {
-			// 				message: 'Please select at least one communication method',
-			// 			},
-			// 		},
-			// 	},
-			// },
+			fields: {
+				ci: {
+					validators: {
+						notEmpty: {
+							message: 'Cèdula requerida',
+						},
+					},
+				},
+				expedido: {
+					validators: {
+						notEmpty: {
+							message: 'Campo requerido',
+						},
+					},
+				},
+				nombre: {
+					validators: {
+						notEmpty: {
+							message: 'Nombre requerido',
+						},
+					},
+				},
+				paterno: {
+					validators: {
+						notEmpty: {
+							message: 'Apellido requerido',
+						},
+					},
+				},
+				fecha_nacimiento: {
+					validators: {
+						notEmpty: {
+							message: 'Fecha requerida',
+						},
+					},
+				},
+				genero: {
+					validators: {
+						notEmpty: {
+							message: 'Género requerido',
+						},
+					},
+				},
+				estado_civil: {
+					validators: {
+						notEmpty: {
+							message: 'Estado requerido',
+						},
+					},
+				},
+				domicilio: {
+					validators: {
+						notEmpty: {
+							message: 'Domicilio requerido',
+						},
+					},
+				},
+				correo: {
+					validators: {
+						notEmpty: {
+							message: 'Correo requerido',
+						},
+					},
+				},
+				celular: {
+					validators: {
+						notEmpty: {
+							message: 'Celular requerida',
+						},
+					},
+				},
+				lugar_nacimiento: {
+					validators: {
+						notEmpty: {
+							message: 'Lugar de nacimiento requerido',
+						},
+					},
+				},
+				'targets_notifications[]': {
+					validators: {
+						notEmpty: {
+							message: 'Please select at least one communication method',
+						},
+					},
+				},
+			},
 			plugins: {
 				trigger: new FormValidation.plugins.Trigger(),
 				bootstrap: new FormValidation.plugins.Bootstrap5({
@@ -163,27 +163,67 @@ var KTModalNewTarget = (function () {
 						// Disable button to avoid multiple click
 						submitButton.disabled = true;
 
-						submitButton.removeAttribute('data-kt-indicator');
+						setTimeout(function () {
+							submitButton.removeAttribute('data-kt-indicator');
 
-						// Enable button
-						submitButton.disabled = false;
+							// Enable button
+							submitButton.disabled = false;
 
-						$(form).ajaxSubmit({
-							url: '/personal/guardarPersonal',
-							type: 'POST',
-							success: function (response) {
-								Swal.fire({
-									title: '¡Éxito!',
-									text: 'El usuario ha sido creado con éxito',
-									icon: 'success',
-									buttonsStyling: false,
-									confirmButtonText: 'Ok, entendido!',
-									customClass: {
-										confirmButton: 'btn btn-primary',
+							// Show success message. For more info check the plugin's official documentation: https://sweetalert2.github.io/
+							// Swal.fire({
+							// 	text: 'Form has been successfully submitted!',
+							// 	icon: 'success',
+							// 	buttonsStyling: false,
+							// 	confirmButtonText: 'Ok, got it!',
+							// 	customClass: {
+							// 		confirmButton: 'btn btn-primary',
+							// 	},
+							// }).then(function (result) {
+							// 	if (result.isConfirmed) {
+							// 		modal.hide();
+							// 	}
+							// });
+							$('#kt_modal_new_target_form').on('submit', function (e) {
+								e.preventDefault();
+								$.ajax({
+									url: '/personal/guardarPersonal',
+									type: 'POST',
+									data: new FormData(this),
+									contentType: false,
+									processData: false,
+									success: function (data) {
+										console.log(data);
+										// Swal.fire({
+										// 	text: 'Target has been successfully created!',
+										// 	icon: 'success',
+										// 	buttonsStyling: false,
+										// 	confirmButtonText: 'Ok, got it!',
+										// 	customClass: {
+										// 		confirmButton: 'btn btn-primary',
+										// 	},
+										// }).then(function (result) {
+										// 	if (result.isConfirmed) {
+										// 		modal.hide();
+										// 		location.reload();
+										// 	}
+										// });
 									},
-								}).then(function (result) {});
-							},
-						});
+									error: function (data) {
+										console.log(data);
+										Swal.fire({
+											text: 'Sorry, looks like there are some errors detected, please try again.',
+											icon: 'error',
+											buttonsStyling: false,
+											confirmButtonText: 'Ok, got it!',
+											customClass: {
+												confirmButton: 'btn btn-primary',
+											},
+										});
+									},
+								});
+							});
+							form.submit(); // Submit form
+						}, 2000);
 					} else {
 						// Show error message.
 						Swal.fire({
@@ -257,45 +297,4 @@ var KTModalNewTarget = (function () {
 // On document ready
 KTUtil.onDOMContentLoaded(function () {
 	KTModalNewTarget.init();
-	$('#kt_modal_new_target_form').on('submit', function (e) {
-		alert();
-		e.preventDefault();
-		e.stopPropagation();
-		$.ajax({
-			url: '/personal/guardarPersonal',
-			type: 'POST',
-			data: new FormData(this),
-			contentType: false,
-			processData: false,
-			success: function (data) {
-				console.log(data);
-				// Swal.fire({
-				// 	text: 'Target has been successfully created!',
-				// 	icon: 'success',
-				// 	buttonsStyling: false,
-				// 	confirmButtonText: 'Ok, got it!',
-				// 	customClass: {
-				// 		confirmButton: 'btn btn-primary',
-				// 	},
-				// }).then(function (result) {
-				// 	if (result.isConfirmed) {
-				// 		modal.hide();
-				// 		location.reload();
-				// 	}
-				// });
-			},
-			error: function (data) {
-				console.log(data);
-				Swal.fire({
-					text: 'Sorry, looks like there are some errors detected, please try again.',
-					icon: 'error',
-					buttonsStyling: false,
-					confirmButtonText: 'Ok, got it!',
-					customClass: {
-						confirmButton: 'btn btn-primary',
-					},
-				});
-			},
-		});
-	});
 });
