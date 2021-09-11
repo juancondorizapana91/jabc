@@ -26,6 +26,20 @@ class Validation
 		CreditCardRules::class,
 	];
 
+	public $validarPersonal = [
+		'ci' => 'required|min_length[7]|max_length[7]|is_natural_no_zero',
+		'expedido' => 'required',
+		'nombre' => 'required|min_length[3]|max_length[40]|alpha',
+		'paterno' => 'required|min_length[3]|max_length[40]|alpha',
+		'materno' => 'min_length[3]|max_length[40]|alpha',
+		'fecha_nacimiento' => 'required|valid_date',
+		'genero' => 'required',
+		'estado_civil' => 'required',
+		'domicilio' => 'min_length[5]|max_length[150]',
+		'correo' => 'required|valid_email',
+		'celular' => 'required|min_length[8]|max_length[8]|is_natural_no_zero',
+		'lugar_nacimiento' => 'min_length[5]|max_length[90]'
+	];
 	/**
 	 * Specifies the views that are used to display the
 	 * errors.

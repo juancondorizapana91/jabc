@@ -44,6 +44,12 @@ class Personal extends BaseController
 	}
 	public function guardarPersonal()
 	{
-		var_dump($_REQUEST);
+		if ($this->request->isAJAX()) {
+			$validation = \Config\Services::validation();
+			if ($this->validate('validarPersonal')) {
+			} else {
+				return $this->response->setJSON(['error' => $validation->listErrors()]);
+			}
+		}
 	}
 }

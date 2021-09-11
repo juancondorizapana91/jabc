@@ -162,42 +162,43 @@ var KTModalNewTarget = (function () {
 
 						// Disable button to avoid multiple click
 						submitButton.disabled = true;
+						setTimeout(function () {
+							// Enable button
 
-						submitButton.removeAttribute('data-kt-indicator');
+							$(form).ajaxSubmit({
+								url: '/personal/guardarPersonal',
+								type: 'POST',
+								success: function (r) {
+									submitButton.removeAttribute('data-kt-indicator');
+									submitButton.disabled = false;
+									if (typeof r.exito != 'undefined') {
+										Swal.fire({
+											title: '¡Éxito!',
+											text: 'El usuario ha sido creado con éxito',
+											icon: 'success',
+											buttonsStyling: false,
+											confirmButtonText: 'Ok, entendido!',
+											customClass: {
+												confirmButton: 'btn btn-primary',
+											},
+										}).then(function (result) {
+											if (result.isConfirmed) {
+												modal.hide();
+											}
+										});
+									} else if (typeof r.error != 'undefined') {
+										Swal.fire({ title: '¡Error!', icon: 'error', html: r.error, buttonsStyling: false, customClass: { confirmButton: 'btn btn-primary' } });
+									}
+								},
+								error: function (r) {
+									submitButton.removeAttribute('data-kt-indicator');
+									submitButton.disabled = false;
+									Swal.fire({ title: '¡Error!', icon: 'error', html: r.responseText, buttonsStyling: false, customClass: { confirmButton: 'btn btn-primary' } });
+								},
+							});
 
-						// Enable button
-						submitButton.disabled = false;
-
-						// Show success message. For more info check the plugin's official documentation: https://sweetalert2.github.io/
-						// Swal.fire({
-						// 	text: 'Form has been successfully submitted!',
-						// 	icon: 'success',
-						// 	buttonsStyling: false,
-						// 	confirmButtonText: 'Ok, got it!',
-						// 	customClass: {
-						// 		confirmButton: 'btn btn-primary',
-						// 	},
-						// }).then(function (result) {
-						// 	if (result.isConfirmed) {
-						// 		modal.hide();
-						// 	}
-						// });
-						$(form).ajaxSubmit({
-							url: '/personal/guardarPersonal',
-							type: 'POST',
-							success: function (response) {
-								Swal.fire({
-									title: '¡Éxito!',
-									text: 'El usuario ha sido creado con éxito',
-									icon: 'success',
-									buttonsStyling: false,
-									confirmButtonText: 'Ok, entendido!',
-									customClass: {
-										confirmButton: 'btn btn-primary',
-									},
-								}).then(function (result) {});
-							},
-						});
+							//form.submit(); // Submit form
+						}, 1000);
 					} else {
 						// Show error message.
 						Swal.fire({
