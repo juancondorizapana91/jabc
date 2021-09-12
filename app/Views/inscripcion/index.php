@@ -39,27 +39,27 @@
 						<div class="stepper-nav py-5 mt-5">
 							<!--begin::Step 1-->
 							<div class="stepper-item current" data-kt-stepper-element="nav">
-								<h3 class="stepper-title">Sede</h3>
+								<h3 class="stepper-title">1. Sede</h3>
 							</div>
 							<!--end::Step 1-->
 							<!--begin::Step 2-->
 							<div class="stepper-item" data-kt-stepper-element="nav">
-								<h3 class="stepper-title">Datos Personales</h3>
+								<h3 class="stepper-title">2. Datos Personales</h3>
 							</div>
 							<!--end::Step 2-->
 							<!--begin::Step 3-->
 							<div class="stepper-item" data-kt-stepper-element="nav">
-								<h3 class="stepper-title">Programa</h3>
+								<h3 class="stepper-title">3. Programa</h3>
 							</div>
 							<!--end::Step 3-->
 							<!--begin::Step 4-->
 							<div class="stepper-item" data-kt-stepper-element="nav">
-								<h3 class="stepper-title">Detalles de Pago</h3>
+								<h3 class="stepper-title">4. Detalles de Pago</h3>
 							</div>
 							<!--end::Step 4-->
 							<!--begin::Step 5-->
 							<div class="stepper-item" data-kt-stepper-element="nav">
-								<h3 class="stepper-title">Completado</h3>
+								<h3 class="stepper-title">5. Completado</h3>
 							</div>
 							<!--end::Step 5-->
 						</div>
@@ -278,7 +278,7 @@
 
 										<!--begin::Tipo-->
 										<div class="col-md-3 fv-row">
-											<label class="required fs-6 fw-bold form-label mb-2">Tipo</label>
+											<label class="required fs-6 fw-bold form-label mb-2">Tipo Universidad</label>
 											<div class="row fv-row">
 												<div class="col-12">
 													<select name="card_expiry_month"
@@ -428,7 +428,7 @@
 												<span>Costo Matrícula</span>
 											</label>
 											<input type="text" class="form-control form-control-solid" placeholder=""
-											name="card_name" value="Bs. 200" readonly/>
+											name="card_name" value="Bs. 200" disabled/>
 										</div>
 										<!--end::Costo Matrícula-->
 
@@ -438,7 +438,7 @@
 												<span>Costo Colegiatura</span>
 											</label>
 											<input type="text" class="form-control form-control-solid" placeholder=""
-											name="card_name" value="Bs. 2000" readonly/>
+											name="card_name" value="Bs. 2000" disabled/>
 										</div>
 										<!--end::Costo Colegiatura-->
 
@@ -448,12 +448,12 @@
 												<span>Costo Total</span>
 											</label>
 											<input type="text" class="form-control form-control-solid" placeholder=""
-											name="card_name" value="Bs. 2200" readonly/>
+											name="card_name" value="Bs. 2200" disabled/>
 										</div>
 										<!--end::Costo Colegiatura-->
 									</div>
 									<!--end::Input group-->
-
+									<hr>
 									<!--begin::Input group-->
 									<div class="fv-row mb-8">
 										<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">

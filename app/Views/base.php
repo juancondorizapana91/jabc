@@ -24,7 +24,7 @@
 </head>
 <!--end::Head-->
 <!--begin::Body-->
-<body id="kt_body" class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled toolbar-fixed toolbar-tablet-and-mobile-fixed aside-enabled aside-fixed" style="--kt-toolbar-height:55px;--kt-toolbar-height-tablet-and-mobile:55px">
+<body id="kt_body" class="page-loading-enabled page-loading header-fixed header-tablet-and-mobile-fixed aside-enabled aside-fixed">
 	<!--begin::Main-->
 	<!--begin::Root-->
 	<div class="d-flex flex-column flex-root">
@@ -108,8 +108,6 @@
 	<script src="<?= base_url('metronic/assets/js/custom/apps/chat/chat.js') ?>"></script>
 	<script src="<?= base_url('metronic/assets/js/custom/modals/create-app.js') ?>"></script>
 	<script src="<?= base_url('metronic/assets/js/custom/modals/upgrade-plan.js') ?>"></script>
-	<script src="<?= base_url('metronic/assets/js/jquery-3.6.0.min.js') ?>"></script>
-
 
 	<!--end::Page Custom Javascript-->
 	<!--end::Javascript-->

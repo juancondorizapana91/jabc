@@ -1,6 +1,16 @@
 "use strict";
 // Class definition
 var KTCreateAccount = (function () {
+	new Dropzone("#kt_modal_create_project_settings_logo", {
+		url: "https://keenthemes.com/scripts/void.php",
+		paramName: "file",
+		maxFiles: 10,
+		maxFilesize: 10,
+		addRemoveLinks: !0,
+		accept: function (e, t) {
+			"justinbieber.jpg" == e.name ? t("Naha, you don't.") : t();
+		},
+	});
 	// Elements
 	var modal;
 	var modalEl;
@@ -150,27 +160,27 @@ var KTCreateAccount = (function () {
 		validations.push(
 			FormValidation.formValidation(form, {
 				fields: {
-					// account_team_size: {
-					// 	validators: {
-					// 		notEmpty: {
-					// 			message: "Time size is required",
-					// 		},
-					// 	},
-					// },
-					// account_name: {
-					// 	validators: {
-					// 		notEmpty: {
-					// 			message: "Account name is required",
-					// 		},
-					// 	},
-					// },
-					// account_plan: {
-					// 	validators: {
-					// 		notEmpty: {
-					// 			message: "Account plan is required",
-					// 		},
-					// 	},
-					// },
+					account_team_size: {
+						validators: {
+							notEmpty: {
+								message: "Time size is required",
+							},
+						},
+					},
+					account_name: {
+						validators: {
+							notEmpty: {
+								message: "Account name is required",
+							},
+						},
+					},
+					account_plan: {
+						validators: {
+							notEmpty: {
+								message: "Account plan is required",
+							},
+						},
+					},
 				},
 				plugins: {
 					trigger: new FormValidation.plugins.Trigger(),
@@ -188,44 +198,44 @@ var KTCreateAccount = (function () {
 		validations.push(
 			FormValidation.formValidation(form, {
 				fields: {
-					// business_name: {
-					// 	validators: {
-					// 		notEmpty: {
-					// 			message: "Busines name is required",
-					// 		},
-					// 	},
-					// },
-					// business_descriptor: {
-					// 	validators: {
-					// 		notEmpty: {
-					// 			message: "Busines descriptor is required",
-					// 		},
-					// 	},
-					// },
-					// business_type: {
-					// 	validators: {
-					// 		notEmpty: {
-					// 			message: "Busines type is required",
-					// 		},
-					// 	},
-					// },
-					// business_description: {
-					// 	validators: {
-					// 		notEmpty: {
-					// 			message: "Busines description is required",
-					// 		},
-					// 	},
-					// },
-					// business_email: {
-					// 	validators: {
-					// 		notEmpty: {
-					// 			message: "Busines email is required",
-					// 		},
-					// 		emailAddress: {
-					// 			message: "The value is not a valid email address",
-					// 		},
-					// 	},
-					// },
+					business_name: {
+						validators: {
+							notEmpty: {
+								message: "Busines name is required",
+							},
+						},
+					},
+					business_descriptor: {
+						validators: {
+							notEmpty: {
+								message: "Busines descriptor is required",
+							},
+						},
+					},
+					business_type: {
+						validators: {
+							notEmpty: {
+								message: "Busines type is required",
+							},
+						},
+					},
+					business_description: {
+						validators: {
+							notEmpty: {
+								message: "Busines description is required",
+							},
+						},
+					},
+					business_email: {
+						validators: {
+							notEmpty: {
+								message: "Busines email is required",
+							},
+							emailAddress: {
+								message: "The value is not a valid email address",
+							},
+						},
+					},
 				},
 				plugins: {
 					trigger: new FormValidation.plugins.Trigger(),
