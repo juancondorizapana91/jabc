@@ -61,6 +61,7 @@ class Personal extends BaseController
 					'lugar_nacimiento' => $this->nuloSiVacio($this->request->getPost('lugar_nacimiento')),
 					'correo' => $this->nuloSiVacio($this->request->getPost('correo')),
 					'celular' => $this->request->getPost('celular'),
+					'id_usuario_registro' => $this->data['user']['id_persona'],
 					'estado_persona' => 'REGISTRADO'
 				]);
 				return is_numeric($idPersona) ? $this->response->setJSON(['exito' => 'Persona agregada correctamente, ¿Desea agregarle algun permiso o usuario?']) : $this->response->setJSON(['error' => '¡Oh no ha ocurrido no error al agregar personal!']);

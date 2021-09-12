@@ -33,7 +33,20 @@ class Querys extends Database
             return null;
         }
     }
+    public function insertarTabla($tabla, $datos)
+    {
+        $builder = $this->db->table($tabla);
+        return $builder->insert($datos);
+    }
+    public function seleccionarTabla($tabla, $campos, $condicion = [], $orden = '', $agrupar = '')
+    {
+        $builder = $this->db->table($tabla);
+        $builder->select($campos);
+        empty($orden) ?: $builder->orderBy($orden);
+        empty($agrupar) ?: $builder->groupBy($agrupar);
 
+        return empty($condicion) ? $builder->get() : $builder->getWhere($condicion);
+    }
     public function verifyRol($condition)
     {
         $builder = $this->db->table('view_users');
