@@ -40,6 +40,7 @@ class BaseController extends Controller
 	 * @var array
 	 */
 	protected $helpers = ['Pb'];
+	protected $db = null;
 
 	public function __construct()
 	{
@@ -57,7 +58,7 @@ class BaseController extends Controller
 	{
 		// Do Not Edit This Line
 		parent::initController($request, $response, $logger);
-
+		$this->db = \Config\Database::connect();
 		//--------------------------------------------------------------------
 		// Preload any models, libraries, etc, here.
 		//--------------------------------------------------------------------

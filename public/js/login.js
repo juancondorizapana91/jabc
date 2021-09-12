@@ -73,21 +73,9 @@ var KTSigninGeneral = (function () {
 							submitButton.disabled = false;
 
 							// Show message popup. For more info check the plugin's official documentation: https://sweetalert2.github.io/
-							Swal.fire({
-								text: '¡Has iniciado sesión correctamente!',
-								icon: 'success',
-								buttonsStyling: false,
-								confirmButtonText: '¡Ok lo tengo!',
-								customClass: {
-									confirmButton: 'btn btn-primary',
-								},
-							}).then(function (result) {
-								if (result.isConfirmed) {
-									form.querySelector('[name="email"]').value = '';
-									form.querySelector('[name="password"]').value = '';
-									window.location = `${window.origin}/principal`;
-								}
-							});
+							form.querySelector('[name="email"]').value = '';
+							form.querySelector('[name="password"]').value = '';
+							window.location = `${window.origin}/principal`;
 						},
 						'json'
 					);
