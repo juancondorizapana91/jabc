@@ -36,7 +36,7 @@ class Querys extends Database
     public function insertarTabla($tabla, $datos)
     {
         $builder = $this->db->table($tabla);
-        return $builder->insert($datos);
+        return $builder->insert($datos) ? $this->db->insertID() : $this->db->error();
     }
     public function seleccionarTabla($tabla, $campos, $condicion = [], $orden = '', $agrupar = '')
     {
