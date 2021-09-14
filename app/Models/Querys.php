@@ -13,7 +13,7 @@ class Querys extends Database
     }
     public function view_users($condicion = null, $busqueda = null)
     {
-        $builder = $this->db->table('view_users');
+        $builder = $this->db->table('pb_view_users');
         if (is_array($condicion)) {
             return $builder->getWhere($condicion)->getResultArray();
         } else {
@@ -23,7 +23,7 @@ class Querys extends Database
 
     public function verifyUser($condition)
     {
-        $builder = $this->db->table('view_users');
+        $builder = $this->db->table('pb_view_users');
 
         if (is_array($condition)) {
             $builder->where($condition);
@@ -36,7 +36,7 @@ class Querys extends Database
 
     public function verifyRol($condition)
     {
-        $builder = $this->db->table('view_users');
+        $builder = $this->db->table('pb_view_users');
         if (is_array($condition)) {
             $builder->select("GROUP_CONCAT(nombre_grupo) AS nombre_grupo");
             $builder->where($condition);

@@ -70,11 +70,11 @@
                     </span>
                     <div class="menu-sub menu-sub-accordion menu-active-bg">
                         <div class="menu-item">
-                            <a class="menu-link" href="account/overview.html">
+                            <a class="menu-link" href="<?= base_url('inscripcion'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
-                                <span class="menu-title">Listado</span>
+                                <span class="menu-title">Inscribir</span>
                             </a>
                         </div>
                         <div class="menu-item">
@@ -82,7 +82,25 @@
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
-                                <span class="menu-title">Inscribir</span>
+                                <span class="menu-title">Profesiones Ocupaciones</span>
+                            </a>
+                        </div>
+
+                        <div class="menu-item">
+                            <a class="menu-link" href="<?= base_url('inscripcion'); ?>">
+                                <span class="menu-bullet">
+                                    <span class="bullet bullet-dot"></span>
+                                </span>
+                                <span class="menu-title">Universidades</span>
+                            </a>
+                        </div>
+
+                        <div class="menu-item">
+                            <a class="menu-link" href="<?= base_url('inscripcion'); ?>">
+                                <span class="menu-bullet">
+                                    <span class="bullet bullet-dot"></span>
+                                </span>
+                                <span class="menu-title">Normales</span>
                             </a>
                         </div>
                     </div>

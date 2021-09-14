@@ -150,7 +150,7 @@
 											<div class="row fv-row">
 												<div class="col-12">
 													<input type="text" class="form-control form-control-solid" minlength="3"
-													maxlength="4" placeholder="C.I." name="card_cvv" />
+													maxlength="12" placeholder="C.I." name="ci" id="ci" />
 												</div>
 											</div>
 										</div>
@@ -162,7 +162,7 @@
 												<span class="required">Expedido</span>
 											</label>
 											<div class="position-relative">
-												<select name="card_expiry_month"
+												<select name="expedido" id="expedido"
 													class="form-select form-select-solid" data-control="select2"
 													data-hide-search="true" data-placeholder="Expedido">
 													<option></option>
@@ -190,7 +190,7 @@
 											<div class="row fv-row">
 												<div class="col-12">
 													<input type="text" class="form-control form-control-solid" minlength="3"
-													maxlength="4" placeholder="Nombres" name="card_cvv" />
+													maxlength="4" placeholder="Nombres" name="nombre" id="nombre" />
 												</div>
 											</div>
 										</div>
@@ -202,7 +202,7 @@
 											<div class="row fv-row">
 												<div class="col-12">
 													<input type="text" class="form-control form-control-solid" minlength="3"
-													maxlength="4" placeholder="Ap. paterno" name="card_cvv" />
+													maxlength="4" placeholder="Ap. paterno" name="paterno" id="paterno" />
 												</div>
 											</div>
 										</div>
@@ -216,7 +216,7 @@
 											<div class="row fv-row">
 												<div class="col-12">
 													<input type="text" class="form-control form-control-solid" minlength="3"
-													maxlength="4" placeholder="Ap. materno" name="card_cvv" />
+													maxlength="4" placeholder="Ap. materno" name="materno" id="materno" />
 												</div>
 											</div>
 										</div>
@@ -226,38 +226,78 @@
 
 									<!--begin::Input group-->
 									<div class="row mb-10 mt-0">
+
 										<!--begin::Celular-->
-										<div class="col-md-4 fv-row">
+										<div class="col-md-5 fv-row">
 											<label class="fs-6 fw-bold form-label mb-2">
-												Celular
+												Fecha Nacimiento
 											</label>
 											<div class="row fv-row">
 												<div class="col-12">
-													<input type="text" class="form-control form-control-solid" minlength="3"
-													maxlength="4" placeholder="Celular" name="card_cvv" />
+													<input type="date" class="form-control form-control-solid"  name="fecha_nacimiento" id="fecha_nacimiento" />
 												</div>
 											</div>
 										</div>
 										<!--end::Celular-->
 
+										<!--begin::Celular-->
+										<div class="col-md-5 fv-row">
+											<label class="fs-6 fw-bold form-label mb-2 required">
+												Celular
+											</label>
+											<div class="row fv-row">
+												<div class="col-12">
+													<input type="text" class="form-control form-control-solid" minlength="3"
+													maxlength="4" placeholder="Celular" name="celular" id="celular" />
+												</div>
+											</div>
+										</div>
+										<!--end::Celular-->
+
+										<!--begin::Celular-->
+										<div class="col-md-2 fv-row">
+											<label class="fs-6 fw-bold form-label mb-2 required">
+												Sexo
+											</label>
+											<div class="row fv-row">
+												<div class="col-12">
+													<select class="form-select form-select-solid" name="genero" id="genero">
+														<option></option>
+														<option value="F" selected>F</option>
+														<option value="M">M</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<!--end::Celular-->
+
+									</div>
+									<!--end::Input group-->
+
+									<!--begin::Input group-->
+									<div class="row mb-10 mt-0">
 										<!--begin::Profesión-->
-										<div class="col-md-8 fv-row">
+										<div class="col-md-12 fv-row">
 											<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
 												Profesión
 											</label>
 											<div class="row fv-row">
 												<div class="col-12">
-													<select class="form-select form-select-solid" data-control="select2" data-placeholder="Seleccione una opción">
+													<select class="form-select form-select-solid" name="id_profesiones_ocupaciones" id="id_profesiones_ocupaciones" data-control="select2" data-placeholder="Seleccione una opción">
 														<option></option>
-														<option value="1">Option 1</option>
-														<option value="2">Option 2</option>
+														<?php
+															foreach ($profesiones_ocupaciones as $key => $value) {
+																echo '<option value="'.$value['id_profesiones_ocupaciones'].'">'.$value['descripcion'].'</option>';
+															}
+														?>
 													</select>
 												</div>
 											</div>
 										</div>
-										<!--end::Profesión-->
+										<!--end::Profesión-->					
 									</div>
 									<!--end::Input group-->
+
 
 									<!--begin::Input group-->
 									<div class="row mb-10">
@@ -266,10 +306,13 @@
 											<label class="required fs-6 fw-bold form-label mb-2">Universidad de titulación</label>
 											<div class="row fv-row">
 												<div class="col-12">
-													<select class="form-select form-select-solid" data-control="select2" data-placeholder="Seleccione una opción">
+													<select class="form-select form-select-solid" name="id_universidades_normales" id="id_universidades_normales" data-control="select2" data-placeholder="Seleccione una opción">
 														<option></option>
-														<option value="1">UPEA</option>
-														<option value="2">UMSA</option>
+														<?php
+															foreach ($universidades_normales as $key => $value) {
+																echo '<option value="'.$value['id_universidades_normales'].'">'.$value['nombre'].' - '. $value['id_departamento'].'</option>';
+															}
+														?>
 													</select>
 												</div>
 											</div>
@@ -281,14 +324,13 @@
 											<label class="required fs-6 fw-bold form-label mb-2">Tipo Universidad</label>
 											<div class="row fv-row">
 												<div class="col-12">
-													<select name="card_expiry_month"
-													class="form-select form-select-solid" data-control="select2"
+													<select class="form-select form-select-solid" name="tipo_universidad" id="tipo_universidad" data-control="select2"
 													data-hide-search="true" data-placeholder="Tipo">
 														<option></option>
-														<option value="Especial">Especial</option>
-														<option value="Público">Público</option>
-														<option value="Privado">Privado</option>
-														<option value="Técnico">Técnico</option>
+														<option value="ESPECIAL">ESPECIAL</option>
+														<option value="PÚBLICA">PÚBLICA</option>
+														<option value="PRIVADA">PRIVADA</option>
+														<option value="TÉCNICO">TÉCNICO</option>
 													</select>
 												</div>
 											</div>
@@ -302,14 +344,18 @@
 											</label>
 											<div class="row fv-row">
 												<div class="col-12">
-													<select name="card_expiry_month"
+													<select name="gestion_titulacion" id="gestion_titulacion"
 													class="form-select form-select-solid" data-control="select2"
 													data-hide-search="true" data-placeholder="Gestión">
 														<option></option>
-														<option value="2020">2020</option>
-														<option value="2021">2021</option>
-														<option value="2022">2022</option>
 														<option value="En trámite">En trámite</option>
+														<?php
+															$inicio = date('Y');
+															for ($i=0; $i < 20; $i++) { 
+																echo '<option value="'.$inicio.'">'.$inicio.'</option>';
+																$inicio--;
+															}
+														?>
 													</select>
 												</div>
 											</div>
@@ -336,10 +382,13 @@
 									<!--begin::Nombre Programa-->
 									<div class="fv-row mb-10">
 										<label class="form-label required">Nombre de Programa</label>
-										<select class="form-select form-select-solid" data-control="select2" data-placeholder="Seleccione un programa">
+										<select class="form-select form-select-solid" name="nombre_programa" id="nombre_programa" data-control="select2" data-placeholder="Seleccione un programa">
 											<option></option>
-											<option value="1">Educación Superior</option>
-											<option value="2">Investigación educativa</option>
+											<?php
+												foreach ($programas as $key => $value) {
+													echo '<option value="'.$value['id_planificacion_programa'].'">'.$value['nombre_programa'].' - grado académico:'. $value['descripcion_grado_academico'].'  sede:'. $value['denominacion_sede'].' = Inicio: '. $value['fecha_inicio'].'  Fin: '. $value['fecha_fin'].' gestión: '. $value['gestion'].'</option>';
+												}
+											?>
 										</select>
 									</div>
 									<!--end::Nombre Programa-->
@@ -350,25 +399,22 @@
 											<label class="d-flex align-items-center form-label">
 												<span>Grado Académico</span>
 											</label>
-											<input name="business_descriptor"
-												class="form-control form-control-lg form-control-solid"
-												value="KEENTHEMES" readonly/>
+											<input name="grado_academico" id="grado_academico"
+												class="form-control form-control-lg form-control-solid" readonly/>
 										</div>
 										<div class="col-md-4 fv-row">
 											<label class="d-flex align-items-center form-label">
 												<span>Fecha Inicio</span>
 											</label>
-											<input name="business_descriptor"
-												class="form-control form-control-lg form-control-solid"
-												value="KEENTHEMES" readonly/>
+											<input name="fecha_inicio" id="fecha_inicio"
+												class="form-control form-control-lg form-control-solid" readonly/>
 										</div>
 										<div class="col-md-4 fv-row">
 											<label class="d-flex align-items-center form-label">
 												<span>Fecha Fin</span>
 											</label>
-											<input name="business_descriptor"
-												class="form-control form-control-lg form-control-solid"
-												value="KEENTHEMES" readonly/>
+											<input name="fecha_fin" id="fecha_fin"
+												class="form-control form-control-lg form-control-solid" readonly/>
 										</div>
 									</div>
 									<!--end::Grado académico-->
@@ -377,30 +423,22 @@
 									<div class="row mb-10">
 										<!--begin::Gestión-->
 										<div class="col-md-6 fv-row">
-											<label class="form-label required">Gestión</label>
-											<select name="business_type"
+											<label class="form-label">Gestión</label>
+											<select name="gestion_programa" id="gestion_programa"
 												class="form-select form-select-lg form-select-solid" data-control="select2"
 												data-placeholder="Seleccione" data-allow-clear="true"
 												data-hide-search="true">
 												<option></option>
-												<option value="2021">2024</option>
-												<option value="2025">2025</option>
+												<?php
+													$inicio = date('Y');
+													for ($i=0; $i < 20; $i++) { 
+														echo '<option value="'.$inicio.'">'.$inicio.'</option>';
+														$inicio--;
+													}
+												?>
 											</select>
 										</div>
 										<!--end::Gestión-->
-										<!--begin::Mes-->
-										<div class="col-md-6 fv-row">
-											<label class="form-label required">Mes</label>
-											<select name="juan"
-												class="form-select form-select-lg form-select-solid" data-control="select2"
-												data-placeholder="Seleccione" data-allow-clear="true"
-												data-hide-search="true">
-												<option></option>
-												<option value="Enero">Enero</option>
-												<option value="Febrero">Febrero</option>
-											</select>
-										</div>
-										<!--end::Mes-->
 									</div>
 									<!--end::Input group-->
 								</div>
@@ -427,8 +465,8 @@
 											<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
 												<span>Costo Matrícula</span>
 											</label>
-											<input type="text" class="form-control form-control-solid" placeholder=""
-											name="card_name" value="Bs. 200" disabled/>
+											<input type="text" class="form-control form-control-solid"
+											name="costo_matricula" id="costo_matricula" disabled/>
 										</div>
 										<!--end::Costo Matrícula-->
 
@@ -437,8 +475,8 @@
 											<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
 												<span>Costo Colegiatura</span>
 											</label>
-											<input type="text" class="form-control form-control-solid" placeholder=""
-											name="card_name" value="Bs. 2000" disabled/>
+											<input type="text" class="form-control form-control-solid"
+											name="costo_colegiatura" id="costo_colegiatura" disabled/>
 										</div>
 										<!--end::Costo Colegiatura-->
 
@@ -447,20 +485,109 @@
 											<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
 												<span>Costo Total</span>
 											</label>
-											<input type="text" class="form-control form-control-solid" placeholder=""
-											name="card_name" value="Bs. 2200" disabled/>
+											<input type="text" class="form-control form-control-solid"
+											name="costo_total" id="costo_total" disabled/>
 										</div>
 										<!--end::Costo Colegiatura-->
 									</div>
 									<!--end::Input group-->
 									<hr>
+
+									<!--begin::Input group-->
+									<div class="row mb-10">
+										<!--begin::Código pago-->
+										<div class="col-md-4 fv-row">
+											<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
+												<span>Código Pago</span>
+											</label>
+											<input type="text" class="form-control form-control-solid bg-success text-white"
+											name="codigo_pago" id="codigo_pago" readonly/>
+										</div>
+										<!--end::Código pago-->
+
+										<!--begin::Monto Pago-->
+										<div class="col-md-4 fv-row">
+											<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
+												<span class="required">Monto Pago</span>
+											</label>
+											<input type="number" class="form-control form-control-solid"
+											name="monto_pago" id="monto_pago"/>
+										</div>
+										<!--end::Monto Pago-->
+
+										<!--begin::Deuda Total-->
+										<div class="col-md-4 fv-row">
+											<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
+												<span>Deuda Total</span>
+											</label>
+											<input type="text" class="form-control form-control-solid bg-danger text-white"
+											name="deuda_total" id="deuda_total" readonly/>
+										</div>
+										<!--end::Deuda Total-->
+									</div>
+									<!--end::Input group-->
+
+									<!--begin::Input group-->
+									<div class="row mb-10">
+										<!--begin::Fecha pago-->
+										<div class="col-md-6 fv-row">
+											<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
+												<span class="required">Fecha Pago</span>
+											</label>
+											<input type="date" class="form-control form-control-solid"
+											name="fecha_deposito" id="fecha_deposito" value="<?= date("Y/m/d")?>"/>
+										</div>
+										<!--end::Fecha pago-->
+										<!--begin::Tipo pago-->
+										<div class="col-md-6 fv-row">
+											<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
+												<span class="required">Tipo Pago</span>
+											</label>
+											<select name="id_tipo_pago" id="id_tipo_pago"
+												class="form-select form-select-lg form-select-solid" data-control="select2"
+												data-placeholder="Seleccione" data-allow-clear="true"
+												data-hide-search="true">
+												<option></option>
+												<?php
+												foreach ($tipo_pago as $key => $value) {
+													echo '<option value="'.$value['id_tipo_pago'].'">'.$value['descripcion_tipo_pago'].' </option>';
+												}
+											?>
+											</select>
+										</div>
+										<!--end::Tipo pago-->
+									</div>
+									<!--end::Input group-->
+
+									<!--begin::Input group-->
+									<div class="row mb-10">
+										<!--begin::Descripción Pago-->
+										<div class="col-md-6 fv-row">
+											<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
+												<span>Descripción Pago</span>
+											</label>
+											<textarea class="form-control form-control-solid" name="descripcion_pago" id="descripcion_pago" rows="1"></textarea>
+										</div>
+										<!--end::Descripción Pago-->
+
+										<!--begin::Descripción Pago-->
+										<div class="col-md-6 fv-row">
+											<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
+												<span>Observación Pago</span>
+											</label>
+											<textarea class="form-control form-control-solid" name="observacion_pago" id="observacion_pago" rows="1"></textarea>
+										</div>
+										<!--end::Descripción Pago-->
+									</div>
+									<!--end::Input group-->
+
 									<!--begin::Input group-->
 									<div class="fv-row mb-8">
 										<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
 											Imagen Comprobante
 										</label>
 										<!--begin::Dropzone-->
-										<div class="dropzone" id="kt_modal_create_project_settings_logo">
+										<div class="dropzone" id="imagen_comprobante">
 											<!--begin::Message-->
 											<div class="dz-message needsclick">
 												<!--begin::Icon-->
@@ -485,39 +612,6 @@
 									</div>
 									<!--end::Input group-->
 
-									<!--begin::Input group-->
-									<div class="row mb-10">
-										<!--begin::Código pago-->
-										<div class="col-md-4 fv-row">
-											<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
-												<span class="required">Código Pago</span>
-											</label>
-											<input type="text" class="form-control form-control-solid" placeholder=""
-											name="card_name" value="32124" readonly/>
-										</div>
-										<!--end::Código pago-->
-
-										<!--begin::Monto Pago-->
-										<div class="col-md-4 fv-row">
-											<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
-												<span class="required">Monto Pago</span>
-											</label>
-											<input type="text" class="form-control form-control-solid" placeholder=""
-											name="card_name" value="2000" readonly/>
-										</div>
-										<!--end::Monto Pago-->
-
-										<!--begin::Deuda Total-->
-										<div class="col-md-4 fv-row">
-											<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
-												<span>Deuda Total</span>
-											</label>
-											<input type="text" class="form-control form-control-solid bg-danger text-white" placeholder=""
-											name="card_name" value="Bs. 200" readonly/>
-										</div>
-										<!--end::Deuda Total-->
-									</div>
-									<!--end::Input group-->
 								</div>
 								<!--end::Wrapper-->
 							</div>
@@ -527,7 +621,7 @@
 								<!--begin::Wrapper-->
 								<div class="w-100">
 									<!--begin::Heading-->
-									<div class="pb-8 pb-lg-10">
+									<div class="pb-2 pb-lg-10">
 										<!--begin::Title-->
 										<h2 class="fw-bolder text-dark">Completado correctamente!</h2>
 										<!--end::Title-->
@@ -537,6 +631,9 @@
 									<div class="mb-0">
 										<!--begin::Text-->
 										<div class="fs-6 text-gray-600 mb-5">Click en botón Registrar para registrar la inscripción</div>
+										<div id="datos_pago_inscripcion">
+											
+										</div>
 										<!--end::Text-->
 									</div>
 									<!--end::Body-->
@@ -545,7 +642,7 @@
 							</div>
 							<!--end::Step 5-->
 							<!--begin::Actions-->
-							<div class="d-flex flex-stack pt-15">
+							<div class="d-flex flex-stack pt-10">
 								<!--begin::Wrapper-->
 								<div class="mr-2">
 									<button type="button" class="btn btn-lg btn-light-primary me-3"
