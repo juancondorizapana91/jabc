@@ -1,0 +1,15 @@
+{
+  "require": {
+    "setasign/fpdf": "^1.8",
+    "setasign/fpdi": "^2.2",
+    "setasign/fpdi-fpdf": "^2.2",
+    "ext-json": "*",
+    "ext-mbstring": "*",
+    "ext-simplexml": "*",
+    "ext-libxml": "*",
+    "ext-pgsql": "*",
+    "ext-pdo": "*",
+    "phpoffice/phpspreadsheet": "^1.17",
+    "phpoffice/phpword": "^0.18.1"
+  }
+}
