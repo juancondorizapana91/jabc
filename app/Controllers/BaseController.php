@@ -41,10 +41,13 @@ class BaseController extends Controller
 	 */
 	protected $helpers = ['Pb'];
 	protected $db = null;
+	protected $q = null;
+	protected $data = null;
 
 	public function __construct()
 	{
 		$this->templater = new Templater(\Config\Services::request());
+		$this->q = new Querys();
 	}
 
 	/**

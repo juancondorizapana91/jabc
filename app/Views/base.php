@@ -110,6 +110,17 @@
 	<script src="<?= base_url('metronic/assets/plugins/custom/datatables/datatables.bundle.js') ?>"></script>
 	<script src="<?= base_url('metronic/assets/plugins/custom/form/jquery.form.min.js') ?>"></script>
 
+<<<<<<< HEAD
+=======
+	<script src="<?= base_url('metronic/assets/js/custom/widgets.js') ?>"></script>
+	<script src="<?= base_url('metronic/assets/js/custom/apps/chat/chat.js') ?>"></script>
+
+
+
+
+
+
+>>>>>>> 0575eb4e9c20474eb95d5598fe56c2a133a164c8
 	<!--end::Page Custom Javascript-->
 	<!--end::Javascript-->
 	<?php $js = str_replace('\\', '/', FCPATH . 'js/' . strtolower(explode('\\', (\Config\Services::router())->controllerName())[3]) . '/' . (\Config\Services::router())->methodName() . '.js');

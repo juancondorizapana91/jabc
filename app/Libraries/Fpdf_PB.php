@@ -1,10 +1,14 @@
 <?php
-// require_once APPPATH.'/vendor/autoload.php';
+
+namespace App\Libraries;
+
+use FPDF;
+
 class Fpdf_PB extends FPDF
 {
-	public function __construct()
+	public function __construct($orientation = 'P', $unit = 'mm', $size = 'A4')
 	{
-		parent::__construct();
+		parent::__construct($orientation, $unit, $size);
 		setlocale(LC_ALL, "es_ES");
 	}
 
@@ -1247,5 +1251,40 @@ class Fpdf_PB extends FPDF
 		$this->Rotate($angle, $x, $y);
 		$this->Text($x, $y, $txt);
 		$this->Rotate(0);
+	}
+
+	/** dump_font */
+	protected $col = 0;
+
+	function SetCol($col)
+	{
+		// Set position on top of a column
+		$this->col = $col;
+		$this->SetLeftMargin(10 + $col * 40);
+		$this->SetY(25);
+	}
+
+	function AcceptPageBreak()
+	{
+		// Go to the next column
+		$this->SetCol($this->col + 1);
+		return false;
+	}
+
+	function DumpFont($FontName)
+	{
+		$this->AddPage();
+		// Title
+		$this->SetFont('Arial', '', 16);
+		$this->Cell(0, 6, $FontName, 0, 1, 'C');
+		// Print all characters in columns
+		$this->SetCol(0);
+		for ($i = 32; $i <= 255; $i++) {
+			$this->SetFont('Arial', '', 14);
+			$this->Cell(12, 5.5, "$i : ");
+			$this->SetFont($FontName);
+			$this->Cell(0, 5.5, chr($i), 0, 1);
+		}
+		$this->SetCol(0);
 	}
 }

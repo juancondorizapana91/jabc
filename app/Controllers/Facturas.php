@@ -1,6 +1,7 @@
 <?php 
 namespace App\Controllers;
 use App\Libraries\Reporte_facturas;
+use App\Libraries\GeneradorQR;
 
 class Facturas extends BaseController
 {
@@ -11,8 +12,14 @@ class Facturas extends BaseController
 
 	public function generarFactura()
 	{
-		$this->load->library('reporte_facturas');
+		$this->response->setContentType('application/pdf');
 		$reporte_facturas = new Reporte_facturas();
 		$reporte_facturas->facturaLg();
+	}
+
+	public function generarqr()
+	{
+		$qr = new GeneradorQR();
+		$qr->generar_qr();
 	}
 }
