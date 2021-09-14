@@ -40,10 +40,14 @@ class BaseController extends Controller
 	 * @var array
 	 */
 	protected $helpers = ['Pb'];
+	protected $db = null;
+	protected $q = null;
+	protected $data = null;
 
 	public function __construct()
 	{
 		$this->templater = new Templater(\Config\Services::request());
+		$this->q = new Querys();
 	}
 
 	/**
@@ -57,7 +61,7 @@ class BaseController extends Controller
 	{
 		// Do Not Edit This Line
 		parent::initController($request, $response, $logger);
-
+		$this->db = \Config\Database::connect();
 		//--------------------------------------------------------------------
 		// Preload any models, libraries, etc, here.
 		//--------------------------------------------------------------------

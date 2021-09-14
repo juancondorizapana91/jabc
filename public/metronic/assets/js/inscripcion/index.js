@@ -150,27 +150,27 @@ var KTCreateAccount = (function () {
 		validations.push(
 			FormValidation.formValidation(form, {
 				fields: {
-					account_team_size: {
-						validators: {
-							notEmpty: {
-								message: "Time size is required",
-							},
-						},
-					},
-					account_name: {
-						validators: {
-							notEmpty: {
-								message: "Account name is required",
-							},
-						},
-					},
-					account_plan: {
-						validators: {
-							notEmpty: {
-								message: "Account plan is required",
-							},
-						},
-					},
+					// account_team_size: {
+					// 	validators: {
+					// 		notEmpty: {
+					// 			message: "Time size is required",
+					// 		},
+					// 	},
+					// },
+					// account_name: {
+					// 	validators: {
+					// 		notEmpty: {
+					// 			message: "Account name is required",
+					// 		},
+					// 	},
+					// },
+					// account_plan: {
+					// 	validators: {
+					// 		notEmpty: {
+					// 			message: "Account plan is required",
+					// 		},
+					// 	},
+					// },
 				},
 				plugins: {
 					trigger: new FormValidation.plugins.Trigger(),
@@ -188,44 +188,44 @@ var KTCreateAccount = (function () {
 		validations.push(
 			FormValidation.formValidation(form, {
 				fields: {
-					business_name: {
-						validators: {
-							notEmpty: {
-								message: "Busines name is required",
-							},
-						},
-					},
-					business_descriptor: {
-						validators: {
-							notEmpty: {
-								message: "Busines descriptor is required",
-							},
-						},
-					},
-					business_type: {
-						validators: {
-							notEmpty: {
-								message: "Busines type is required",
-							},
-						},
-					},
-					business_description: {
-						validators: {
-							notEmpty: {
-								message: "Busines description is required",
-							},
-						},
-					},
-					business_email: {
-						validators: {
-							notEmpty: {
-								message: "Busines email is required",
-							},
-							emailAddress: {
-								message: "The value is not a valid email address",
-							},
-						},
-					},
+					// business_name: {
+					// 	validators: {
+					// 		notEmpty: {
+					// 			message: "Busines name is required",
+					// 		},
+					// 	},
+					// },
+					// business_descriptor: {
+					// 	validators: {
+					// 		notEmpty: {
+					// 			message: "Busines descriptor is required",
+					// 		},
+					// 	},
+					// },
+					// business_type: {
+					// 	validators: {
+					// 		notEmpty: {
+					// 			message: "Busines type is required",
+					// 		},
+					// 	},
+					// },
+					// business_description: {
+					// 	validators: {
+					// 		notEmpty: {
+					// 			message: "Busines description is required",
+					// 		},
+					// 	},
+					// },
+					// business_email: {
+					// 	validators: {
+					// 		notEmpty: {
+					// 			message: "Busines email is required",
+					// 		},
+					// 		emailAddress: {
+					// 			message: "The value is not a valid email address",
+					// 		},
+					// 	},
+					// },
 				},
 				plugins: {
 					trigger: new FormValidation.plugins.Trigger(),
@@ -243,52 +243,52 @@ var KTCreateAccount = (function () {
 		validations.push(
 			FormValidation.formValidation(form, {
 				fields: {
-					card_name: {
-						validators: {
-							notEmpty: {
-								message: "Name on card is required",
-							},
-						},
-					},
-					card_number: {
-						validators: {
-							notEmpty: {
-								message: "Card member is required",
-							},
-							creditCard: {
-								message: "Card number is not valid",
-							},
-						},
-					},
-					card_expiry_month: {
-						validators: {
-							notEmpty: {
-								message: "Month is required",
-							},
-						},
-					},
-					card_expiry_year: {
-						validators: {
-							notEmpty: {
-								message: "Year is required",
-							},
-						},
-					},
-					card_cvv: {
-						validators: {
-							notEmpty: {
-								message: "CVV is required",
-							},
-							digits: {
-								message: "CVV must contain only digits",
-							},
-							stringLength: {
-								min: 3,
-								max: 4,
-								message: "CVV must contain 3 to 4 digits only",
-							},
-						},
-					},
+					// card_name: {
+					// 	validators: {
+					// 		notEmpty: {
+					// 			message: "Name on card is required",
+					// 		},
+					// 	},
+					// },
+					// card_number: {
+					// 	validators: {
+					// 		notEmpty: {
+					// 			message: "Card member is required",
+					// 		},
+					// 		creditCard: {
+					// 			message: "Card number is not valid",
+					// 		},
+					// 	},
+					// },
+					// card_expiry_month: {
+					// 	validators: {
+					// 		notEmpty: {
+					// 			message: "Month is required",
+					// 		},
+					// 	},
+					// },
+					// card_expiry_year: {
+					// 	validators: {
+					// 		notEmpty: {
+					// 			message: "Year is required",
+					// 		},
+					// 	},
+					// },
+					// card_cvv: {
+					// 	validators: {
+					// 		notEmpty: {
+					// 			message: "CVV is required",
+					// 		},
+					// 		digits: {
+					// 			message: "CVV must contain only digits",
+					// 		},
+					// 		stringLength: {
+					// 			min: 3,
+					// 			max: 4,
+					// 			message: "CVV must contain 3 to 4 digits only",
+					// 		},
+					// 	},
+					// },
 				},
 
 				plugins: {
