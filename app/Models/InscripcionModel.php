@@ -59,10 +59,18 @@ class InscripcionModel extends Model
     
     public function get_id_last_codigo_pago()
     {
-        $builder = $this->db->table("pb_pago_programa");
-        $builder->select('(id_transaccion+1) as id_transaccion');
-        $builder->orderBy('id_pago_programa');
+        $builder = $this->db->table("pago_programa");
+        $builder->select('(codigo_pago+1) as codigo_pago');
+        $builder->orderBy('id_pago_programa', 'DESC');
         $builder->limit(1);
+        return $builder->get()->getResult();
+    }
+
+    public function verificarTabla($fila, $valor, $tabla, $descripcion)
+    {   
+        $builder = $this->db->table($tabla);
+        $builder->select($descripcion);
+        $builder->where($fila, $valor);
         return $builder->get()->getResultArray();
     }
 

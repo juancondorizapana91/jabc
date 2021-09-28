@@ -68,7 +68,7 @@
 						<form class="mx-auto mw-900px w-100 pt-15 pb-10" novalidate="novalidate"
 							id="kt_create_account_form">
 							<!--begin::Step 1-->
-							<div class="current" data-kt-stepper-element="content">
+							<div class="current" data-kt-stepper-element="content" id="paso_0_inscripcion">
 								<!--begin::Wrapper-->
 								<div class="w-100">
 									<!--begin::Heading-->
@@ -83,11 +83,11 @@
 											<div class="col-lg-12 d-flex justify-content-center">
 												<!--begin::Option-->
 												<input type="radio" class="btn-check" name="account_type"
-													value="personal" checked="checked"
-													id="kt_create_account_form_account_type_personal" />
+													value="EL ALTO" checked="checked"
+													id="sede" />
 												<label
 													class="btn btn-outline btn-outline-dashed btn-outline-default p-7 d-flex align-items-center mb-10"
-													for="kt_create_account_form_account_type_personal">
+													for="sede">
 													<!--begin::Svg Icon | path: icons/duotone/Contacts/User.svg-->
 													<span class="svg-icon svg-icon-3x me-5">
 														<!--begin::Svg Icon | path:/var/www/preview.keenthemes.com/metronic/releases/2021-05-14-112058/theme/html/demo1/dist/../src/media/svg/icons/Home/Home.svg-->
@@ -127,7 +127,7 @@
 							<!--end::Step 1-->
 
 							<!--begin::Step 2-->
-							<div data-kt-stepper-element="content">
+							<div data-kt-stepper-element="content" id="paso_1_inscripcion">
 								<!--begin::Wrapper-->
 								<div class="w-100">
 									<!--begin::Heading-->
@@ -142,6 +142,7 @@
 									<div class="row mb-10 mt-0">
 										<!--begin::CI-->
 										<div class="col-md-8 fv-row">
+											<input type="hidden" name="id_persona" id="id_persona" />
 											<label class="required fs-6 fw-bold form-label mb-2">
 												Carnet de Identidad
 												<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip"
@@ -150,7 +151,7 @@
 											<div class="row fv-row">
 												<div class="col-12">
 													<input type="text" class="form-control form-control-solid" minlength="3"
-													maxlength="12" placeholder="C.I." name="ci" id="ci" />
+													maxlength="15" placeholder="C.I." name="ci" id="ci" />
 												</div>
 											</div>
 										</div>
@@ -189,8 +190,7 @@
 											<label class="required fs-6 fw-bold form-label mb-2">Nombre(s)</label>
 											<div class="row fv-row">
 												<div class="col-12">
-													<input type="text" class="form-control form-control-solid" minlength="3"
-													maxlength="4" placeholder="Nombres" name="nombre" id="nombre" />
+													<input type="text" class="form-control form-control-solid" placeholder="Nombres" name="nombre" id="nombre" />
 												</div>
 											</div>
 										</div>
@@ -201,8 +201,7 @@
 											<label class="required fs-6 fw-bold form-label mb-2">Apellido Paterno</label>
 											<div class="row fv-row">
 												<div class="col-12">
-													<input type="text" class="form-control form-control-solid" minlength="3"
-													maxlength="4" placeholder="Ap. paterno" name="paterno" id="paterno" />
+													<input type="text" class="form-control form-control-solid" placeholder="Ap. paterno" name="paterno" id="paterno" />
 												</div>
 											</div>
 										</div>
@@ -215,8 +214,7 @@
 											</label>
 											<div class="row fv-row">
 												<div class="col-12">
-													<input type="text" class="form-control form-control-solid" minlength="3"
-													maxlength="4" placeholder="Ap. materno" name="materno" id="materno" />
+													<input type="text" class="form-control form-control-solid"  placeholder="Ap. materno" name="materno" id="materno" />
 												</div>
 											</div>
 										</div>
@@ -247,8 +245,8 @@
 											</label>
 											<div class="row fv-row">
 												<div class="col-12">
-													<input type="text" class="form-control form-control-solid" minlength="3"
-													maxlength="4" placeholder="Celular" name="celular" id="celular" />
+													<input type="text" class="form-control form-control-solid"
+													 placeholder="Celular" name="celular" id="celular" />
 												</div>
 											</div>
 										</div>
@@ -369,7 +367,7 @@
 							<!--end::Step 2-->
 
 							<!--begin::Step 3-->
-							<div data-kt-stepper-element="content">
+							<div data-kt-stepper-element="content" id="paso_2_inscripcion">
 								<!--begin::Wrapper-->
 								<div class="w-100">
 
@@ -447,7 +445,7 @@
 							<!--end::Step 3-->
 
 							<!--begin::Step 4-->
-							<div data-kt-stepper-element="content">
+							<div data-kt-stepper-element="content" id="paso_3_inscripcion">
 								<!--begin::Wrapper-->
 								<div class="w-100">
 									<!--begin::Heading-->
@@ -603,7 +601,7 @@
 												<!--begin::Info-->
 												<div class="ms-4">
 													<h4 class="dfs-3 fw-bolder text-gray-900 mb-1">Suelta los archivos aquí o haz clic para subirlos.</h3>
-													<span class="fw-bold fs-4 text-muted">Sube hasta 3 archivos</span>
+													<span class="fw-bold fs-4 text-muted">Suba el comprobante de pago</span>
 												</div>
 												<!--end::Info-->
 											</div>
@@ -625,6 +623,13 @@
 										<!--begin::Title-->
 										<h2 class="fw-bolder text-dark">Completado correctamente!</h2>
 										<!--end::Title-->
+										<!--begin::Notice-->
+										<div class="text-gray-400 fw-bold fs-6">Por favor revise los datos registrados.</div>
+										<div id="content-data">
+
+										</div>
+										<!--end::Notice-->
+										
 									</div>
 									<!--end::Heading-->
 									<!--begin::Body-->
@@ -670,7 +675,7 @@
 								<!--end::Wrapper-->
 								<!--begin::Wrapper-->
 								<div>
-									<button type="button" class="btn btn-lg btn-primary me-3"
+									<button type="submit" class="btn btn-lg btn-primary me-3"
 										data-kt-stepper-action="submit">
 										<span class="indicator-label">Registrar
 											<!--begin::Svg Icon | path: icons/stockholm/Navigation/Right-2.svg-->
@@ -694,7 +699,9 @@
 										</span>
 										<span class="indicator-progress">Espere por favor...
 											<span
-												class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+												class="spinner-border spinner-border-sm align-middle ms-2">
+											</span>
+										</span>
 									</button>
 									<button type="button" class="btn btn-lg btn-primary" data-kt-stepper-action="next">
 										Continuar
