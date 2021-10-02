@@ -30,13 +30,14 @@ class Personal extends BaseController
 			array('db' => 'nombre', 'dt' => 2),
 			array('db' => 'paterno', 'dt' => 3),
 			array('db' => 'materno', 'dt' => 4),
+			// array('db' => 'nombre_usuario', 'dt' => 5),
 			array('db' => 'fecha_nacimiento', 'dt' => 5),
-			array('db' => 'genero', 'dt' => 6),
-			array('db' => 'estado_civil', 'dt' => 7),
-			array('db' => 'domicilio', 'dt' => 8),
-			array('db' => 'correo', 'dt' => 9),
-			array('db' => 'celular', 'dt' => 10),
-			array('db' => 'lugar_nacimiento', 'dt' => 11),
+			// array('db' => 'genero', 'dt' => 7),
+			// array('db' => 'estado_civil', 'dt' => 7),
+			// array('db' => 'domicilio', 'dt' => 8),
+			array('db' => 'correo', 'dt' => 6),
+			array('db' => 'celular', 'dt' => 7),
+			// array('db' => 'lugar_nacimiento', 'dt' => 11),
 		);
 
 		$sql_details = array('user' => $this->db->username, 'pass' => $this->db->password, 'db'   => $this->db->database, 'host' => $this->db->hostname);
@@ -44,6 +45,7 @@ class Personal extends BaseController
 	}
 	public function guardarPersonal()
 	{
+		// return var_dump($_REQUEST);
 		if ($this->request->isAJAX()) {
 			$validation = \Config\Services::validation();
 			if ($this->validate('validarPersonal')) {

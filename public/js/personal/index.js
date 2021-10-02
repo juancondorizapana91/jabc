@@ -1,7 +1,3 @@
-$('#fecha_nacimiento').flatpickr({
-	dateFormat: 'd-m-y',
-});
-
 // $('#kt_modal_new_target_submit').on('click', function (e) {
 // 	alert('hola');
 // });
@@ -17,7 +13,36 @@ $('#table').DataTable({
 	language: {
 		lengthMenu: 'Show _MENU_',
 	},
-	dom: "<'row'" + "<'col-sm-6 d-flex align-items-center justify-conten-start'l>" + "<'col-sm-6 d-flex align-items-center justify-content-end'f>" + '>' + "<'table-responsive'tr>" + "<'row'" + "<'col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start'i>" + "<'col-sm-12 col-md-7 d-flex align-items-center justify-content-center justify-content-md-end'p>" + '>',
+	columnDefs: [
+		{
+			targets: -1,
+			orderable: false,
+			data: null,
+			render: function (data, type, row, meta) {
+				return `<button type="button" class="btn btn-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-start">
+				Click to open menu
+				<span class="svg-icon svg-icon-5 rotate-180 ms-3 me-0">...</span>
+			</button>
+			
+			<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold fs-7 w-200px py-4" data-kt-menu="true">
+				<div class="menu-item px-3">
+					<a href="#" class="menu-link px-3">
+						Menu item 1
+					</a>
+				</div>
+			</div>`;
+			},
+		},
+	],
+	order: [[0, 'asc']],
+	responsive: true,
+	dom: '<"row"<"col-sm-6"l><"col-sm-6"f>><"row"<"col-sm-12"t>><"row"<"col-sm-6"i><"col-sm-6"p>>',
+	lengthMenu: [
+		[10, 25, 50, 100, -1],
+		[10, 25, 50, 100, 'All'],
+	],
+	pageLength: 10,
+	// dom: "<'row'" + "<'col-sm-6 d-flex align-items-center justify-conten-start'l>" + "<'col-sm-6 d-flex align-items-center justify-content-end'f>" + '>' + "<'table-responsive'tr>" + "<'row'" + "<'col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start'i>" + "<'col-sm-12 col-md-7 d-flex align-items-center justify-content-center justify-content-md-end'p>" + '>',
 	ajax: 'personal/ajaxListarPersonal',
 });
 
@@ -33,10 +58,11 @@ var KTModalNewTarget = (function () {
 	// Init form inputs
 	var initForm = function () {
 		// Due date. For more info, please visit the official plugin site: https://flatpickr.js.org/
-		var dueDate = $(form.querySelector('[name="due_date"]'));
+		var dueDate = $(form.querySelector('[name="fecha_nacimiento"]'));
 		dueDate.flatpickr({
-			enableTime: true,
-			dateFormat: 'd, M Y, H:i',
+			altInput: true,
+			altFormat: 'F j, Y',
+			dateFormat: 'Y-m-d',
 		});
 
 		// Team assign. For more info, plase visit the official plugin site: https://select2.org/
@@ -55,7 +81,7 @@ var KTModalNewTarget = (function () {
 				ci: {
 					validators: {
 						notEmpty: {
-							message: 'Cèdula requerida',
+							message: 'Cédula requerida',
 						},
 					},
 				},
@@ -176,7 +202,7 @@ var KTModalNewTarget = (function () {
 											icon: 'success',
 											showCancelButton: true,
 											confirmButtonText: '¡Si deseo agregar roles!',
-											denyButtonText: `No, mas tarde`,
+											cancelButtonText: `No, mas tarde`,
 										}).then((result) => {
 											if (result.isConfirmed) {
 												Swal.fire('Saved!', '', 'success');

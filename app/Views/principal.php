@@ -189,8 +189,8 @@
                     <div class="card card-xxl-stretch">
                         <div class="card-header align-items-center border-0 mt-4">
                             <h3 class="card-title align-items-start flex-column">
-                                <span class="fw-bolder mb-2 text-dark">Activities</span>
-                                <span class="text-muted fw-bold fs-7">890,344 Sales</span>
+                                <span class="fw-bolder mb-2 text-dark">Actividades</span>
+                                <span class="text-muted fw-bold fs-7">Este dia</span>
                             </h3>
                             <div class="card-toolbar">
                                 <button type="button" class="btn btn-sm btn-icon btn-color-primary btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-flip="top-end">
@@ -285,594 +285,560 @@
                                     </div>
                                     <div class="timeline-content fw-mormal text-muted ps-3">Indulging in poorly driving and keep structure keep great</div>
                                 </div>
-                                <div class="timeline-item">
-                                    <div class="timeline-label fw-bolder text-gray-800 fs-6">21:03</div>
-                                    <div class="timeline-badge">
-                                        <i class="fa fa-genderless text-danger fs-1"></i>
-                                    </div>
-                                    <div class="timeline-content fw-bold text-gray-800 ps-3">New order placed
-                                        <a href="#" class="text-primary">#XF-2356</a>.
-                                    </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="timeline-label fw-bolder text-gray-800 fs-6">16:50</div>
-                                    <div class="timeline-badge">
-                                        <i class="fa fa-genderless text-primary fs-1"></i>
-                                    </div>
-                                    <div class="timeline-content fw-mormal text-muted ps-3">Indulging in poorly driving and keep structure keep great</div>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="timeline-label fw-bolder text-gray-800 fs-6">21:03</div>
-                                    <div class="timeline-badge">
-                                        <i class="fa fa-genderless text-danger fs-1"></i>
-                                    </div>
-                                    <div class="timeline-content fw-bold text-gray-800 ps-3">New order placed
-                                        <a href="#" class="text-primary">#XF-2356</a>.
-                                    </div>
-                                </div>
-                                <div class="timeline-item">
-                                    <div class="timeline-label fw-bolder text-gray-800 fs-6">10:30</div>
-                                    <div class="timeline-badge">
-                                        <i class="fa fa-genderless text-success fs-1"></i>
-                                    </div>
-                                    <div class="timeline-content fw-mormal text-muted ps-3">Finance KPI Mobile app launch preparion meeting</div>
-                                </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
-
-            </div>
-
-
-            <div class="row g-5 gx-xxl-8">
-                <div class="col-xxl-4">
-                    <div class="card card-xxl-stretch mb-xl-3">
-                        <div class="card-header border-0 py-5">
-                            <h3 class="card-title align-items-start flex-column">
-                                <span class="card-label fw-bolder fs-3 mb-1">Trends</span>
-                                <span class="text-muted fw-bold fs-7">Latest trends</span>
-                            </h3>
-                            <div class="card-toolbar">
-                                <button type="button" class="btn btn-sm btn-icon btn-color-primary btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-flip="top-end">
-                                    <span class="svg-icon svg-icon-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                <rect x="5" y="5" width="5" height="5" rx="1" fill="#000000" />
-                                                <rect x="14" y="5" width="5" height="5" rx="1" fill="#000000" opacity="0.3" />
-                                                <rect x="5" y="14" width="5" height="5" rx="1" fill="#000000" opacity="0.3" />
-                                                <rect x="14" y="14" width="5" height="5" rx="1" fill="#000000" opacity="0.3" />
-                                            </g>
-                                        </svg>
-                                    </span>
-                                </button>
-                                <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-bold w-200px py-3" data-kt-menu="true">
-                                    <div class="menu-item px-3">
-                                        <div class="menu-content text-muted pb-2 px-3 fs-7 text-uppercase">Payments</div>
-                                    </div>
-                                    <div class="menu-item px-3">
-                                        <a href="#" class="menu-link px-3">Create Invoice</a>
-                                    </div>
-                                    <div class="menu-item px-3">
-                                        <a href="#" class="menu-link flex-stack px-3">Create Payment
-                                            <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Specify a target name for future usage and reference"></i></a>
-                                    </div>
-                                    <div class="menu-item px-3">
-                                        <a href="#" class="menu-link px-3">Generate Bill</a>
-                                    </div>
-                                    <div class="menu-item px-3" data-kt-menu-trigger="hover" data-kt-menu-placement="left-start" data-kt-menu-flip="center, top">
-                                        <a href="#" class="menu-link px-3">
-                                            <span class="menu-title">Subscription</span>
-                                            <span class="menu-arrow"></span>
-                                        </a>
-                                        <div class="menu-sub menu-sub-dropdown w-175px py-4">
-                                            <div class="menu-item px-3">
-                                                <a href="#" class="menu-link px-3">Plans</a>
-                                            </div>
-                                            <div class="menu-item px-3">
-                                                <a href="#" class="menu-link px-3">Billing</a>
-                                            </div>
-                                            <div class="menu-item px-3">
-                                                <a href="#" class="menu-link px-3">Statements</a>
-                                            </div>
-                                            <div class="separator my-2"></div>
-                                            <div class="menu-item px-3">
-                                                <div class="menu-content px-3">
-                                                    <label class="form-check form-switch form-check-custom form-check-solid">
-                                                        <input class="form-check-input w-30px h-20px" type="checkbox" value="1" checked="checked" name="notifications" />
-                                                        <span class="form-check-label text-muted fs-6">Recuring</span>
-                                                    </label>
+                <div class="row g-5 gx-xxl-8">
+                    <div class="col-xxl-4">
+                        <div class="card card-xxl-stretch mb-xl-3">
+                            <div class="card-header border-0 py-5">
+                                <h3 class="card-title align-items-start flex-column">
+                                    <span class="card-label fw-bolder fs-3 mb-1">Trends</span>
+                                    <span class="text-muted fw-bold fs-7">Latest trends</span>
+                                </h3>
+                                <div class="card-toolbar">
+                                    <button type="button" class="btn btn-sm btn-icon btn-color-primary btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-flip="top-end">
+                                        <span class="svg-icon svg-icon-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                    <rect x="5" y="5" width="5" height="5" rx="1" fill="#000000" />
+                                                    <rect x="14" y="5" width="5" height="5" rx="1" fill="#000000" opacity="0.3" />
+                                                    <rect x="5" y="14" width="5" height="5" rx="1" fill="#000000" opacity="0.3" />
+                                                    <rect x="14" y="14" width="5" height="5" rx="1" fill="#000000" opacity="0.3" />
+                                                </g>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-bold w-200px py-3" data-kt-menu="true">
+                                        <div class="menu-item px-3">
+                                            <div class="menu-content text-muted pb-2 px-3 fs-7 text-uppercase">Payments</div>
+                                        </div>
+                                        <div class="menu-item px-3">
+                                            <a href="#" class="menu-link px-3">Create Invoice</a>
+                                        </div>
+                                        <div class="menu-item px-3">
+                                            <a href="#" class="menu-link flex-stack px-3">Create Payment
+                                                <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Specify a target name for future usage and reference"></i></a>
+                                        </div>
+                                        <div class="menu-item px-3">
+                                            <a href="#" class="menu-link px-3">Generate Bill</a>
+                                        </div>
+                                        <div class="menu-item px-3" data-kt-menu-trigger="hover" data-kt-menu-placement="left-start" data-kt-menu-flip="center, top">
+                                            <a href="#" class="menu-link px-3">
+                                                <span class="menu-title">Subscription</span>
+                                                <span class="menu-arrow"></span>
+                                            </a>
+                                            <div class="menu-sub menu-sub-dropdown w-175px py-4">
+                                                <div class="menu-item px-3">
+                                                    <a href="#" class="menu-link px-3">Plans</a>
+                                                </div>
+                                                <div class="menu-item px-3">
+                                                    <a href="#" class="menu-link px-3">Billing</a>
+                                                </div>
+                                                <div class="menu-item px-3">
+                                                    <a href="#" class="menu-link px-3">Statements</a>
+                                                </div>
+                                                <div class="separator my-2"></div>
+                                                <div class="menu-item px-3">
+                                                    <div class="menu-content px-3">
+                                                        <label class="form-check form-switch form-check-custom form-check-solid">
+                                                            <input class="form-check-input w-30px h-20px" type="checkbox" value="1" checked="checked" name="notifications" />
+                                                            <span class="form-check-label text-muted fs-6">Recuring</span>
+                                                        </label>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="menu-item px-3 my-1">
-                                        <a href="#" class="menu-link px-3">Settings</a>
+                                        <div class="menu-item px-3 my-1">
+                                            <a href="#" class="menu-link px-3">Settings</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card-body d-flex flex-column">
-                            <div class="mixed-widget-5-chart card-rounded-top" data-kt-chart-color="success" style="height: 150px"></div>
-                            <div class="mt-5">
-                                <div class="d-flex flex-stack mb-5">
-                                    <div class="d-flex align-items-center me-2">
-                                        <div class="symbol symbol-50px me-3">
-                                            <div class="symbol-label bg-light">
-                                                <img src="metronic/assets/media/svg/brand-logos/plurk.svg" class="h-50" alt="" />
+                            <div class="card-body d-flex flex-column">
+                                <div class="mixed-widget-5-chart card-rounded-top" data-kt-chart-color="success" style="height: 150px"></div>
+                                <div class="mt-5">
+                                    <div class="d-flex flex-stack mb-5">
+                                        <div class="d-flex align-items-center me-2">
+                                            <div class="symbol symbol-50px me-3">
+                                                <div class="symbol-label bg-light">
+                                                    <img src="metronic/assets/media/svg/brand-logos/plurk.svg" class="h-50" alt="" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bolder">Top Authors</a>
+                                                <div class="fs-7 text-muted fw-bold mt-1">Ricky Hunt, Sandra Trepp</div>
                                             </div>
                                         </div>
-                                        <div>
-                                            <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bolder">Top Authors</a>
-                                            <div class="fs-7 text-muted fw-bold mt-1">Ricky Hunt, Sandra Trepp</div>
-                                        </div>
+                                        <div class="badge badge-light fw-bold py-4 px-3">+82$</div>
                                     </div>
-                                    <div class="badge badge-light fw-bold py-4 px-3">+82$</div>
-                                </div>
-                                <div class="d-flex flex-stack mb-5">
-                                    <div class="d-flex align-items-center me-2">
-                                        <div class="symbol symbol-50px me-3">
-                                            <div class="symbol-label bg-light">
-                                                <img src="metronic/assets/media/svg/brand-logos/figma-1.svg" class="h-50" alt="" />
+                                    <div class="d-flex flex-stack mb-5">
+                                        <div class="d-flex align-items-center me-2">
+                                            <div class="symbol symbol-50px me-3">
+                                                <div class="symbol-label bg-light">
+                                                    <img src="metronic/assets/media/svg/brand-logos/figma-1.svg" class="h-50" alt="" />
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bolder">Top Sales</a>
+                                                <div class="fs-7 text-muted fw-bold mt-1">PitStop Emails</div>
                                             </div>
                                         </div>
-                                        <div>
-                                            <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bolder">Top Sales</a>
-                                            <div class="fs-7 text-muted fw-bold mt-1">PitStop Emails</div>
-                                        </div>
+                                        <div class="badge badge-light fw-bold py-4 px-3">+82$</div>
                                     </div>
-                                    <div class="badge badge-light fw-bold py-4 px-3">+82$</div>
-                                </div>
-                                <div class="d-flex flex-stack">
-                                    <div class="d-flex align-items-center me-2">
-                                        <div class="symbol symbol-50px me-3">
-                                            <div class="symbol-label bg-light">
-                                                <img src="metronic/assets/media/svg/brand-logos/vimeo.svg" class="h-50" alt="" />
+                                    <div class="d-flex flex-stack">
+                                        <div class="d-flex align-items-center me-2">
+                                            <div class="symbol symbol-50px me-3">
+                                                <div class="symbol-label bg-light">
+                                                    <img src="metronic/assets/media/svg/brand-logos/vimeo.svg" class="h-50" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="py-1">
+                                                <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bolder">Top Engagement</a>
+                                                <div class="fs-7 text-muted fw-bold mt-1">KT.com</div>
                                             </div>
                                         </div>
-                                        <div class="py-1">
-                                            <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bolder">Top Engagement</a>
-                                            <div class="fs-7 text-muted fw-bold mt-1">KT.com</div>
-                                        </div>
+                                        <div class="badge badge-light fw-bold py-4 px-3">+82$</div>
                                     </div>
-                                    <div class="badge badge-light fw-bold py-4 px-3">+82$</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-xxl-8">
-                    <div class="card card-xxl-stretch mb-5 mb-xxl-8">
-                        <div class="card-header border-0 pt-5">
-                            <h3 class="card-title align-items-start flex-column">
-                                <span class="card-label fw-bolder fs-3 mb-1">Latest Products</span>
-                                <span class="text-muted mt-1 fw-bold fs-7">More than 400 new products</span>
-                            </h3>
-                            <div class="card-toolbar">
-                                <ul class="nav">
-                                    <li class="nav-item">
-                                        <a class="nav-link btn btn-sm btn-color-muted btn-active btn-active-light-primary active fw-bolder px-4 me-1" data-bs-toggle="tab" href="#kt_table_widget_5_tab_1">Month</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link btn btn-sm btn-color-muted btn-active btn-active-light-primary fw-bolder px-4 me-1" data-bs-toggle="tab" href="#kt_table_widget_5_tab_2">Week</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link btn btn-sm btn-color-muted btn-active btn-active-light-primary fw-bolder px-4" data-bs-toggle="tab" href="#kt_table_widget_5_tab_3">Day</a>
-                                    </li>
-                                </ul>
+                    <div class="col-xxl-8">
+                        <div class="card card-xxl-stretch mb-5 mb-xxl-8">
+                            <div class="card-header border-0 pt-5">
+                                <h3 class="card-title align-items-start flex-column">
+                                    <span class="card-label fw-bolder fs-3 mb-1">Latest Products</span>
+                                    <span class="text-muted mt-1 fw-bold fs-7">More than 400 new products</span>
+                                </h3>
+                                <div class="card-toolbar">
+                                    <ul class="nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link btn btn-sm btn-color-muted btn-active btn-active-light-primary active fw-bolder px-4 me-1" data-bs-toggle="tab" href="#kt_table_widget_5_tab_1">Month</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link btn btn-sm btn-color-muted btn-active btn-active-light-primary fw-bolder px-4 me-1" data-bs-toggle="tab" href="#kt_table_widget_5_tab_2">Week</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link btn btn-sm btn-color-muted btn-active btn-active-light-primary fw-bolder px-4" data-bs-toggle="tab" href="#kt_table_widget_5_tab_3">Day</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card-body py-3">
-                            <div class="tab-content">
-                                <div class="tab-pane fade show active" id="kt_table_widget_5_tab_1">
-                                    <div class="table-responsive">
-                                        <table class="table table-row-dashed table-row-gray-200 align-middle gs-0 gy-4">
-                                            <thead>
-                                                <tr class="border-0">
-                                                    <th class="p-0 w-50px"></th>
-                                                    <th class="p-0 min-w-150px"></th>
-                                                    <th class="p-0 min-w-140px"></th>
-                                                    <th class="p-0 min-w-110px"></th>
-                                                    <th class="p-0 min-w-50px"></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <div class="symbol symbol-45px me-2">
-                                                            <span class="symbol-label">
-                                                                <img src="metronic/assets/media/svg/brand-logos/plurk.svg" class="h-50 align-self-center" alt="" />
-                                                            </span>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="text-dark fw-bolder text-hover-primary mb-1 fs-6">Brad Simmons</a>
-                                                        <span class="text-muted fw-bold d-block">Movie Creator</span>
-                                                    </td>
-                                                    <td class="text-end text-muted fw-bold">React, HTML</td>
-                                                    <td class="text-end">
-                                                        <span class="badge badge-light-success">Approved</span>
-                                                    </td>
-                                                    <td class="text-end">
-                                                        <a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary">
-                                                            <span class="svg-icon svg-icon-2">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                                        <polygon points="0 0 24 0 24 24 0 24" />
-                                                                        <rect fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000)" x="11" y="5" width="2" height="14" rx="1" />
-                                                                        <path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997)" />
-                                                                    </g>
-                                                                </svg>
-                                                            </span>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="symbol symbol-45px me-2">
-                                                            <span class="symbol-label">
-                                                                <img src="metronic/assets/media/svg/brand-logos/telegram.svg" class="h-50 align-self-center" alt="" />
-                                                            </span>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="text-dark fw-bolder text-hover-primary mb-1 fs-6">Popular Authors</a>
-                                                        <span class="text-muted fw-bold d-block">Most Successful</span>
-                                                    </td>
-                                                    <td class="text-end text-muted fw-bold">Python, MySQL</td>
-                                                    <td class="text-end">
-                                                        <span class="badge badge-light-warning">In Progress</span>
-                                                    </td>
-                                                    <td class="text-end">
-                                                        <a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary">
-                                                            <span class="svg-icon svg-icon-2">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                                        <polygon points="0 0 24 0 24 24 0 24" />
-                                                                        <rect fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000)" x="11" y="5" width="2" height="14" rx="1" />
-                                                                        <path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997)" />
-                                                                    </g>
-                                                                </svg>
-                                                            </span>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="symbol symbol-45px me-2">
-                                                            <span class="symbol-label">
-                                                                <img src="metronic/assets/media/svg/brand-logos/vimeo.svg" class="h-50 align-self-center" alt="" />
-                                                            </span>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="text-dark fw-bolder text-hover-primary mb-1 fs-6">New Users</a>
-                                                        <span class="text-muted fw-bold d-block">Awesome Users</span>
-                                                    </td>
-                                                    <td class="text-end text-muted fw-bold">Laravel,Metronic</td>
-                                                    <td class="text-end">
-                                                        <span class="badge badge-light-primary">Success</span>
-                                                    </td>
-                                                    <td class="text-end">
-                                                        <a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary">
-                                                            <span class="svg-icon svg-icon-2">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                                        <polygon points="0 0 24 0 24 24 0 24" />
-                                                                        <rect fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000)" x="11" y="5" width="2" height="14" rx="1" />
-                                                                        <path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997)" />
-                                                                    </g>
-                                                                </svg>
-                                                            </span>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="symbol symbol-45px me-2">
-                                                            <span class="symbol-label">
-                                                                <img src="metronic/assets/media/svg/brand-logos/bebo.svg" class="h-50 align-self-center" alt="" />
-                                                            </span>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="text-dark fw-bolder text-hover-primary mb-1 fs-6">Active Customers</a>
-                                                        <span class="text-muted fw-bold d-block">Movie Creator</span>
-                                                    </td>
-                                                    <td class="text-end text-muted fw-bold">AngularJS, C#</td>
-                                                    <td class="text-end">
-                                                        <span class="badge badge-light-danger">Rejected</span>
-                                                    </td>
-                                                    <td class="text-end">
-                                                        <a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary">
-                                                            <span class="svg-icon svg-icon-2">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                                        <polygon points="0 0 24 0 24 24 0 24" />
-                                                                        <rect fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000)" x="11" y="5" width="2" height="14" rx="1" />
-                                                                        <path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997)" />
-                                                                    </g>
-                                                                </svg>
-                                                            </span>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="symbol symbol-45px me-2">
-                                                            <span class="symbol-label">
-                                                                <img src="metronic/assets/media/svg/brand-logos/kickstarter.svg" class="h-50 align-self-center" alt="" />
-                                                            </span>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="text-dark fw-bolder text-hover-primary mb-1 fs-6">Bestseller Theme</a>
-                                                        <span class="text-muted fw-bold d-block">Best Customers</span>
-                                                    </td>
-                                                    <td class="text-end text-muted fw-bold">ReactJS, Ruby</td>
-                                                    <td class="text-end">
-                                                        <span class="badge badge-light-warning">In Progress</span>
-                                                    </td>
-                                                    <td class="text-end">
-                                                        <a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary">
-                                                            <span class="svg-icon svg-icon-2">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                                        <polygon points="0 0 24 0 24 24 0 24" />
-                                                                        <rect fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000)" x="11" y="5" width="2" height="14" rx="1" />
-                                                                        <path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997)" />
-                                                                    </g>
-                                                                </svg>
-                                                            </span>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                            <div class="card-body py-3">
+                                <div class="tab-content">
+                                    <div class="tab-pane fade show active" id="kt_table_widget_5_tab_1">
+                                        <div class="table-responsive">
+                                            <table class="table table-row-dashed table-row-gray-200 align-middle gs-0 gy-4">
+                                                <thead>
+                                                    <tr class="border-0">
+                                                        <th class="p-0 w-50px"></th>
+                                                        <th class="p-0 min-w-150px"></th>
+                                                        <th class="p-0 min-w-140px"></th>
+                                                        <th class="p-0 min-w-110px"></th>
+                                                        <th class="p-0 min-w-50px"></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="symbol symbol-45px me-2">
+                                                                <span class="symbol-label">
+                                                                    <img src="metronic/assets/media/svg/brand-logos/plurk.svg" class="h-50 align-self-center" alt="" />
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="text-dark fw-bolder text-hover-primary mb-1 fs-6">Brad Simmons</a>
+                                                            <span class="text-muted fw-bold d-block">Movie Creator</span>
+                                                        </td>
+                                                        <td class="text-end text-muted fw-bold">React, HTML</td>
+                                                        <td class="text-end">
+                                                            <span class="badge badge-light-success">Approved</span>
+                                                        </td>
+                                                        <td class="text-end">
+                                                            <a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary">
+                                                                <span class="svg-icon svg-icon-2">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                            <polygon points="0 0 24 0 24 24 0 24" />
+                                                                            <rect fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000)" x="11" y="5" width="2" height="14" rx="1" />
+                                                                            <path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997)" />
+                                                                        </g>
+                                                                    </svg>
+                                                                </span>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="symbol symbol-45px me-2">
+                                                                <span class="symbol-label">
+                                                                    <img src="metronic/assets/media/svg/brand-logos/telegram.svg" class="h-50 align-self-center" alt="" />
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="text-dark fw-bolder text-hover-primary mb-1 fs-6">Popular Authors</a>
+                                                            <span class="text-muted fw-bold d-block">Most Successful</span>
+                                                        </td>
+                                                        <td class="text-end text-muted fw-bold">Python, MySQL</td>
+                                                        <td class="text-end">
+                                                            <span class="badge badge-light-warning">In Progress</span>
+                                                        </td>
+                                                        <td class="text-end">
+                                                            <a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary">
+                                                                <span class="svg-icon svg-icon-2">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                            <polygon points="0 0 24 0 24 24 0 24" />
+                                                                            <rect fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000)" x="11" y="5" width="2" height="14" rx="1" />
+                                                                            <path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997)" />
+                                                                        </g>
+                                                                    </svg>
+                                                                </span>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="symbol symbol-45px me-2">
+                                                                <span class="symbol-label">
+                                                                    <img src="metronic/assets/media/svg/brand-logos/vimeo.svg" class="h-50 align-self-center" alt="" />
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="text-dark fw-bolder text-hover-primary mb-1 fs-6">New Users</a>
+                                                            <span class="text-muted fw-bold d-block">Awesome Users</span>
+                                                        </td>
+                                                        <td class="text-end text-muted fw-bold">Laravel,Metronic</td>
+                                                        <td class="text-end">
+                                                            <span class="badge badge-light-primary">Success</span>
+                                                        </td>
+                                                        <td class="text-end">
+                                                            <a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary">
+                                                                <span class="svg-icon svg-icon-2">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                            <polygon points="0 0 24 0 24 24 0 24" />
+                                                                            <rect fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000)" x="11" y="5" width="2" height="14" rx="1" />
+                                                                            <path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997)" />
+                                                                        </g>
+                                                                    </svg>
+                                                                </span>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="symbol symbol-45px me-2">
+                                                                <span class="symbol-label">
+                                                                    <img src="metronic/assets/media/svg/brand-logos/bebo.svg" class="h-50 align-self-center" alt="" />
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="text-dark fw-bolder text-hover-primary mb-1 fs-6">Active Customers</a>
+                                                            <span class="text-muted fw-bold d-block">Movie Creator</span>
+                                                        </td>
+                                                        <td class="text-end text-muted fw-bold">AngularJS, C#</td>
+                                                        <td class="text-end">
+                                                            <span class="badge badge-light-danger">Rejected</span>
+                                                        </td>
+                                                        <td class="text-end">
+                                                            <a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary">
+                                                                <span class="svg-icon svg-icon-2">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                            <polygon points="0 0 24 0 24 24 0 24" />
+                                                                            <rect fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000)" x="11" y="5" width="2" height="14" rx="1" />
+                                                                            <path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997)" />
+                                                                        </g>
+                                                                    </svg>
+                                                                </span>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="symbol symbol-45px me-2">
+                                                                <span class="symbol-label">
+                                                                    <img src="metronic/assets/media/svg/brand-logos/kickstarter.svg" class="h-50 align-self-center" alt="" />
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="text-dark fw-bolder text-hover-primary mb-1 fs-6">Bestseller Theme</a>
+                                                            <span class="text-muted fw-bold d-block">Best Customers</span>
+                                                        </td>
+                                                        <td class="text-end text-muted fw-bold">ReactJS, Ruby</td>
+                                                        <td class="text-end">
+                                                            <span class="badge badge-light-warning">In Progress</span>
+                                                        </td>
+                                                        <td class="text-end">
+                                                            <a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary">
+                                                                <span class="svg-icon svg-icon-2">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                            <polygon points="0 0 24 0 24 24 0 24" />
+                                                                            <rect fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000)" x="11" y="5" width="2" height="14" rx="1" />
+                                                                            <path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997)" />
+                                                                        </g>
+                                                                    </svg>
+                                                                </span>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="tab-pane fade" id="kt_table_widget_5_tab_2">
-                                    <div class="table-responsive">
-                                        <table class="table table-row-dashed table-row-gray-200 align-middle gs-0 gy-4">
-                                            <thead>
-                                                <tr class="border-0">
-                                                    <th class="p-0 w-50px"></th>
-                                                    <th class="p-0 min-w-150px"></th>
-                                                    <th class="p-0 min-w-140px"></th>
-                                                    <th class="p-0 min-w-110px"></th>
-                                                    <th class="p-0 min-w-50px"></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <div class="symbol symbol-45px me-2">
-                                                            <span class="symbol-label">
-                                                                <img src="metronic/assets/media/svg/brand-logos/plurk.svg" class="h-50 align-self-center" alt="" />
-                                                            </span>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="text-dark fw-bolder text-hover-primary mb-1 fs-6">Brad Simmons</a>
-                                                        <span class="text-muted fw-bold d-block">Movie Creator</span>
-                                                    </td>
-                                                    <td class="text-end text-muted fw-bold">React, HTML</td>
-                                                    <td class="text-end">
-                                                        <span class="badge badge-light-success">Approved</span>
-                                                    </td>
-                                                    <td class="text-end">
-                                                        <a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary">
-                                                            <span class="svg-icon svg-icon-2">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                                        <polygon points="0 0 24 0 24 24 0 24" />
-                                                                        <rect fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000)" x="11" y="5" width="2" height="14" rx="1" />
-                                                                        <path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997)" />
-                                                                    </g>
-                                                                </svg>
-                                                            </span>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="symbol symbol-45px me-2">
-                                                            <span class="symbol-label">
-                                                                <img src="metronic/assets/media/svg/brand-logos/telegram.svg" class="h-50 align-self-center" alt="" />
-                                                            </span>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="text-dark fw-bolder text-hover-primary mb-1 fs-6">Popular Authors</a>
-                                                        <span class="text-muted fw-bold d-block">Most Successful</span>
-                                                    </td>
-                                                    <td class="text-end text-muted fw-bold">Python, MySQL</td>
-                                                    <td class="text-end">
-                                                        <span class="badge badge-light-warning">In Progress</span>
-                                                    </td>
-                                                    <td class="text-end">
-                                                        <a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary">
-                                                            <span class="svg-icon svg-icon-2">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                                        <polygon points="0 0 24 0 24 24 0 24" />
-                                                                        <rect fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000)" x="11" y="5" width="2" height="14" rx="1" />
-                                                                        <path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997)" />
-                                                                    </g>
-                                                                </svg>
-                                                            </span>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="symbol symbol-45px me-2">
-                                                            <span class="symbol-label">
-                                                                <img src="metronic/assets/media/svg/brand-logos/bebo.svg" class="h-50 align-self-center" alt="" />
-                                                            </span>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="text-dark fw-bolder text-hover-primary mb-1 fs-6">Active Customers</a>
-                                                        <span class="text-muted fw-bold d-block">Movie Creator</span>
-                                                    </td>
-                                                    <td class="text-end text-muted fw-bold">AngularJS, C#</td>
-                                                    <td class="text-end">
-                                                        <span class="badge badge-light-danger">Rejected</span>
-                                                    </td>
-                                                    <td class="text-end">
-                                                        <a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary">
-                                                            <span class="svg-icon svg-icon-2">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                                        <polygon points="0 0 24 0 24 24 0 24" />
-                                                                        <rect fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000)" x="11" y="5" width="2" height="14" rx="1" />
-                                                                        <path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997)" />
-                                                                    </g>
-                                                                </svg>
-                                                            </span>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                    <div class="tab-pane fade" id="kt_table_widget_5_tab_2">
+                                        <div class="table-responsive">
+                                            <table class="table table-row-dashed table-row-gray-200 align-middle gs-0 gy-4">
+                                                <thead>
+                                                    <tr class="border-0">
+                                                        <th class="p-0 w-50px"></th>
+                                                        <th class="p-0 min-w-150px"></th>
+                                                        <th class="p-0 min-w-140px"></th>
+                                                        <th class="p-0 min-w-110px"></th>
+                                                        <th class="p-0 min-w-50px"></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="symbol symbol-45px me-2">
+                                                                <span class="symbol-label">
+                                                                    <img src="metronic/assets/media/svg/brand-logos/plurk.svg" class="h-50 align-self-center" alt="" />
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="text-dark fw-bolder text-hover-primary mb-1 fs-6">Brad Simmons</a>
+                                                            <span class="text-muted fw-bold d-block">Movie Creator</span>
+                                                        </td>
+                                                        <td class="text-end text-muted fw-bold">React, HTML</td>
+                                                        <td class="text-end">
+                                                            <span class="badge badge-light-success">Approved</span>
+                                                        </td>
+                                                        <td class="text-end">
+                                                            <a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary">
+                                                                <span class="svg-icon svg-icon-2">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                            <polygon points="0 0 24 0 24 24 0 24" />
+                                                                            <rect fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000)" x="11" y="5" width="2" height="14" rx="1" />
+                                                                            <path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997)" />
+                                                                        </g>
+                                                                    </svg>
+                                                                </span>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="symbol symbol-45px me-2">
+                                                                <span class="symbol-label">
+                                                                    <img src="metronic/assets/media/svg/brand-logos/telegram.svg" class="h-50 align-self-center" alt="" />
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="text-dark fw-bolder text-hover-primary mb-1 fs-6">Popular Authors</a>
+                                                            <span class="text-muted fw-bold d-block">Most Successful</span>
+                                                        </td>
+                                                        <td class="text-end text-muted fw-bold">Python, MySQL</td>
+                                                        <td class="text-end">
+                                                            <span class="badge badge-light-warning">In Progress</span>
+                                                        </td>
+                                                        <td class="text-end">
+                                                            <a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary">
+                                                                <span class="svg-icon svg-icon-2">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                            <polygon points="0 0 24 0 24 24 0 24" />
+                                                                            <rect fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000)" x="11" y="5" width="2" height="14" rx="1" />
+                                                                            <path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997)" />
+                                                                        </g>
+                                                                    </svg>
+                                                                </span>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="symbol symbol-45px me-2">
+                                                                <span class="symbol-label">
+                                                                    <img src="metronic/assets/media/svg/brand-logos/bebo.svg" class="h-50 align-self-center" alt="" />
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="text-dark fw-bolder text-hover-primary mb-1 fs-6">Active Customers</a>
+                                                            <span class="text-muted fw-bold d-block">Movie Creator</span>
+                                                        </td>
+                                                        <td class="text-end text-muted fw-bold">AngularJS, C#</td>
+                                                        <td class="text-end">
+                                                            <span class="badge badge-light-danger">Rejected</span>
+                                                        </td>
+                                                        <td class="text-end">
+                                                            <a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary">
+                                                                <span class="svg-icon svg-icon-2">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                            <polygon points="0 0 24 0 24 24 0 24" />
+                                                                            <rect fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000)" x="11" y="5" width="2" height="14" rx="1" />
+                                                                            <path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997)" />
+                                                                        </g>
+                                                                    </svg>
+                                                                </span>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="tab-pane fade" id="kt_table_widget_5_tab_3">
-                                    <div class="table-responsive">
-                                        <table class="table table-row-dashed table-row-gray-200 align-middle gs-0 gy-4">
-                                            <thead>
-                                                <tr class="border-0">
-                                                    <th class="p-0 w-50px"></th>
-                                                    <th class="p-0 min-w-150px"></th>
-                                                    <th class="p-0 min-w-140px"></th>
-                                                    <th class="p-0 min-w-110px"></th>
-                                                    <th class="p-0 min-w-50px"></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <div class="symbol symbol-45px me-2">
-                                                            <span class="symbol-label">
-                                                                <img src="metronic/assets/media/svg/brand-logos/kickstarter.svg" class="h-50 align-self-center" alt="" />
-                                                            </span>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="text-dark fw-bolder text-hover-primary mb-1 fs-6">Bestseller Theme</a>
-                                                        <span class="text-muted fw-bold d-block">Best Customers</span>
-                                                    </td>
-                                                    <td class="text-end text-muted fw-bold">ReactJS, Ruby</td>
-                                                    <td class="text-end">
-                                                        <span class="badge badge-light-warning">In Progress</span>
-                                                    </td>
-                                                    <td class="text-end">
-                                                        <a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary">
-                                                            <span class="svg-icon svg-icon-2">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                                        <polygon points="0 0 24 0 24 24 0 24" />
-                                                                        <rect fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000)" x="11" y="5" width="2" height="14" rx="1" />
-                                                                        <path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997)" />
-                                                                    </g>
-                                                                </svg>
-                                                            </span>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="symbol symbol-45px me-2">
-                                                            <span class="symbol-label">
-                                                                <img src="metronic/assets/media/svg/brand-logos/bebo.svg" class="h-50 align-self-center" alt="" />
-                                                            </span>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="text-dark fw-bolder text-hover-primary mb-1 fs-6">Active Customers</a>
-                                                        <span class="text-muted fw-bold d-block">Movie Creator</span>
-                                                    </td>
-                                                    <td class="text-end text-muted fw-bold">AngularJS, C#</td>
-                                                    <td class="text-end">
-                                                        <span class="badge badge-light-danger">Rejected</span>
-                                                    </td>
-                                                    <td class="text-end">
-                                                        <a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary">
-                                                            <span class="svg-icon svg-icon-2">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                                        <polygon points="0 0 24 0 24 24 0 24" />
-                                                                        <rect fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000)" x="11" y="5" width="2" height="14" rx="1" />
-                                                                        <path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997)" />
-                                                                    </g>
-                                                                </svg>
-                                                            </span>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="symbol symbol-45px me-2">
-                                                            <span class="symbol-label">
-                                                                <img src="metronic/assets/media/svg/brand-logos/vimeo.svg" class="h-50 align-self-center" alt="" />
-                                                            </span>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="text-dark fw-bolder text-hover-primary mb-1 fs-6">New Users</a>
-                                                        <span class="text-muted fw-bold d-block">Awesome Users</span>
-                                                    </td>
-                                                    <td class="text-end text-muted fw-bold">Laravel,Metronic</td>
-                                                    <td class="text-end">
-                                                        <span class="badge badge-light-primary">Success</span>
-                                                    </td>
-                                                    <td class="text-end">
-                                                        <a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary">
-                                                            <span class="svg-icon svg-icon-2">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                                        <polygon points="0 0 24 0 24 24 0 24" />
-                                                                        <rect fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000)" x="11" y="5" width="2" height="14" rx="1" />
-                                                                        <path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997)" />
-                                                                    </g>
-                                                                </svg>
-                                                            </span>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="symbol symbol-45px me-2">
-                                                            <span class="symbol-label">
-                                                                <img src="metronic/assets/media/svg/brand-logos/telegram.svg" class="h-50 align-self-center" alt="" />
-                                                            </span>
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" class="text-dark fw-bolder text-hover-primary mb-1 fs-6">Popular Authors</a>
-                                                        <span class="text-muted fw-bold d-block">Most Successful</span>
-                                                    </td>
-                                                    <td class="text-end text-muted fw-bold">Python, MySQL</td>
-                                                    <td class="text-end">
-                                                        <span class="badge badge-light-warning">In Progress</span>
-                                                    </td>
-                                                    <td class="text-end">
-                                                        <a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary">
-                                                            <span class="svg-icon svg-icon-2">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                                        <polygon points="0 0 24 0 24 24 0 24" />
-                                                                        <rect fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000)" x="11" y="5" width="2" height="14" rx="1" />
-                                                                        <path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997)" />
-                                                                    </g>
-                                                                </svg>
-                                                            </span>
-                                                        </a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                    <div class="tab-pane fade" id="kt_table_widget_5_tab_3">
+                                        <div class="table-responsive">
+                                            <table class="table table-row-dashed table-row-gray-200 align-middle gs-0 gy-4">
+                                                <thead>
+                                                    <tr class="border-0">
+                                                        <th class="p-0 w-50px"></th>
+                                                        <th class="p-0 min-w-150px"></th>
+                                                        <th class="p-0 min-w-140px"></th>
+                                                        <th class="p-0 min-w-110px"></th>
+                                                        <th class="p-0 min-w-50px"></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="symbol symbol-45px me-2">
+                                                                <span class="symbol-label">
+                                                                    <img src="metronic/assets/media/svg/brand-logos/kickstarter.svg" class="h-50 align-self-center" alt="" />
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="text-dark fw-bolder text-hover-primary mb-1 fs-6">Bestseller Theme</a>
+                                                            <span class="text-muted fw-bold d-block">Best Customers</span>
+                                                        </td>
+                                                        <td class="text-end text-muted fw-bold">ReactJS, Ruby</td>
+                                                        <td class="text-end">
+                                                            <span class="badge badge-light-warning">In Progress</span>
+                                                        </td>
+                                                        <td class="text-end">
+                                                            <a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary">
+                                                                <span class="svg-icon svg-icon-2">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                            <polygon points="0 0 24 0 24 24 0 24" />
+                                                                            <rect fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000)" x="11" y="5" width="2" height="14" rx="1" />
+                                                                            <path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997)" />
+                                                                        </g>
+                                                                    </svg>
+                                                                </span>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="symbol symbol-45px me-2">
+                                                                <span class="symbol-label">
+                                                                    <img src="metronic/assets/media/svg/brand-logos/bebo.svg" class="h-50 align-self-center" alt="" />
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="text-dark fw-bolder text-hover-primary mb-1 fs-6">Active Customers</a>
+                                                            <span class="text-muted fw-bold d-block">Movie Creator</span>
+                                                        </td>
+                                                        <td class="text-end text-muted fw-bold">AngularJS, C#</td>
+                                                        <td class="text-end">
+                                                            <span class="badge badge-light-danger">Rejected</span>
+                                                        </td>
+                                                        <td class="text-end">
+                                                            <a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary">
+                                                                <span class="svg-icon svg-icon-2">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                            <polygon points="0 0 24 0 24 24 0 24" />
+                                                                            <rect fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000)" x="11" y="5" width="2" height="14" rx="1" />
+                                                                            <path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997)" />
+                                                                        </g>
+                                                                    </svg>
+                                                                </span>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="symbol symbol-45px me-2">
+                                                                <span class="symbol-label">
+                                                                    <img src="metronic/assets/media/svg/brand-logos/vimeo.svg" class="h-50 align-self-center" alt="" />
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="text-dark fw-bolder text-hover-primary mb-1 fs-6">New Users</a>
+                                                            <span class="text-muted fw-bold d-block">Awesome Users</span>
+                                                        </td>
+                                                        <td class="text-end text-muted fw-bold">Laravel,Metronic</td>
+                                                        <td class="text-end">
+                                                            <span class="badge badge-light-primary">Success</span>
+                                                        </td>
+                                                        <td class="text-end">
+                                                            <a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary">
+                                                                <span class="svg-icon svg-icon-2">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                            <polygon points="0 0 24 0 24 24 0 24" />
+                                                                            <rect fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000)" x="11" y="5" width="2" height="14" rx="1" />
+                                                                            <path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997)" />
+                                                                        </g>
+                                                                    </svg>
+                                                                </span>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="symbol symbol-45px me-2">
+                                                                <span class="symbol-label">
+                                                                    <img src="metronic/assets/media/svg/brand-logos/telegram.svg" class="h-50 align-self-center" alt="" />
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" class="text-dark fw-bolder text-hover-primary mb-1 fs-6">Popular Authors</a>
+                                                            <span class="text-muted fw-bold d-block">Most Successful</span>
+                                                        </td>
+                                                        <td class="text-end text-muted fw-bold">Python, MySQL</td>
+                                                        <td class="text-end">
+                                                            <span class="badge badge-light-warning">In Progress</span>
+                                                        </td>
+                                                        <td class="text-end">
+                                                            <a href="#" class="btn btn-sm btn-icon btn-bg-light btn-active-color-primary">
+                                                                <span class="svg-icon svg-icon-2">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                            <polygon points="0 0 24 0 24 24 0 24" />
+                                                                            <rect fill="#000000" opacity="0.5" transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000)" x="11" y="5" width="2" height="14" rx="1" />
+                                                                            <path d="M9.70710318,15.7071045 C9.31657888,16.0976288 8.68341391,16.0976288 8.29288961,15.7071045 C7.90236532,15.3165802 7.90236532,14.6834152 8.29288961,14.2928909 L14.2928896,8.29289093 C14.6714686,7.914312 15.281055,7.90106637 15.675721,8.26284357 L21.675721,13.7628436 C22.08284,14.136036 22.1103429,14.7686034 21.7371505,15.1757223 C21.3639581,15.5828413 20.7313908,15.6103443 20.3242718,15.2371519 L15.0300721,10.3841355 L9.70710318,15.7071045 Z" fill="#000000" fill-rule="nonzero" transform="translate(14.999999, 11.999997) scale(1, -1) rotate(90.000000) translate(-14.999999, -11.999997)" />
+                                                                        </g>
+                                                                    </svg>
+                                                                </span>
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
