@@ -66,6 +66,7 @@ class BaseController extends Controller
 		// Preload any models, libraries, etc, here.
 		//--------------------------------------------------------------------
 		// E.g.: $this->session = \Config\Services::session();
+		// return var_dump($request, $response, $logger);
 		$this->user = authenticated();
 		if (!$this->user) {
 			return $this->response->redirect(base_url('auth/login'));
