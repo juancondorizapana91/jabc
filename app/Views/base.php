@@ -14,9 +14,10 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
 	<!--end::Fonts-->
 	<!--begin::Global Stylesheets Bundle(used by all pages)-->
+	<link href="<?= base_url('metronic/assets/plugins/custom/datatables/datatables.bundle.css') ?>" rel="stylesheet" type="text/css" />
 	<link href="<?= base_url('metronic/assets/plugins/global/plugins.bundle.css') ?>" rel="stylesheet" type="text/css" />
 	<link href="<?= base_url('metronic/assets/css/style.bundle.css') ?>" rel="stylesheet" type="text/css" />
-	<link href="<?= base_url('metronic/assets/plugins/custom/datatables/datatables.bundle.css') ?>" rel="stylesheet" type="text/css" />
+
 	<!--end::Global Stylesheets Bundle-->
 	<?php $js = str_replace('\\', '/', FCPATH . 'css/' . strtolower(explode('\\', (\Config\Services::router())->controllerName())[3]) . '/' . (\Config\Services::router())->methodName() . '.css');
 	if (is_file($js)) : ?>
@@ -25,6 +26,7 @@
 </head>
 <!--end::Head-->
 <!--begin::Body-->
+
 <body id="kt_body" class="page-loading-enabled page-loading header-fixed header-tablet-and-mobile-fixed aside-enabled aside-fixed">
 	<!--begin::Main-->
 	<!--begin::Root-->
@@ -110,17 +112,12 @@
 	<script src="<?= base_url('metronic/assets/plugins/custom/datatables/datatables.bundle.js') ?>"></script>
 	<script src="<?= base_url('metronic/assets/plugins/custom/form/jquery.form.min.js') ?>"></script>
 
-<<<<<<< HEAD
-=======
-	<script src="<?= base_url('metronic/assets/js/custom/widgets.js') ?>"></script>
-	<script src="<?= base_url('metronic/assets/js/custom/apps/chat/chat.js') ?>"></script>
 
 
 
 
 
 
->>>>>>> 0575eb4e9c20474eb95d5598fe56c2a133a164c8
 	<!--end::Page Custom Javascript-->
 	<!--end::Javascript-->
 	<?php $js = str_replace('\\', '/', FCPATH . 'js/' . strtolower(explode('\\', (\Config\Services::router())->controllerName())[3]) . '/' . (\Config\Services::router())->methodName() . '.js');
