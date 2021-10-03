@@ -74,9 +74,13 @@ class Personal extends BaseController
 	}
 	public function editarPersonal($idPersona)
 	{
-		$persona = $this->q->seleccionarTabla('persona', '*', ['id_persona' => $idPersona])->getRowArray();
 
-		var_dump($persona);
+		$persona = $this->q->seleccionarTabla('persona', '*', ['id_persona' => $idPersona])->getRowArray();
+		if (is_null($persona)) {
+			return $this->response->setStatusCode(500)->setJSON(['error' => '¡Oh no ha ocurrido un error al editar el personal!']);
+		} else {
+			return $this->response->setStatusCode(200)->setJSON($persona);
+		}
 	}
 	public function nuloSiVacio($dato)
 	{
