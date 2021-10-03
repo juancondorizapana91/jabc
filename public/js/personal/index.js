@@ -300,6 +300,11 @@ var KTModalNewTarget = (function () {
 			initForm();
 			handleForm();
 			initTable();
+			var loading = new KTDialog({
+				type: 'loader',
+				placement: 'top center',
+				message: 'Loading ...',
+			});
 		},
 	};
 })();

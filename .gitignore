@@ -94,7 +94,7 @@ phpunit
 #-------------------------
 # Composer
 #-------------------------
-vendor/
+#vendor/
 composer.lock
 
 #-------------------------
@@ -145,10 +145,10 @@ application/logs/*
 !application/logs/index.html
 !application/logs/.htaccess
 
-/application/vendor/
-application/vendor/
-/application/vendor/*
-application/vendor/*
+#/application/vendor/
+#application/vendor/
+#/application/vendor/*
+#application/vendor/*
 
 /application/config/database.php
 /application/config/config.php
@@ -237,5 +237,5 @@ ehthumbs_vista.db
 [Dd]esktop.ini
 
 /public/img/imagen_comprobante/
-/vendor/
+#/vendor/
 .env
