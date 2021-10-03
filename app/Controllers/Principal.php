@@ -28,7 +28,7 @@ class Principal extends BaseController
 					'movil' => nuloSiVacio($this->request->getUserAgent()->getMobile())
 				]);
 			}
-			$this->data['sesion'] = $this->q->seleccionar()->getResultArray();
+			$this->data['sesion'] = $this->q->seleccionar([], '', "*, concat(nombre,' ',paterno,' ',materno) as nombre_completo")->getResultArray();
 
 			return $this->templater->view('principal', $this->data);
 		}

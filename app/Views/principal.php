@@ -253,20 +253,20 @@
                         </div>
                         <div class="card-body pt-5">
                             <div class="timeline-label">
-                                <?php foreach ($sesion as $s) : ?>
+                                <?php $colores = ['text-success', 'text-danger', 'text-warning', 'text-primary'];
+                                foreach ($sesion as $s) : ?>
                                     <div class="timeline-item">
                                         <div class="timeline-label fw-bolder text-gray-800 fs-6"><?= $dt = DateTime::createFromFormat("Y-m-d H:i:s", $s['fecha_registro_sesion'])->format('H:i'); ?></div>
                                         <script>
 
                                         </script>
                                         <div class="timeline-badge">
-                                            <i class="fa fa-genderless text-success fs-1"></i>
+                                            <i class="fa fa-genderless <?= $colores[rand(0, count($colores) - 1)]; ?> fs-1"></i>
                                         </div>
 
-                                        <div class="timeline-content fw-bolder text-gray-800 ps-3">Inicio sesión
-                                            <a href="#" class="text-primary"><?= $s['nombre'] ?>
-                                                <?= $s['paterno'] ?> <?= $s['materno'] ?>
-                                            </a>.
+                                        <div class="timeline-content fw-bolder text-gray-800 ps-3">Inicio sesión en el sistema
+                                            <a href="#" class="text-primary"><?= ucwords(mb_convert_case($s['nombre_completo'], MB_CASE_LOWER))  ?>
+                                            </a>
                                         </div>
                                     </div>
                                 <?php endforeach ?>
