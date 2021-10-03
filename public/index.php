@@ -1,9 +1,7 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', '1');
+
 // Path to the front controller (this file)
 define('FCPATH', __DIR__ . DIRECTORY_SEPARATOR);
-
 
 /*
  *---------------------------------------------------------------
@@ -19,22 +17,16 @@ chdir(__DIR__);
 
 // Load our paths config file
 // This is the line that might need to be changed, depending on your folder structure.
-
 $pathsConfig = FCPATH . '../app/Config/Paths.php';
 // ^^^ Change this if you move your application folder
-echo '<pre>';
-var_dump($pathsConfig);
 require realpath($pathsConfig) ?: $pathsConfig;
 
 $paths = new Config\Paths();
 
 // Location of the framework bootstrap file.
 $bootstrap = rtrim($paths->systemDirectory, '\\/ ') . DIRECTORY_SEPARATOR . 'bootstrap.php';
-
-var_dump($bootstrap);
 $app       = require realpath($bootstrap) ?: $bootstrap;
-var_dump($app);
-return;
+
 /*
  *---------------------------------------------------------------
  * LAUNCH THE APPLICATION
