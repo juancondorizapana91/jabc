@@ -66,9 +66,9 @@ class Personal extends BaseController
 					'id_usuario_registro' => $this->data['user']['id_persona'],
 					'estado_persona' => 'REGISTRADO'
 				]);
-				return is_numeric($idPersona) ? $this->response->setJSON(['exito' => 'Persona agregada correctamente, ¿Desea agregarle algun permiso o usuario?']) : $this->response->setJSON(['error' => '¡Oh no ha ocurrido no error al agregar personal!']);
+				return is_numeric($idPersona) ? $this->response->setJSON('Persona agregada correctamente, ¿Desea agregarle algun permiso o usuario?') : $this->response->setStatusCode(500)->setJSON(['error' => '¡Oh no ha ocurrido no error al agregar personal!']);
 			} else {
-				return $this->response->setJSON(['error' => $validation->listErrors()]);
+				return $this->response->setStatusCode(500)->setJSON(['error' => $validation->listErrors()]);
 			}
 		}
 	}

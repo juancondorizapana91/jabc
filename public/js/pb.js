@@ -1,4 +1,4 @@
-$(documente).ready(function () {
+$(document).ready(function () {
 	window.parametrosModal = function (idModal, titulo, tamano = 'modal-lg', keyboard = true, backdrop = 'static', focus = true) {
 		$(`#${idModal}-title`).html(titulo);
 		$(`#${idModal}-dialog`).addClass(tamano);

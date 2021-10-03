@@ -99,9 +99,9 @@
 		</span>
 		<!--end::Svg Icon-->
 	</div>
-	<script src="<?= base_url('js/pb.js') ?>"></script>
 	<script src="<?= base_url('metronic/assets/plugins/global/plugins.bundle.js') ?>"></script>
 	<script src="<?= base_url('metronic/assets/js/scripts.bundle.js') ?>"></script>
+	<script src="<?= base_url('js/pb.js') ?>"></script>
 	<!--end::Global Javascript Bundle-->
 	<!--begin::Page Custom Javascript(used by this page)-->
 	<script src="<?= base_url('metronic/assets/js/custom/widgets.js') ?>"></script>

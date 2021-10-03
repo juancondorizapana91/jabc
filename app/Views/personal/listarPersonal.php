@@ -25,7 +25,7 @@
                         </div>
                         <div class="separator mb-2 opacity-75"></div>
                         <div class="menu-item px-3 py-2">
-                            <a href="#" class="menu-link px-3" data-bs-toggle="modal" data-bs-target="#kt_modal_new_target">Agregar personal</a>
+                            <a href="#" class="menu-link px-3" data-bs-toggle="modal" data-bs-target="#modal">Agregar personal</a>
                         </div>
                     </div>
                 </div>
@@ -55,10 +55,10 @@
     </div>
 </div>
 
-<div class="modal fade" id="kt_modal_new_target" tabindex="" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered mw-650px">
-        <div class="modal-content rounded">
-            <div class="modal-header pb-0 border-0 justify-content-end">
+<div class="modal fade" id="modal" tabindex="" aria-hidden="true">
+    <div id="modal-dialog" class="modal-dialog modal-dialog-centered mw-650px">
+        <div id="modal-content" class="modal-content rounded">
+            <div id="modal-header" class="modal-header pb-0 border-0 justify-content-end">
                 <div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
                     <span class="svg-icon svg-icon-1">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -70,10 +70,10 @@
                     </span>
                 </div>
             </div>
-            <div class="modal-body scroll-y px-10 px-lg-10 pt-0 pb-10">
-                <form id="kt_modal_new_target_form" class="form" action="#">
+            <div id="modal-body" class="modal-body scroll-y px-10 px-lg-10 pt-0 pb-10">
+                <form id="modal_form" class="form" action="#">
                     <div class="mb-13 text-center">
-                        <h1 class="mb-3">Agregar Personal</h1>
+                        <h1 id="modal-title" class="mb-3">Agregar Personal</h1>
                         <div class="text-gray-400 fw-bold fs-5">Escriba correctamente los
                             <a href="#" class="fw-bolder link-primary">Datos</a>.
                         </div>
@@ -194,8 +194,8 @@
                         </div>
                     </div>
                     <div class="text-center">
-                        <button type="reset" id="kt_modal_new_target_cancel" class="btn btn-white me-3">Cancelar</button>
-                        <button type="submit" id="kt_modal_new_target_submit" class="btn btn-primary">
+                        <button type="reset" id="modal_cancel" class="btn btn-white me-3">Cancelar</button>
+                        <button type="submit" id="modal_submit" class="btn btn-primary">
                             <span class="indicator-label">Agregar</span>
                             <span class="indicator-progress">Espere por favor...
                                 <span class="spinner-border spinner-border align-middle ms-2"></span></span>
@@ -250,8 +250,8 @@
                     </div>
 
                     <div class="text-center">
-                        <button type="reset" id="kt_modal_new_target_cancel" class="btn btn-white me-3">Cancelar</button>
-                        <button type="submit" id="kt_modal_new_target_submit" class="btn btn-primary">
+                        <button type="reset" id="modal_cancel" class="btn btn-white me-3">Cancelar</button>
+                        <button type="submit" id="modal_submit" class="btn btn-primary">
                             <span class="indicator-label">Agregar</span>
                             <span class="indicator-progress">Espere por favor...
                                 <span class="spinner-border spinner-border align-middle ms-2"></span></span>
