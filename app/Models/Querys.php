@@ -59,4 +59,14 @@ class Querys extends Database
             return null;
         }
     }
+    public function seleccionar($condicion = [], $orden = '', $columna = '*')
+    {
+        $builder = $this->db->table('sesion s');
+        $builder->orderBy($orden);
+        $builder->select($columna);
+        $builder->join('usuario u', 'u.id_usuario = s.id_usuario');
+        $builder->join('persona p', 'p.id_persona = u.id_usuario');
+
+        return empty($condicion) ? $builder->get() : $builder->getWhere($condicion);
+    }
 }

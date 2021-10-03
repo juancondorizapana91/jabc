@@ -9,8 +9,16 @@ class Principal extends BaseController
 
 	public function index()
 	{
+
 		if (isset($this->data['user'])) {
-			if (($this->q->seleccionarTabla('sesion', 'fecha_registro_sesion', ["date_format(fecha_registro_sesion, '%Y-%m-%d')" => date('Y-m-d'), 'id_usuario' => $this->data['user']['id_usuario']]))->getRowArray() == null) {
+			if (($this->q->seleccionarTabla(
+				'sesion',
+				'fecha_registro_sesion',
+				[
+					"date_format(fecha_registro_sesion, '%Y-%m-%d')" => date('Y-m-d'),
+					'id_usuario' => $this->data['user']['id_usuario']
+				]
+			))->getRowArray() == null) {
 				$this->q->insertarTabla('sesion', [
 					'id_usuario' => $this->data['user']['id_usuario'],
 					'ip' => nuloSiVacio($this->request->getIPAddress()),
@@ -20,8 +28,9 @@ class Principal extends BaseController
 					'movil' => nuloSiVacio($this->request->getUserAgent()->getMobile())
 				]);
 			}
+			$this->data['sesion'] = $this->q->seleccionar()->getResultArray();
 
-			return $this->templater->view('principal');
+			return $this->templater->view('principal', $this->data);
 		}
 	}
 }

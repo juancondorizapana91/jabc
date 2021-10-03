@@ -253,6 +253,23 @@
                         </div>
                         <div class="card-body pt-5">
                             <div class="timeline-label">
+                                <?php foreach ($sesion as $s) : ?>
+                                    <div class="timeline-item">
+                                        <div class="timeline-label fw-bolder text-gray-800 fs-6"><?= $dt = DateTime::createFromFormat("Y-m-d H:i:s", $s['fecha_registro_sesion'])->format('H:i'); ?></div>
+                                        <script>
+
+                                        </script>
+                                        <div class="timeline-badge">
+                                            <i class="fa fa-genderless text-success fs-1"></i>
+                                        </div>
+
+                                        <div class="timeline-content fw-bolder text-gray-800 ps-3">Inicio sesión
+                                            <a href="#" class="text-primary"><?= $s['nombre'] ?>
+                                                <?= $s['paterno'] ?> <?= $s['materno'] ?>
+                                            </a>.
+                                        </div>
+                                    </div>
+                                <?php endforeach ?>
                                 <div class="timeline-item">
                                     <div class="timeline-label fw-bolder text-gray-800 fs-6">08:42</div>
                                     <div class="timeline-badge">
