@@ -44,6 +44,7 @@
                                 <th>Fecha Nacimiento</th>
                                 <th>Correo</th>
                                 <th>Celular</th>
+                                <th></th>
                             </tr>
                         </thead>
 

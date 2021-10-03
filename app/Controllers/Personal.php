@@ -72,6 +72,12 @@ class Personal extends BaseController
 			}
 		}
 	}
+	public function editarPersonal($idPersona)
+	{
+		$persona = $this->q->seleccionarTabla('persona', '*', ['id_persona' => $idPersona])->getRowArray();
+
+		var_dump($persona);
+	}
 	public function nuloSiVacio($dato)
 	{
 		return is_null($dato) ? null : (empty($dato) ? null : trim($dato));
