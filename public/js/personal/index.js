@@ -1,8 +1,17 @@
+var locale = {
+	firstDayOfWeek: 1,
+	weekdays: {
+		shorthand: ['Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sa'],
+		longhand: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+	},
+	months: {
+		shorthand: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Оct', 'Nov', 'Dic'],
+		longhand: ['Enero', 'Febrero', 'Мarzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+	},
+};
 $('#table')
 	.DataTable({
-		language: {
-			lengthMenu: 'Show _MENU_',
-		},
+		language: { url: '/metronic/assets/plugins/custom/datatables/es_es.json' },
 		columnDefs: [
 			{
 				targets: -1,
@@ -55,19 +64,18 @@ $('#table')
 			`/personal/editarPersonal/${$(this).data('id-persona')}`,
 			function (r) {
 				$('form#kt_modal_new_target_form :input').each(function () {
-					// $(this).val(r[$(this).attr('name')]);
-					// console.log($(this));
-					// console.log($(this).prop('tagName'));
 					if ($(this).prop('tagName') == 'SELECT') {
 						$(this).val(r[$(this).attr('name')]).trigger('change');
 					} else {
 						if ($(this).attr('class') == 'form-control form-control-solid ps-12 flatpickr-input') {
-							$(`#${$(this).attr('name')}`).flatpickr({
-								defaultDate: r[$(this).attr('name')],
-								dateFormat: 'Y-m-d',
-							});
+							// $(`#${$(this).attr('name')}`).flatpickr({
+							// 	defaultDate: r[$(this).attr('name')],
+							// 	dateFormat: 'Y-m-d',
+							// });
 							// console.log(r[$(this).attr('name')]);
-							// flatpickr(`#${$(this).attr('name')}`, {}).setDate(r[$(this).attr('name')]);
+							flatpickr(`#${$(this).attr('name')}`, {
+								locale: locale,
+							}).setDate(r[$(this).attr('name')]);
 						} else {
 							$(this).val(r[$(this).attr('name')]);
 						}
@@ -95,6 +103,7 @@ var KTModalNewTarget = (function () {
 			altInput: true,
 			altFormat: 'F j, Y',
 			dateFormat: 'Y-m-d',
+			locale: locale,
 		});
 
 		// Team assign. For more info, plase visit the official plugin site: https://select2.org/
