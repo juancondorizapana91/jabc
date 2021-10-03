@@ -1,14 +1,3 @@
-// $('#kt_modal_new_target_submit').on('click', function (e) {
-// 	alert('hola');
-// });
-
-// Inputmask({
-// 	mask: 'a',
-// 	repeat: 2,
-// 	greedy: false,
-// }).mask('#nombre');
-('use strict');
-
 $('#table')
 	.DataTable({
 		language: {
@@ -62,7 +51,31 @@ $('#table')
 		ajax: 'personal/ajaxListarPersonal',
 	})
 	.on('click', '.editar-personal', function () {
-		$.get(`/pesonal/editarPersonal${$(this).data('id-persona')}`);
+		$.get(
+			`/personal/editarPersonal/${$(this).data('id-persona')}`,
+			function (r) {
+				$('form#kt_modal_new_target_form :input').each(function () {
+					// $(this).val(r[$(this).attr('name')]);
+					// console.log($(this));
+					// console.log($(this).prop('tagName'));
+					if ($(this).prop('tagName') == 'SELECT') {
+						$(this).val(r[$(this).attr('name')]).trigger('change');
+					} else {
+						if ($(this).attr('class') == 'form-control form-control-solid ps-12 flatpickr-input') {
+							$(`#${$(this).attr('name')}`).flatpickr({
+								defaultDate: r[$(this).attr('name')],
+								dateFormat: 'Y-m-d',
+							});
+							// console.log(r[$(this).attr('name')]);
+							// flatpickr(`#${$(this).attr('name')}`, {}).setDate(r[$(this).attr('name')]);
+						} else {
+							$(this).val(r[$(this).attr('name')]);
+						}
+					}
+				});
+			},
+			'json'
+		).fail(function () {});
 	});
 
 // Class definition

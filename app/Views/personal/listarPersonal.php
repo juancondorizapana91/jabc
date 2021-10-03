@@ -140,7 +140,7 @@
                             <label for="genero" class="required fs-6 fw-bold mb-2">Genero</label>
                             <select id="genero" class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Seleccione genero" name="genero">
                                 <option value="" selected></option>
-                                <option value="M">Maculino</option>
+                                <option value="M">Masculino</option>
                                 <option value="F">Femenino</option>
 
                             </select>
