@@ -28,7 +28,9 @@ class Principal extends BaseController
 					'movil' => nuloSiVacio($this->request->getUserAgent()->getMobile())
 				]);
 			}
+
 			$this->data['sesion'] = $this->q->seleccionar([], '', "*, concat(nombre,' ',paterno,' ',materno) as nombre_completo")->getResultArray();
+			$this->data['cantidadPersonas'] = count($this->q->seleccionarTabla('persona')->getResultArray());
 
 			return $this->templater->view('principal', $this->data);
 		}

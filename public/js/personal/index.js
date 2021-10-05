@@ -279,7 +279,7 @@ var KTModalNewTarget = (function () {
 						parametrosModal('modal', 'Editar Personal', 'modal-md');
 					},
 					'json'
-				).fail(function () {});
+				).fail(function () { });
 			});
 	};
 	return {
