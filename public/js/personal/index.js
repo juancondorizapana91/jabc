@@ -18,7 +18,19 @@ var KTModalNewTarget = (function () {
 	var form;
 	var modal;
 	var modalEl;
+	var agregarPersonal;
 
+	var estadoBotones = {
+		agregar: function () {
+			$(form).clearForm();
+			$(submitButton).removeAttr('data-id-persona');
+			$(submitButton).text('Agregar');
+		},
+		editar: function (idPersona) {
+			$(submitButton).attr('data-id-persona', idPersona);
+			$(submitButton).text('Editar');
+		},
+	};
 	// Init form inputs
 	var initForm = function () {
 		// Due date. For more info, please visit the official plugin site: https://flatpickr.js.org/
@@ -125,6 +137,10 @@ var KTModalNewTarget = (function () {
 			},
 		});
 
+		agregarPersonal.addEventListener('click', function (e) {
+			estadoBotones.agregar();
+			parametrosModal('modal');
+		});
 		// Action buttons
 		submitButton.addEventListener('click', function (e) {
 			e.preventDefault();
@@ -141,33 +157,33 @@ var KTModalNewTarget = (function () {
 						submitButton.disabled = true;
 						setTimeout(function () {
 							// Enable button
-
-							$(form).ajaxSubmit({
-								url: '/personal/guardarPersonal',
-								type: 'POST',
-								success: function (r) {
-									submitButton.removeAttribute('data-kt-indicator');
-									submitButton.disabled = false;
-									Swal.fire({
-										title: r.exito,
-										icon: 'success',
-										showCancelButton: true,
-										confirmButtonText: '¡Si deseo agregar roles!',
-										cancelButtonText: `No, mas tarde`,
-									}).then((result) => {
-										if (result.isConfirmed) {
-											Swal.fire('Saved!', '', 'success');
-										} else if (result.isCanceled) {
-											modal.hide();
-										}
-									});
-								},
-								error: function (xhr, textStatus, errorThrown) {
-									submitButton.removeAttribute('data-kt-indicator');
-									submitButton.disabled = false;
-									Swal.fire({ title: '¡Error!', icon: 'error', html: xhr.responseJSON.error, buttonsStyling: false, customClass: { confirmButton: 'btn btn-primary' } });
-								},
-							});
+							console.log($(submitButton).attr('data-id-persona'));
+							// $(form).ajaxSubmit({
+							// 	url: '/personal/guardarPersonal',
+							// 	type: 'POST',
+							// 	success: function (r) {
+							// 		submitButton.removeAttribute('data-kt-indicator');
+							// 		submitButton.disabled = false;
+							// 		Swal.fire({
+							// 			title: r.exito,
+							// 			icon: 'success',
+							// 			showCancelButton: true,
+							// 			confirmButtonText: '¡Si deseo agregar roles!',
+							// 			cancelButtonText: `No, mas tarde`,
+							// 		}).then((result) => {
+							// 			if (result.isConfirmed) {
+							// 				Swal.fire('Saved!', '', 'success');
+							// 			} else if (result.isCanceled) {
+							// 				modal.hide();
+							// 			}
+							// 		});
+							// 	},
+							// 	error: function (xhr, textStatus, errorThrown) {
+							// 		submitButton.removeAttribute('data-kt-indicator');
+							// 		submitButton.disabled = false;
+							// 		Swal.fire({ title: '¡Error!', icon: 'error', html: xhr.responseJSON.error, buttonsStyling: false, customClass: { confirmButton: 'btn btn-primary' } });
+							// 	},
+							// });
 
 							//form.submit(); // Submit form
 						}, 1000);
@@ -277,6 +293,7 @@ var KTModalNewTarget = (function () {
 							}
 						});
 						parametrosModal('modal', 'Editar Personal', 'modal-md');
+						estadoBotones.editar(r.id_persona);
 					},
 					'json'
 				).fail(function () {});
@@ -297,14 +314,10 @@ var KTModalNewTarget = (function () {
 			form = document.querySelector('#modal_form');
 			submitButton = document.getElementById('modal_submit');
 			cancelButton = document.getElementById('modal_cancel');
+			agregarPersonal = document.getElementById('agregar-personal');
 			initForm();
 			handleForm();
 			initTable();
-			var loading = new KTDialog({
-				type: 'loader',
-				placement: 'top center',
-				message: 'Loading ...',
-			});
 		},
 	};
 })();

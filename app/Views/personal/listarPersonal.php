@@ -25,7 +25,7 @@
                         </div>
                         <div class="separator mb-2 opacity-75"></div>
                         <div class="menu-item px-3 py-2">
-                            <a href="#" class="menu-link px-3" data-bs-toggle="modal" data-bs-target="#modal">Agregar personal</a>
+                            <a href="#" class="menu-link px-3" id="agregar-personal" data-bs-toggle="modal">Agregar personal</a>
                         </div>
                     </div>
                 </div>
@@ -206,8 +206,6 @@
         </div>
     </div>
 </div>
-
-
 
 <div class="modal fade" id="agregar-rol-usuario" tabindex="" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered mw-650px">
