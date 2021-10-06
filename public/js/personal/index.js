@@ -296,7 +296,7 @@ var KTModalNewTarget = (function () {
 						estadoBotones.editar(r.id_persona);
 					},
 					'json'
-				).fail(function () {});
+				).fail(function () { });
 			});
 	};
 	return {
