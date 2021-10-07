@@ -78,6 +78,14 @@
                             </a>
                         </div>
                         <div class="menu-item">
+                            <a class="menu-link" href="<?= base_url('pago'); ?>">
+                                <span class="menu-bullet">
+                                    <span class="bullet bullet-dot"></span>
+                                </span>
+                                <span class="menu-title">Ver pagos</span>
+                            </a>
+                        </div>
+                        <div class="menu-item">
                             <a class="menu-link" href="<?= base_url('inscripcion'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
