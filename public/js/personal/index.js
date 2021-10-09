@@ -185,7 +185,8 @@ var KTModalNewTarget = (function () {
 									},
 									complete: function () {
 										submitButton.removeAttribute('data-kt-indicator');
-										submitButton.disabled = false;
+										submitBut;
+										ton.disabled = false;
 										$('#table').DataTable().ajax.reload();
 									},
 								});
@@ -199,7 +200,8 @@ var KTModalNewTarget = (function () {
 									},
 									complete: function () {
 										submitButton.removeAttribute('data-kt-indicator');
-										submitButton.disabled = false;
+										submitBut;
+										ton.disabled = false;
 										$('#table').DataTable().ajax.reload();
 									},
 									error: function (xhr, textStatus, errorThrown) {
