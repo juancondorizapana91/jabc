@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '0d54c8d74f532c7e062e8e1b6905c0fe50d1675c',
+        'reference' => 'b127f373a50306a2ad978b565f6cc596bb93e6a3',
         'name' => 'codeigniter4/appstarter',
         'dev' => true,
     ),
@@ -25,7 +25,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '0d54c8d74f532c7e062e8e1b6905c0fe50d1675c',
+            'reference' => 'b127f373a50306a2ad978b565f6cc596bb93e6a3',
             'dev_requirement' => false,
         ),
         'codeigniter4/framework' => array(
@@ -392,12 +392,12 @@
             'dev_requirement' => true,
         ),
         'setasign/fpdf' => array(
-            'pretty_version' => '1.8.2',
-            'version' => '1.8.2.0',
+            'pretty_version' => '1.8.4',
+            'version' => '1.8.4.0',
             'type' => 'library',
             'install_path' => __DIR__ . '/../setasign/fpdf',
             'aliases' => array(),
-            'reference' => 'd77904018090c17dc9f3ab6e944679a7a47e710a',
+            'reference' => 'b0ddd9c5b98ced8230ef38534f6f3c17308a7974',
             'dev_requirement' => false,
         ),
         'symfony/deprecation-contracts' => array(

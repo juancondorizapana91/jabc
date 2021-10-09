@@ -236,6 +236,11 @@ ehthumbs_vista.db
 # Folder config file
 [Dd]esktop.ini
 
+<<<<<<< HEAD
+public/img/imagen_comprobante/
+/vendor/
+=======
 /public/img/imagen_comprobante/
 #/vendor/
+>>>>>>> 6ee8cc12723ab6b392549bc4de68f7f0a30e64b2
 .env

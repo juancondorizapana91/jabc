@@ -112,11 +112,8 @@
 	<script src="<?= base_url('metronic/assets/plugins/custom/datatables/datatables.bundle.js') ?>"></script>
 	<script src="<?= base_url('metronic/assets/plugins/custom/form/jquery.form.min.js') ?>"></script>
 
-
-
-
-
-
+	<script src="<?= base_url('metronic/assets/js/custom/widgets.js') ?>"></script>
+	<script src="<?= base_url('metronic/assets/js/custom/apps/chat/chat.js') ?>"></script>
 
 	<!--end::Page Custom Javascript-->
 	<!--end::Javascript-->

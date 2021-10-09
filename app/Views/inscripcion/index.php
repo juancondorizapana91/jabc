@@ -28,7 +28,7 @@
 	<!--begin::Post-->
 	<div class="post d-flex flex-column-fluid" id="kt_post">
 		<!--begin::Container-->
-		<div id="kt_content_container" class="container">
+		<div id="kt_content_container" class="container-fluid">
 			<!--begin::Card-->
 			<div class="card">
 				<!--begin::Card body-->
@@ -83,7 +83,7 @@
 											<div class="col-lg-12 d-flex justify-content-center">
 												<!--begin::Option-->
 												<input type="radio" class="btn-check" name="account_type"
-													value="EL ALTO" checked="checked"
+													value="<?= $sede ?>" checked="checked"
 													id="sede" />
 												<label
 													class="btn btn-outline btn-outline-dashed btn-outline-default p-7 d-flex align-items-center mb-10"

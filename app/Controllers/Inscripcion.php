@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Models\InscripcionModel;
 use App\Models\Querys;
+use App\Libraries\Reporte_facturas;
 
 class Inscripcion extends BaseController
 {
@@ -20,10 +21,14 @@ class Inscripcion extends BaseController
 
 	public function index()
 	{
+		
 		$this->data['profesiones_ocupaciones'] = $this->model->listado_profesiones_ocupaciones();
 		$this->data['universidades_normales'] = $this->model->universidades_normales();
 		$this->data['programas'] = $this->model->listado_programas();
 		$this->data['tipo_pago'] =$this->model->listado_tipo_pago();
+		$this->data['sede'] = null;
+		// $this->data['sede'] = $this->model->datosUsuario(['p.id_persona' => (\Config\Services::session())->get('id_persona')])['denominacion_sede'];
+		// return var_dump($this->data['sede'], (\Config\Services::session())->get('id_persona'));
 		return $this->templater->view('inscripcion/index', $this->data);
 	}
 
@@ -225,7 +230,8 @@ class Inscripcion extends BaseController
 								
 								if(is_numeric($id_multimedia_pago_programa))
 								{
-									return $this->response->setJSON(['exito' => "Pago programa registrado correctamente"]);
+									// $pdf = 'data:application/pdf;base64,' . base64_encode($this->generarFactura($id_pago_programa));
+									return $this->response->setJSON(['exito' => "Pago programa registrado correctamente", 'id_pago_programa' => $id_pago_programa]);
 								}
 							}
 
@@ -233,7 +239,7 @@ class Inscripcion extends BaseController
 					}
 				}
 
-				return $this->response->setJSON(['exito' => "Pago programa registrado correctamente"]);
+				return $this->response->setJSON(['exito' => "Pago programa registrado correctamente", 'id_pago_programa' => $id_pago_programa]);
 
 			}else{
 				return $this->response->setJSON(['error' => "Error al registrar el pago programa"]);
@@ -241,5 +247,15 @@ class Inscripcion extends BaseController
 		}
 
 	}
+
+	public function generarFactura($id_pago_programa)
+    {
+        $id_usuario = (\Config\Services::session())->get('id_persona');
+        $datos = $this->model->datosInscripcion(['pp.id_pago_programa' => $id_pago_programa]);  // $id_pago_programa
+        $datos = array_merge($datos, $this->model->datosUsuario(['p.id_persona' => $id_usuario]));
+        $this->response->setContentType('application/pdf');
+        $reporte_facturas = new Reporte_facturas();
+        return $reporte_facturas->facturaLg($datos);
+    }
 
 }
