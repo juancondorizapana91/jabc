@@ -328,16 +328,26 @@ var KTModalNewTarget = (function () {
 				).fail(function () {});
 			})
 			.on('click', '.eliminar-personal', function () {
-				$.post(
-					'personal/eliminarPersonal',
-					{ id_persona: $(this).data('id-persona') },
-					function (r) {
-						Swal.fire({ title: '¡Exito!', icon: 'success', html: r.exito, buttonsStyling: false, customClass: { confirmButton: 'btn btn-primary' } });
-						$('#table').DataTable().ajax.reload();
-					},
-					'json'
-				).fail(function (jqXHR, textStatus, errorThrown) {
-					Swal.fire({ title: '¡Error!', icon: 'error', html: jqXHR.responseJSON.error, buttonsStyling: false, customClass: { confirmButton: 'btn btn-primary' } });
+				Swal.fire({
+					title: '¿Está seguro de eliminar?',
+					icon: 'warning',
+					showDenyButton: true,
+					confirmButtonText: '¡Eliminar!',
+					denyButtonText: `Cancelar`,
+				}).then((result) => {
+					if (result.isConfirmed) {
+						$.post(
+							'personal/eliminarPersonal',
+							{ id_persona: $(this).data('id-persona') },
+							function (r) {
+								Swal.fire({ title: '¡Exito!', icon: 'success', html: r.exito, buttonsStyling: false, customClass: { confirmButton: 'btn btn-primary' } });
+								$('#table').DataTable().ajax.reload();
+							},
+							'json'
+						).fail(function (jqXHR, textStatus, errorThrown) {
+							Swal.fire({ title: '¡Error!', icon: 'error', html: jqXHR.responseJSON.error, buttonsStyling: false, customClass: { confirmButton: 'btn btn-primary' } });
+						});
+					}
 				});
 			});
 	};
