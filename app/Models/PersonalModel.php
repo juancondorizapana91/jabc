@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class PersonalModel extends Model
 {
     protected $table = 'persona';
-    protected $primarykey = 'id_persona';
+    protected $primaryKey = 'id_persona';
     protected $allowedFields = [
         'ci',
         'expedido',
