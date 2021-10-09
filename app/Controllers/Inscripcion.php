@@ -26,7 +26,8 @@ class Inscripcion extends BaseController
 		$this->data['universidades_normales'] = $this->model->universidades_normales();
 		$this->data['programas'] = $this->model->listado_programas();
 		$this->data['tipo_pago'] =$this->model->listado_tipo_pago();
-		$this->data['sede'] = $this->model->datosUsuario(['p.id_persona' => (\Config\Services::session())->get('id_persona')])['denominacion_sede'];
+		$this->data['sede'] = null;
+		// $this->data['sede'] = $this->model->datosUsuario(['p.id_persona' => (\Config\Services::session())->get('id_persona')])['denominacion_sede'];
 		// return var_dump($this->data['sede'], (\Config\Services::session())->get('id_persona'));
 		return $this->templater->view('inscripcion/index', $this->data);
 	}

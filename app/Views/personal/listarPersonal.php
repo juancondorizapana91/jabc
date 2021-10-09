@@ -1,20 +1,13 @@
 <div class="post d-flex flex-column-fluid" id="kt_post">
-    <!--begin::Container-->
     <div id="kt_content_container" class="container">
-        <!--begin::Row-->
-
-        <!--begin::Tables Widget 12-->
         <div class="card mb-5 mb-xl-8">
-            <!--begin::Header-->
             <div class="card-header border-0 pt-5">
                 <h3 class="card-title align-items-start flex-column">
                     <span class="card-label fw-bolder fs-3 mb-1">Personal Registrado</span>
                     <span class="text-muted mt-1 fw-bold fs-7">Personal agregado</span>
                 </h3>
                 <div class="card-toolbar">
-                    <!--begin::Menu-->
                     <button type="button" class="btn btn-sm btn-icon btn-color-primary btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-flip="top-end">
-                        <!--begin::Svg Icon | path: icons/stockholm/Layout/Layout-4-blocks-2.svg-->
                         <span class="svg-icon svg-icon-2">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
                                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -25,40 +18,34 @@
                                 </g>
                             </svg>
                         </span>
-                        <!--end::Svg Icon-->
                     </button>
-                    <!--begin::Menu 2-->
-
                     <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg-light-primary fw-bold w-200px" data-kt-menu="true">
-                        <!--begin::Menu item-->
                         <div class="menu-item px-3">
                             <div class="menu-content fs-6 text-dark fw-bolder px-3 py-4">Acciones rápidas</div>
                         </div>
-                        <!--end::Menu item-->
-                        <!--begin::Menu separator-->
                         <div class="separator mb-2 opacity-75"></div>
-                        <!--end::Menu separator-->
-                        <!--begin::Menu item-->
                         <div class="menu-item px-3 py-2">
-                            <a href="#" class="menu-link px-3" data-bs-toggle="modal" data-bs-target="#kt_modal_new_target">Agregar personal</a>
+                            <a href="#" class="menu-link px-3" id="agregar-personal" data-bs-toggle="modal">Agregar personal</a>
                         </div>
-                        <!--end::Menu item-->
                     </div>
-                    <!--end::Menu 2-->
-                    <!--end::Menu-->
                 </div>
+
             </div>
-            <!--end::Header-->
             <div class="card-body py-3">
                 <div class="table-responsive">
                     <table id="table" class="table align-middle gs-0 gy-4">
                         <thead>
                             <tr class="fw-bolder text-muted bg-light">
-                                <th>#</th>
-                                <th>ci</th>
+                                <th>Nº</th>
+                                <th>CI</th>
                                 <th>Nombre</th>
                                 <th>Paterno</th>
                                 <th>Materno</th>
+                                <!-- <th>Usuario</th> -->
+                                <th>Fecha Nacimiento</th>
+                                <th>Correo</th>
+                                <th>Celular</th>
+                                <th></th>
                             </tr>
                         </thead>
 
@@ -69,10 +56,10 @@
     </div>
 </div>
 
-<div class="modal fade" id="kt_modal_new_target" tabindex="" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered mw-650px">
-        <div class="modal-content rounded">
-            <div class="modal-header pb-0 border-0 justify-content-end">
+<div class="modal fade" id="modal" tabindex="" aria-hidden="true">
+    <div id="modal-dialog" class="modal-dialog modal-dialog-centered mw-650px">
+        <div id="modal-content" class="modal-content rounded">
+            <div id="modal-header" class="modal-header pb-0 border-0 justify-content-end">
                 <div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
                     <span class="svg-icon svg-icon-1">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
@@ -84,10 +71,10 @@
                     </span>
                 </div>
             </div>
-            <div class="modal-body scroll-y px-10 px-lg-10 pt-0 pb-10">
-                <form id="kt_modal_new_target_form" class="form" action="#">
+            <div id="modal-body" class="modal-body scroll-y px-10 px-lg-10 pt-0 pb-10">
+                <form id="modal_form" class="form" action="#">
                     <div class="mb-13 text-center">
-                        <h1 class="mb-3">Agregar Personal</h1>
+                        <h1 id="modal-title" class="mb-3">Agregar Personal</h1>
                         <div class="text-gray-400 fw-bold fs-5">Escriba correctamente los
                             <a href="#" class="fw-bolder link-primary">Datos</a>.
                         </div>
@@ -154,7 +141,7 @@
                             <label for="genero" class="required fs-6 fw-bold mb-2">Genero</label>
                             <select id="genero" class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Seleccione genero" name="genero">
                                 <option value="" selected></option>
-                                <option value="M">Maculino</option>
+                                <option value="M">Masculino</option>
                                 <option value="F">Femenino</option>
 
                             </select>
@@ -208,8 +195,62 @@
                         </div>
                     </div>
                     <div class="text-center">
-                        <button type="reset" id="kt_modal_new_target_cancel" class="btn btn-white me-3">Cancelar</button>
-                        <button type="submit" id="kt_modal_new_target_submit" class="btn btn-primary">
+                        <button type="reset" id="modal_cancel" class="btn btn-white me-3">Cancelar</button>
+                        <button type="submit" id="modal_submit" class="btn btn-primary">
+                            <span class="indicator-label">Agregar</span>
+                            <span class="indicator-progress">Espere por favor...
+                                <span class="spinner-border spinner-border align-middle ms-2"></span></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="agregar-rol-usuario" tabindex="" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered mw-650px">
+        <div class="modal-content rounded">
+            <div class="modal-header pb-0 border-0 justify-content-end">
+                <div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
+                    <span class="svg-icon svg-icon-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                            <g transform="translate(12.000000, 12.000000) rotate(-45.000000) translate(-12.000000, -12.000000) translate(4.000000, 4.000000)" fill="#000000">
+                                <rect fill="#000000" x="0" y="7" width="16" height="2" rx="1" />
+                                <rect fill="#000000" opacity="0.5" transform="translate(8.000000, 8.000000) rotate(-270.000000) translate(-8.000000, -8.000000)" x="0" y="7" width="16" height="2" rx="1" />
+                            </g>
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <div class="modal-body scroll-y px-10 px-lg-10 pt-0 pb-10">
+                <form id="form-agregar-rol-usuario" class="form" action="#">
+                    <div class="mb-13 text-center">
+                        <h1 class="mb-3">Agregar Usuario</h1>
+                        <div class="text-gray-400 fw-bold fs-5">Escriba correctamente los
+                            <a href="#" class="fw-bolder link-primary">Datos</a>.
+                        </div>
+                    </div>
+                    <div class="row d-flex mb-8 fv-row fv-plugins-icon-container">
+                        <div class="col-md-6">
+                            <label for="ci" class="d-flex align-items-center fs-6 fw-bold mb-2">
+                                <span class="required">Usuario</span>
+                                <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Specify a target name for future usage and reference"></i>
+                            </label>
+                            <input id="ci" type="text" class="form-control form-control-solid" name="ci" placeholder="Cedula de Identidad" />
+                        </div>
+                        <div class="col-md-6">
+                            <label for="ci" class="d-flex align-items-center fs-6 fw-bold mb-2">
+                                <span class="required">Usuario</span>
+                                <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Specify a target name for future usage and reference"></i>
+                            </label>
+                            <input id="ci" type="text" class="form-control form-control-solid" name="ci" placeholder="Cedula de Identidad" />
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="reset" id="modal_cancel" class="btn btn-white me-3">Cancelar</button>
+                        <button type="submit" id="modal_submit" class="btn btn-primary">
                             <span class="indicator-label">Agregar</span>
                             <span class="indicator-progress">Espere por favor...
                                 <span class="spinner-border spinner-border align-middle ms-2"></span></span>

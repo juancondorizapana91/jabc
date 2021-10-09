@@ -40,6 +40,14 @@ if (!function_exists('css_tag')) {
         return $css;
     }
 }
+if (!function_exists('nuloSiVacio')) {
+    function nuloSiVacio($dato)
+    {
+        return is_null($dato) ? null : (empty($dato) ? null : trim($dato));
+    }
+}
+
+
 
 if (!function_exists('script_tag')) {
     function script_tag($src = '', $flashdata = NULL, $type = 'text/javascript')

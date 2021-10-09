@@ -106,7 +106,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row" id="datos_programa_listar_descuento"></div>
+                    <div class="row m-t-15" id="datos_programa_listar_descuento">
+                        <div class="table">
+                            <table id="tbl_descuento" class="display nowrap table table-hover table-striped table-bordered dataTable" width="100%" style="width: 100%;">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Programa</th>
+                                        <th>Nombre</th>
+                                        <th>Paterno</th>
+                                        <th>Materno</th>
+                                        <th>CI</th>
+                                        <th>Expedido</th>
+                                        <th>Descuento</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
                     <div id="datos_vacios_descuento"></div>
                 </div>
             </div>

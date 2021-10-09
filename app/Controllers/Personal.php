@@ -30,13 +30,14 @@ class Personal extends BaseController
 			array('db' => 'nombre', 'dt' => 2),
 			array('db' => 'paterno', 'dt' => 3),
 			array('db' => 'materno', 'dt' => 4),
+			// array('db' => 'nombre_usuario', 'dt' => 5),
 			array('db' => 'fecha_nacimiento', 'dt' => 5),
-			array('db' => 'genero', 'dt' => 6),
-			array('db' => 'estado_civil', 'dt' => 7),
-			array('db' => 'domicilio', 'dt' => 8),
-			array('db' => 'correo', 'dt' => 9),
-			array('db' => 'celular', 'dt' => 10),
-			array('db' => 'lugar_nacimiento', 'dt' => 11),
+			// array('db' => 'genero', 'dt' => 7),
+			// array('db' => 'estado_civil', 'dt' => 7),
+			// array('db' => 'domicilio', 'dt' => 8),
+			array('db' => 'correo', 'dt' => 6),
+			array('db' => 'celular', 'dt' => 7),
+			// array('db' => 'lugar_nacimiento', 'dt' => 11),
 		);
 
 		$sql_details = array('user' => $this->db->username, 'pass' => $this->db->password, 'db'   => $this->db->database, 'host' => $this->db->hostname);
@@ -44,6 +45,7 @@ class Personal extends BaseController
 	}
 	public function guardarPersonal()
 	{
+		// return var_dump($_REQUEST);
 		if ($this->request->isAJAX()) {
 			$validation = \Config\Services::validation();
 			if ($this->validate('validarPersonal')) {
@@ -64,10 +66,20 @@ class Personal extends BaseController
 					'id_usuario_registro' => $this->data['user']['id_persona'],
 					'estado_persona' => 'REGISTRADO'
 				]);
-				return is_numeric($idPersona) ? $this->response->setJSON(['exito' => 'Persona agregada correctamente, ¿Desea agregarle algun permiso o usuario?']) : $this->response->setJSON(['error' => '¡Oh no ha ocurrido no error al agregar personal!']);
+				return is_numeric($idPersona) ? $this->response->setJSON('Persona agregada correctamente, ¿Desea agregarle algun permiso o usuario?') : $this->response->setStatusCode(500)->setJSON(['error' => '¡Oh no ha ocurrido no error al agregar personal!']);
 			} else {
-				return $this->response->setJSON(['error' => $validation->listErrors()]);
+				return $this->response->setStatusCode(500)->setJSON(['error' => $validation->listErrors()]);
 			}
+		}
+	}
+	public function editarPersonal($idPersona)
+	{
+
+		$persona = $this->q->seleccionarTabla('persona', '*', ['id_persona' => $idPersona])->getRowArray();
+		if (is_null($persona)) {
+			return $this->response->setStatusCode(500)->setJSON(['error' => '¡Oh no ha ocurrido un error al editar el personal!']);
+		} else {
+			return $this->response->setStatusCode(200)->setJSON($persona);
 		}
 	}
 	public function nuloSiVacio($dato)
