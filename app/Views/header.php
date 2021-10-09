@@ -989,7 +989,7 @@
                             </div>
                             <div class="d-flex flex-column">
                                 <div class="fw-bolder d-flex align-items-center fs-5">Max Smith
-                                    <span class="badge badge-light-success fw-bolder fs-8 px-2 py-1 ms-2">Pro</span>
+                                    <!-- <span class="badge badge-light-success fw-bolder fs-8 px-2 py-1 ms-2">Pro</span> -->
                                 </div>
                                 <a href="#" class="fw-bold text-muted text-hover-primary fs-7">max@kt.com</a>
                             </div>
@@ -1128,7 +1128,7 @@
 
 
                     <div class="menu-item px-5">
-                        <a href="authentication/flows/basic/sign-in.html" class="menu-link px-5">Sign Out</a>
+                        <a href="authentication/flows/basic/sign-in.html" class="menu-link px-5">Cerrar Sesión</a>
                     </div>
 
                 </div>
