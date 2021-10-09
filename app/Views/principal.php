@@ -294,7 +294,7 @@
                                         </div>
                                     </div>
                                 <?php endforeach ?>
-                                <div class="timeline-item">
+                                <!-- <div class="timeline-item">
                                     <div class="timeline-label fw-bolder text-gray-800 fs-6">08:42</div>
                                     <div class="timeline-badge">
                                         <i class="fa fa-genderless text-warning fs-1"></i>
@@ -325,7 +325,7 @@
                                         <i class="fa fa-genderless text-primary fs-1"></i>
                                     </div>
                                     <div class="timeline-content fw-mormal text-muted ps-3">Indulging in poorly driving and keep structure keep great</div>
-                                </div>
+                                </div> -->
 
                             </div>
                         </div>
