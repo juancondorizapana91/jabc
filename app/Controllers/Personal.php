@@ -66,12 +66,43 @@ class Personal extends BaseController
 					'id_usuario_registro' => $this->data['user']['id_persona'],
 					'estado_persona' => 'REGISTRADO'
 				]);
-				return is_numeric($idPersona) ? $this->response->setJSON('Persona agregada correctamente, ¿Desea agregarle algun permiso o usuario?') : $this->response->setStatusCode(500)->setJSON(['error' => '¡Oh no ha ocurrido no error al agregar personal!']);
+				return is_numeric($idPersona) ? $this->response->setJSON(['exito' => 'Persona agregada correctamente, ¿Desea agregarle algun permiso o usuario?']) : $this->response->setStatusCode(500)->setJSON(['error' => '¡Oh no ha ocurrido no error al agregar personal!']);
 			} else {
 				return $this->response->setStatusCode(500)->setJSON(['error' => $validation->listErrors()]);
 			}
 		}
 	}
+
+	public function actualizarPersonal()
+	{
+		// return var_dump($_REQUEST);
+		if ($this->request->isAJAX()) {
+			$validation = \Config\Services::validation();
+			if ($this->validate('validarPersonal')) {
+				$personal = new PersonalModel();
+				$idPersona = $personal->update(['id_persona' => $this->request->getPost('id_persona')], [
+					'ci' => $this->request->getPost('ci'),
+					'expedido' => $this->request->getPost('expedido'),
+					'paterno' => $this->nuloSiVacio($this->request->getPost('paterno')),
+					'materno' => $this->nuloSiVacio($this->request->getPost('materno')),
+					'nombre' => $this->nuloSiVacio($this->request->getPost('nombre')),
+					'fecha_nacimiento' => $this->request->getPost('fecha_nacimiento'),
+					'genero' => $this->request->getPost('genero'),
+					'estado_civil' => $this->request->getPost('estado_civil'),
+					'domicilio' => $this->nuloSiVacio($this->request->getPost('domicilio')),
+					'lugar_nacimiento' => $this->nuloSiVacio($this->request->getPost('lugar_nacimiento')),
+					'correo' => $this->nuloSiVacio($this->request->getPost('correo')),
+					'celular' => $this->request->getPost('celular'),
+					'id_usuario_registro' => $this->data['user']['id_persona'],
+					'estado_persona' => 'REGISTRADO'
+				]);
+				return $idPersona == true ? $this->response->setJSON(['exito' => 'Persona actualizada correctamente']) : $this->response->setStatusCode(500)->setJSON(['error' => '¡Oh no ha ocurrido no error al actualizar personal!']);
+			} else {
+				return $this->response->setStatusCode(500)->setJSON(['error' => $validation->listErrors()]);
+			}
+		}
+	}
+
 	public function editarPersonal($idPersona)
 	{
 
@@ -79,7 +110,7 @@ class Personal extends BaseController
 		if (is_null($persona)) {
 			return $this->response->setStatusCode(500)->setJSON(['error' => '¡Oh no ha ocurrido un error al editar el personal!']);
 		} else {
-			return $this->response->setStatusCode(200)->setJSON($persona);
+			return $this->response->setJSON($persona);
 		}
 	}
 	public function nuloSiVacio($dato)

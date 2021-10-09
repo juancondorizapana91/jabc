@@ -19,10 +19,13 @@ var KTModalNewTarget = (function () {
 	var modal;
 	var modalEl;
 	var agregarPersonal;
+	var dataTable;
+	var modalTitle;
+	var modalSize;
 
 	var estadoBotones = {
 		agregar: function () {
-			$(form).clearForm();
+			form.reset();
 			$(submitButton).removeAttr('data-id-persona');
 			$(submitButton).text('Agregar');
 		},
@@ -139,7 +142,8 @@ var KTModalNewTarget = (function () {
 
 		agregarPersonal.addEventListener('click', function (e) {
 			estadoBotones.agregar();
-			parametrosModal('modal');
+			// parametrosModal('modal');
+			modal.show();
 		});
 		// Action buttons
 		submitButton.addEventListener('click', function (e) {
@@ -157,33 +161,52 @@ var KTModalNewTarget = (function () {
 						submitButton.disabled = true;
 						setTimeout(function () {
 							// Enable button
-							console.log($(submitButton).attr('data-id-persona'));
-							// $(form).ajaxSubmit({
-							// 	url: '/personal/guardarPersonal',
-							// 	type: 'POST',
-							// 	success: function (r) {
-							// 		submitButton.removeAttribute('data-kt-indicator');
-							// 		submitButton.disabled = false;
-							// 		Swal.fire({
-							// 			title: r.exito,
-							// 			icon: 'success',
-							// 			showCancelButton: true,
-							// 			confirmButtonText: '¡Si deseo agregar roles!',
-							// 			cancelButtonText: `No, mas tarde`,
-							// 		}).then((result) => {
-							// 			if (result.isConfirmed) {
-							// 				Swal.fire('Saved!', '', 'success');
-							// 			} else if (result.isCanceled) {
-							// 				modal.hide();
-							// 			}
-							// 		});
-							// 	},
-							// 	error: function (xhr, textStatus, errorThrown) {
-							// 		submitButton.removeAttribute('data-kt-indicator');
-							// 		submitButton.disabled = false;
-							// 		Swal.fire({ title: '¡Error!', icon: 'error', html: xhr.responseJSON.error, buttonsStyling: false, customClass: { confirmButton: 'btn btn-primary' } });
-							// 	},
-							// });
+							if ($(submitButton).attr('data-id-persona') == undefined) {
+								$(form).ajaxSubmit({
+									url: '/personal/guardarPersonal',
+									type: 'POST',
+									success: function (r) {
+										Swal.fire({
+											title: r.exito,
+											icon: 'success',
+											showCancelButton: true,
+											confirmButtonText: '¡Si deseo agregar roles!',
+											cancelButtonText: `No, mas tarde`,
+										}).then((result) => {
+											if (result.isConfirmed) {
+												Swal.fire('Saved!', '', 'success');
+											} else if (result.isCanceled) {
+												modal.hide();
+											}
+										});
+									},
+									error: function (xhr, textStatus, errorThrown) {
+										Swal.fire({ title: '¡Error!', icon: 'error', html: xhr.responseJSON.error, buttonsStyling: false, customClass: { confirmButton: 'btn btn-primary' } });
+									},
+									complete: function () {
+										submitButton.removeAttribute('data-kt-indicator');
+										submitButton.disabled = false;
+										$('#table').DataTable().ajax.reload();
+									},
+								});
+							} else {
+								$(form).ajaxSubmit({
+									url: '/personal/actualizarPersonal',
+									type: 'POST',
+									data: { id_persona: $(submitButton).attr('data-id-persona') },
+									success: function (r) {
+										modal.hide();
+									},
+									complete: function () {
+										submitButton.removeAttribute('data-kt-indicator');
+										submitButton.disabled = false;
+										$('#table').DataTable().ajax.reload();
+									},
+									error: function (xhr, textStatus, errorThrown) {
+										Swal.fire({ title: '¡Error!', icon: 'error', html: xhr.responseJSON.error, buttonsStyling: false, customClass: { confirmButton: 'btn btn-primary' } });
+									},
+								});
+							}
 
 							//form.submit(); // Submit form
 						}, 1000);
@@ -225,7 +248,7 @@ var KTModalNewTarget = (function () {
 		});
 	};
 	var initTable = function () {
-		$('#table')
+		dataTable = $('#table')
 			.DataTable({
 				language: { url: '/metronic/assets/plugins/custom/datatables/es_es.json' },
 				columnDefs: [
@@ -292,11 +315,14 @@ var KTModalNewTarget = (function () {
 								}
 							}
 						});
-						parametrosModal('modal', 'Editar Personal', 'modal-md');
+						// parametrosModal('modal', 'Editar Personal', 'modal-md');
+						//show modal with javascript
+						modal.show();
+						modalTitle.innerHTML = 'Editar Personal';
 						estadoBotones.editar(r.id_persona);
 					},
 					'json'
-				).fail(function () { });
+				).fail(function () {});
 			});
 	};
 	return {
@@ -309,7 +335,9 @@ var KTModalNewTarget = (function () {
 				return;
 			}
 
-			modal = new bootstrap.Modal(modalEl);
+			modal = new bootstrap.Modal(modalEl, { keyboard: true, backdrop: 'static', focus: true });
+			modalTitle = document.getElementById('modal-title');
+			modalSize = document.getElementById('modal-dialog');
 
 			form = document.querySelector('#modal_form');
 			submitButton = document.getElementById('modal_submit');
