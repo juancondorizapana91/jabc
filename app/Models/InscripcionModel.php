@@ -27,7 +27,7 @@ class InscripcionModel extends Model
         $builder = $this->db->table("pb_persona as pe");
         $builder->select('*');
         $builder->join('pb_persona_grado_academico pga', 'pe.id_persona=pga.id_persona', 'left');
-        $builder->where('pe.ci', $ci );
+        $builder->where('pe.ci', $ci);
         return $builder->get()->getResultArray();
     }
 
@@ -35,7 +35,7 @@ class InscripcionModel extends Model
     {
         $builder = $this->db->table("pb_view_programas");
         $builder->select('*');
-        if($id != null){
+        if ($id != null) {
             $builder->where('id_planificacion_programa', $id);
         }
         return $builder->get()->getResultArray();
@@ -56,7 +56,7 @@ class InscripcionModel extends Model
         $builder->where('estado_pago_programa', 'REGISTRADO');
         return $builder->get()->getResultArray();
     }
-    
+
     public function get_id_last_codigo_pago()
     {
         $builder = $this->db->table("pago_programa");
@@ -67,7 +67,7 @@ class InscripcionModel extends Model
     }
 
     public function verificarTabla($fila, $valor, $tabla, $descripcion)
-    {   
+    {
         $builder = $this->db->table($tabla);
         $builder->select($descripcion);
         $builder->where($fila, $valor);
@@ -79,9 +79,9 @@ class InscripcionModel extends Model
         $builder = $this->db->table("persona p");
         $builder->select("CONCAT_WS(' ',s.denominacion_sede,o.direccion_oficina) oficina, s.denominacion_sede, o.celular_oficina, o.telefono_oficina,
         CONCAT_WS(' ' ,p.nombre,p.paterno,p.materno) usuario");
-        $builder->join("personal psnl", "p.id_persona = psnl.id_usuario");
-        $builder->join("oficina o", "psnl.id_oficina = o.id_oficina");
-        $builder->join("sede s", "o.id_sede = s.id_sede");
+        $builder->join("personal psnl", "p.id_persona = psnl.id_usuario", 'left');
+        $builder->join("oficina o", "psnl.id_oficina = o.id_oficina", 'left');
+        $builder->join("sede s", "o.id_sede = s.id_sede", 'left');
         $builder->where($condicion);
         $query = $builder->get();
         // return var_dump($this->db->getLastQuery());
@@ -103,5 +103,4 @@ class InscripcionModel extends Model
         $query = $builder->get();
         return $query->getRowArray();
     }
-
 }
