@@ -20,6 +20,8 @@ class Pago extends BaseController
 
 	public function index()
 	{
+		$this->data['profesiones_ocupaciones'] = $this->model->getProfesiones_ocupaciones();
+		$this->data['universidades_normales'] = $this->model->getUniversity();
 		return $this->templater->view('pago/index', $this->data);
 	}
 

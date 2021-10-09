@@ -546,6 +546,10 @@ KTUtil.onDOMContentLoaded(function () {
 					if (typeof response.exito != "undefined") {
 						Swal.fire("Exito!", response.exito, "success");
 						limpiar();
+						window.open(
+							"/inscripcion/generarFactura/" + response.id_pago_programa,
+							"_blank"
+						);
 						location.reload();
 					}
 					if (typeof response.error != "undefined") {
