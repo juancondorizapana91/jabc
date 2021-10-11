@@ -82,7 +82,7 @@
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
-                                <span class="menu-title">Ver pagos</span>
+                                <span class="menu-title">Buscar Personas</span>
                             </a>
                         </div>
                         <div class="menu-item">
