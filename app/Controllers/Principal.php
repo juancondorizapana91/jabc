@@ -13,11 +13,7 @@ class Principal extends BaseController
 		echo 'Time zone is: ' . date('e');
 		echo 'Time zone is: ' . date_default_timezone_get();
 
-		$tz = Time::now()->getTimezone();
-		$tz = Time::now()->timezone;
 
-		echo $tz->getName();
-		echo $tz->getOffset();
 		return;
 
 		if (isset($this->data['user'])) {
