@@ -9,13 +9,6 @@ class Principal extends BaseController
 
 	public function index()
 	{
-
-		echo 'Time zone is: ' . date('e');
-		echo 'Time zone is: ' . date_default_timezone_get();
-
-
-		return;
-
 		if (isset($this->data['user'])) {
 			if (($this->q->seleccionarTabla(
 				'sesion',
