@@ -184,7 +184,7 @@
                                                 </span>
                                                 <a href="#" class="text-danger fw-bold fs-6 mt-2">Cantidad de Programas</a>
                                             </div>
-                                            <div class="col text-danger fw-bold text-end px-10 fs-2hx">1</div>
+                                            <div class="col text-danger fw-bold text-end px-10 fs-2hx"><?= $cantidadProgramas ?></div>
                                         </div>
                                     </div>
                                     <div class="col bg-light-success px-6 py-8 rounded-2">

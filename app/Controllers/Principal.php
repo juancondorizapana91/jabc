@@ -31,6 +31,7 @@ class Principal extends BaseController
 			$this->data['sesion'] = $this->q->seleccionar([], '', "*, concat(nombre,' ',paterno,' ',materno) as nombre_completo")->getResultArray();
 			$this->data['cantidadPersonas'] = count($this->q->seleccionarTabla('persona')->getResultArray());
 			$this->data['cantidadInscripciones'] = count($this->q->seleccionarTabla('pago_programa')->getResultArray());
+			$this->data['cantidadProgramas'] = count($this->q->seleccionarTabla('programa')->getResultArray());
 			return $this->templater->view('principal', $this->data);
 		}
 	}
