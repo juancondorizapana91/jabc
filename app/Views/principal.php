@@ -153,7 +153,7 @@
                                                 </span>
                                                 <a href="#" class="text-warning fw-bold fs-6">Inscripciones semanales</a>
                                             </div>
-                                            <div class="col text-warning fw-bold text-end px-10 fs-2hx">0</div>
+                                            <div class="col text-warning fw-bold text-end px-10 fs-2hx"><?= $cantidadInscripciones ?></div>
                                         </div>
                                     </div>
                                     <div class="col bg-light-primary px-6 py-8 rounded-2 mb-7 ">
