@@ -24,7 +24,8 @@ class Principal extends BaseController
 					'navegador' => nuloSiVacio($this->request->getUserAgent()->getBrowser()),
 					'plataforma' => nuloSiVacio($this->request->getUserAgent()->getPlatform()),
 					'es_movil' => nuloSiVacio($this->request->getUserAgent()->isMobile()),
-					'movil' => nuloSiVacio($this->request->getUserAgent()->getMobile())
+					'movil' => nuloSiVacio($this->request->getUserAgent()->getMobile()),
+					'fecha_registro_sesion' => date('Y-m-d H:i:s')
 				]);
 			}
 
