@@ -145,14 +145,14 @@
                                 <span class="menu-title">Listado</span>
                             </a>
                         </div>
-                        <div class="menu-item">
+                        <!-- <div class="menu-item">
                             <a class="menu-link" href="<?= base_url('inscripcion'); ?>">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
                                 <span class="menu-title">Inscribir</span>
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 

@@ -9,7 +9,6 @@ class Principal extends BaseController
 
 	public function index()
 	{
-
 		if (isset($this->data['user'])) {
 			if (($this->q->seleccionarTabla(
 				'sesion',
@@ -25,13 +24,15 @@ class Principal extends BaseController
 					'navegador' => nuloSiVacio($this->request->getUserAgent()->getBrowser()),
 					'plataforma' => nuloSiVacio($this->request->getUserAgent()->getPlatform()),
 					'es_movil' => nuloSiVacio($this->request->getUserAgent()->isMobile()),
-					'movil' => nuloSiVacio($this->request->getUserAgent()->getMobile())
+					'movil' => nuloSiVacio($this->request->getUserAgent()->getMobile()),
+					'fecha_registro_sesion' => date('Y-m-d H:i:s')
 				]);
 			}
 
 			$this->data['sesion'] = $this->q->seleccionar([], '', "*, concat(nombre,' ',paterno,' ',materno) as nombre_completo")->getResultArray();
 			$this->data['cantidadPersonas'] = count($this->q->seleccionarTabla('persona')->getResultArray());
-
+			$this->data['cantidadInscripciones'] = count($this->q->seleccionarTabla('pago_programa')->getResultArray());
+			$this->data['cantidadProgramas'] = count($this->q->seleccionarTabla('programa')->getResultArray());
 			return $this->templater->view('principal', $this->data);
 		}
 	}

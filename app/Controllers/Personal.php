@@ -43,6 +43,16 @@ class Personal extends BaseController
 		$sql_details = array('user' => $this->db->username, 'pass' => $this->db->password, 'db'   => $this->db->database, 'host' => $this->db->hostname);
 		return $this->response->setJSON(json_encode(SSP::complex($_GET, $sql_details, $table, $primaryKey, $columns)));
 	}
+
+	public function eliminarPersonal()
+	{
+		$personal = new PersonalModel();
+		if ($personal->delete($this->request->getVar('id_persona'))) {
+			return $this->response->setJSON(['exito' => 'Se elimino correctamente el personal']);
+		} else {
+			return $this->response->setStatusCode(500)->setJSON(['error' => 'No se elimino el personal']);
+		}
+	}
 	public function guardarPersonal()
 	{
 		// return var_dump($_REQUEST);

@@ -6,7 +6,7 @@
                     <span class="h-20px border-gray-200 border-start ms-3 mx-2"></span>
                 </h1>
             </div>
-            <div class="d-flex align-items-center py-1">
+            <!-- <div class="d-flex align-items-center py-1">
                 <div class="me-4">
                     <a href="#" class="btn btn-sm btn-flex btn-light btn-active-primary fw-bolder" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-flip="top-end">
                         <span class="svg-icon svg-icon-5 svg-icon-gray-500 me-1">
@@ -64,7 +64,7 @@
                     </div>
                 </div>
                 <a href="#" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_create_app" id="kt_toolbar_primary_button">Create</a>
-            </div>
+            </div> -->
         </div>
     </div>
     <div class="post d-flex flex-column-fluid" id="kt_post">
@@ -153,8 +153,7 @@
                                                 </span>
                                                 <a href="#" class="text-warning fw-bold fs-6">Inscripciones semanales</a>
                                             </div>
-                                            <div class="col text-warning fw-bold text-end px-10 fs-2hx"><?= $cantidadPersonas ?>
-                                            </div>
+                                            <div class="col text-warning fw-bold text-end px-10 fs-2hx"><?= $cantidadInscripciones ?></div>
                                         </div>
                                     </div>
                                     <div class="col bg-light-primary px-6 py-8 rounded-2 mb-7 ">
@@ -183,10 +182,9 @@
                                                         <path d="M11.0563554,18.6706981 L5.33593024,14.122919 C4.94553994,13.8125559 4.37746707,13.8774308 4.06710397,14.2678211 C4.06471678,14.2708238 4.06234874,14.2738418 4.06,14.2768747 L4.06,14.2768747 C3.75257288,14.6738539 3.82516916,15.244888 4.22214834,15.5523151 C4.22358765,15.5534297 4.2250303,15.55454 4.22647627,15.555646 L11.0872776,20.8031356 C11.6250734,21.2144692 12.371757,21.2145375 12.909628,20.8033023 L19.7677785,15.559828 C20.1693192,15.2528257 20.2459576,14.6784381 19.9389553,14.2768974 C19.9376429,14.2751809 19.9363245,14.2734691 19.935,14.2717619 L19.935,14.2717619 C19.6266937,13.8743807 19.0546209,13.8021712 18.6572397,14.1104775 C18.654352,14.112718 18.6514778,14.1149757 18.6486172,14.1172508 L12.9235044,18.6705218 C12.377022,19.1051477 11.6029199,19.1052208 11.0563554,18.6706981 Z" fill="#000000" opacity="0.3" />
                                                     </svg>
                                                 </span>
-                                                <a href="#" class="text-danger fw-bold fs-6 mt-2">Item Orders</a>
+                                                <a href="#" class="text-danger fw-bold fs-6 mt-2">Cantidad de Programas</a>
                                             </div>
-                                            <div class="col text-danger fw-bold text-end px-10 fs-2hx"><?= $cantidadPersonas ?>
-                                            </div>
+                                            <div class="col text-danger fw-bold text-end px-10 fs-2hx"><?= $cantidadProgramas ?></div>
                                         </div>
                                     </div>
                                     <div class="col bg-light-success px-6 py-8 rounded-2">
@@ -198,10 +196,9 @@
                                                         <path d="M9.80428954,10.9142091 L9,12 L11.2222222,12 L11.2222222,16 L15.6666667,10 L15.4615385,10 L20.2072547,6.57253826 C20.4311176,6.4108595 20.7436609,6.46126971 20.9053396,6.68513259 C20.9668779,6.77033951 21,6.87277228 21,6.97787787 L21,17 C21,18.1045695 20.1045695,19 19,19 L5,19 C3.8954305,19 3,18.1045695 3,17 L3,6.97787787 C3,6.70173549 3.22385763,6.47787787 3.5,6.47787787 C3.60510559,6.47787787 3.70753836,6.51099993 3.79274528,6.57253826 L9.80428954,10.9142091 Z" fill="#000000" />
                                                     </svg>
                                                 </span>
-                                                <a href="#" class="text-success fw-bold fs-6 mt-2">Bug Reports</a>
+                                                <a href="#" class="text-success fw-bold fs-6 mt-2">Reporte de Errores</a>
                                             </div>
-                                            <div class="col text-success fw-bold text-end px-10 fs-2hx"><?= $cantidadPersonas ?>
-                                            </div>
+                                            <div class="col text-success fw-bold text-end px-10 fs-2hx">0</div>
                                         </div>
                                     </div>
                                 </div>
@@ -281,20 +278,16 @@
                                 foreach ($sesion as $s) : ?>
                                     <div class="timeline-item">
                                         <div class="timeline-label fw-bolder text-gray-800 fs-6"><?= $dt = DateTime::createFromFormat("Y-m-d H:i:s", $s['fecha_registro_sesion'])->format('H:i'); ?></div>
-                                        <script>
-
-                                        </script>
                                         <div class="timeline-badge">
                                             <i class="fa fa-genderless <?= $colores[rand(0, count($colores) - 1)]; ?> fs-1"></i>
                                         </div>
 
-                                        <div class="timeline-content fw-bolder text-gray-800 ps-3">Inicio sesión en el sistema
-                                            <a href="#" class="text-primary"><?= ucwords(mb_convert_case($s['nombre_completo'], MB_CASE_LOWER))  ?>
-                                            </a>
+                                        <div class="timeline-content fw-bolder text-gray-800 ps-3">Inicio sesión en el sistema <?= $dt = DateTime::createFromFormat("Y-m-d H:i:s", $s['fecha_registro_sesion'])->format('d/M/Y'); ?>
+                                            <a href="#" class="text-primary"><?= ucwords(mb_convert_case($s['nombre_completo'], MB_CASE_LOWER))  ?></a>, ingreso desde <?= is_null($s['es_movil']) ? "una computadora, navegador {$s['navegador']}." : "un celular, navegador {$s['navegador']}." ?>
                                         </div>
                                     </div>
                                 <?php endforeach ?>
-                                <div class="timeline-item">
+                                <!-- <div class="timeline-item">
                                     <div class="timeline-label fw-bolder text-gray-800 fs-6">08:42</div>
                                     <div class="timeline-badge">
                                         <i class="fa fa-genderless text-warning fs-1"></i>
@@ -325,13 +318,13 @@
                                         <i class="fa fa-genderless text-primary fs-1"></i>
                                     </div>
                                     <div class="timeline-content fw-mormal text-muted ps-3">Indulging in poorly driving and keep structure keep great</div>
-                                </div>
+                                </div> -->
 
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row g-5 gx-xxl-8">
+                <!-- <div class="row g-5 gx-xxl-8">
                     <div class="col-xxl-4">
                         <div class="card card-xxl-stretch mb-xl-3">
                             <div class="card-header border-0 py-5">
@@ -885,7 +878,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
