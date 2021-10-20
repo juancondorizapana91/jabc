@@ -394,20 +394,22 @@
                             <div class="card-body d-flex flex-column">
                                 <div class="mixed-widget-5-chart card-rounded-top" data-kt-chart-color="success" style="height: 150px"></div>
                                 <div class="mt-5">
-                                    <div class="d-flex flex-stack mb-5">
-                                        <div class="d-flex align-items-center me-2">
-                                            <div class="symbol symbol-50px me-3">
-                                                <div class="symbol-label bg-light">
-                                                    <img src="metronic/assets/media/svg/brand-logos/plurk.svg" class="h-50" alt="" />
+                                    <?php foreach ($pagosPrograma as $key => $value) : ?>
+                                        <div class="d-flex flex-stack mb-5">
+                                            <div class="d-flex align-items-center me-2">
+                                                <div class="symbol symbol-50px me-3">
+                                                    <div class="symbol-label bg-light">
+                                                        <img src="metronic/assets/media/svg/brand-logos/plurk.svg" class="h-50" alt="" />
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bolder"><?= $value['descripcion_grado_academico'] ?> EN <?= $value['nombre_programa'] ?></a>
+                                                    <div class="fs-7 text-muted fw-bold mt-1"><?= "Gestión {$value['gestion']}, Sede {$value['denominacion_sede']}" ?></div>
                                                 </div>
                                             </div>
-                                            <div>
-                                                <a href="#" class="fs-6 text-gray-800 text-hover-primary fw-bolder">Top Authors</a>
-                                                <div class="fs-7 text-muted fw-bold mt-1">Ricky Hunt, Sandra Trepp</div>
-                                            </div>
+                                            <div class="badge badge-light fw-bold py-4 px-3">+<?= $value['monto'] ?> Bs</div>
                                         </div>
-                                        <div class="badge badge-light fw-bold py-4 px-3">+82$</div>
-                                    </div>
+                                    <?php endforeach ?>
                                     <div class="d-flex flex-stack mb-5">
                                         <div class="d-flex align-items-center me-2">
                                             <div class="symbol symbol-50px me-3">
