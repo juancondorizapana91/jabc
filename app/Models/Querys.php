@@ -69,9 +69,16 @@ class Querys extends Database
 
         return empty($condicion) ? $builder->get() : $builder->getWhere($condicion);
     }
-    public function tablapersona()
+
+    public function recaudacionPorPrograma($condicion = [], $orden = '', $columna = '*', $agrupar = '')
     {
-        $builder = $this->db->table('persona');
-        return $builder->get();
+        $builder = $this->db->table('programa p');
+        empty($orden) ?: $builder->orderBy($orden);
+        $builder->select($columna);
+        $builder->join('view_programas pp', 'pp.id_programa = p.id_programa');
+        $builder->join('pago_programa pp2', 'pp2.id_planificacion_programa = pp.id_planificacion_programa', 'left');
+        empty($agrupar) ?: $builder->groupBy($agrupar);
+
+        return empty($condicion) ? $builder->get() : $builder->getWhere($condicion);
     }
 }
