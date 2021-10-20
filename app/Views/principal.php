@@ -324,7 +324,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="row g-5 gx-xxl-8">
+                <div class="row g-5 gx-xxl-8">
                     <div class="col-xxl-4">
                         <div class="card card-xxl-stretch mb-xl-3">
                             <div class="card-header border-0 py-5">
@@ -440,7 +440,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-8">
+                    <!-- <div class="col-xxl-8">
                         <div class="card card-xxl-stretch mb-5 mb-xxl-8">
                             <div class="card-header border-0 pt-5">
                                 <h3 class="card-title align-items-start flex-column">
@@ -877,8 +877,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div> -->
+                    </div> -->
+                </div>
             </div>
         </div>
     </div>
