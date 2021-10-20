@@ -28,11 +28,27 @@ class Pago extends BaseController
 
 	public function buscar_persona()
 	{
-		$id_grado_academico = $this->request->getPost("id_grado_academico");
-		$anio_titulacion = ($this->request->getPost("anio_titulacion") == '[TODOS]')? '':$this->request->getPost("anio_titulacion");
-		$id_profesiones_ocupaciones = ($this->request->getPost("id_profesiones_ocupaciones") == '[TODOS]')? '':$this->request->getPost("id_profesiones_ocupaciones");
-		$id_universidades_normales = ($this->request->getPost("id_universidades_normales") == '[TODOS]')?'':$this->request->getPost("id_universidades_normales");
-		// var_dump($anio_titulacion, $id_profesiones_ocupaciones, $id_universidades_normales);
+		$donde = " WHERE ";
+
+		foreach ($this->request->getPost() as $value) {
+			if (!empty($value['value']) && $value['value'] != -1 && $value['value'] != '[TODOS]') {
+				$donde .=  $value["name"] . "='" . $value["value"] . "' AND ";
+			}
+		}
+
+		$tam = strlen($donde);
+
+		$donde = trim(substr($donde, 0, ($tam - 4)));
+
+		$where = '';
+		$donde = str_replace('id_profesiones_ocupaciones', 'ppo.id_profesiones_ocupaciones', $donde);
+		$donde = str_replace('id_universidades_normales', 'pun.id_universidades_normales', $donde);
+
+		if (strlen($donde) == 3) {
+			$where = '';
+		} else {
+			$where = $donde;
+		}
 
 		$table = <<<EOT
 		(SELECT 
@@ -54,37 +70,34 @@ class Pago extends BaseController
 		LEFT JOIN pb_persona_grado_academico pbc ON pp.id_persona = pbc.id_persona
 		LEFT JOIN pb_profesiones_ocupaciones ppo ON ppo.id_profesiones_ocupaciones = pbc.id_profesiones_ocupaciones
 		LEFT JOIN pb_universidades_normales pun ON pbc.id_universidades_normales = pun.id_universidades_normales
-		WHERE pbc.gestion_titulacion like '%$anio_titulacion%'
-		OR ppo.id_profesiones_ocupaciones like '%$id_profesiones_ocupaciones%'
-		OR pun.id_universidades_normales like '%$id_universidades_normales%') temp
+		$where) temp
 		EOT;
 
 		$primaryKey = 'id_persona';
 		$where = null;
 
-        $columns = array(
-            array('dt' => 0, 'db' => 'id_persona'),
-            array('dt' => 1, 'db' => 'ci'),
-            array('dt' => 2, 'db' => 'nombre'),
-            array('dt' => 3, 'db' => 'fecha_nacimiento'),
-            array('dt' => 4, 'db' => 'celular'),
-            array('dt' => 5, 'db' => 'correo'),
-				array('dt' => 6, 'db' => 'gestion_titulacion'),
-				array('dt' => 7, 'db' => 'tipo'),
-				array('dt' => 8, 'db' => 'universidad'),
-				array('dt' => 9, 'db' => 'profesion'),
-        );
-        $sql_details = array(
-            'driver' => $this->db->dbdriver,
-            'user' => $this->db->username,
-            'pass' => $this->db->password,
-            'db' => $this->db->database,
-            'host' => $this->db->hostname
-        );
+		$columns = array(
+			array('dt' => 0, 'db' => 'id_persona'),
+			array('dt' => 1, 'db' => 'ci'),
+			array('dt' => 2, 'db' => 'nombre'),
+			array('dt' => 3, 'db' => 'fecha_nacimiento'),
+			array('dt' => 4, 'db' => 'celular'),
+			array('dt' => 5, 'db' => 'correo'),
+			array('dt' => 6, 'db' => 'gestion_titulacion'),
+			array('dt' => 7, 'db' => 'tipo'),
+			array('dt' => 8, 'db' => 'universidad'),
+			array('dt' => 9, 'db' => 'profesion'),
+		);
+		$sql_details = array(
+			'driver' => $this->db->dbdriver,
+			'user' 	=> $this->db->username,
+			'pass' 	=> $this->db->password,
+			'db' 		=> $this->db->database,
+			'host' 	=> $this->db->hostname
+		);
 
-		$sql_details = array('user' => $this->db->username, 'pass' => $this->db->password, 'db'   => $this->db->database, 'host' => $this->db->hostname);
-		return $this->response->setJSON(json_encode(SSP::complex($_GET, $sql_details, $table, $primaryKey, $columns, $where)));
-
+		return $this->response->setJSON(json_encode(
+			SSP::complex($_GET, $sql_details, $table, $primaryKey, $columns, $where)
+		));
 	}
-
 }

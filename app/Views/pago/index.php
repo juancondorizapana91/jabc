@@ -68,7 +68,7 @@
                             <div class="row m-t-10 m-b-10">
                                 <div class="col-lg-3">
                                     <label class="font-weight-bold" for="anio_titulacion">Año Titulación</label>
-                                    <select class="form-select form-select-sm form-select-solid" name="anio_titulacion" id="anio_titulacion" data-control="select2" data-placeholder="Seleccione">
+                                    <select class="form-select form-select-sm form-select-solid" name="gestion_titulacion" id="gestion_titulacion" data-control="select2" data-placeholder="Seleccione">
                                         <option>[TODOS]</option>
                                         <option value="En trámite">En trámite</option>
                                         <?php
@@ -120,7 +120,7 @@
                                     <th>Nombre</th>
                                     <th>Nacimiento</th>
                                     <th>Celular.</th>
-                                    <th>E-mail</th>
+                                    <th>Correo</th>
                                     <th>Titulación</th>
                                     <th>Tipo</th>
                                     <th>Universidad</th>
