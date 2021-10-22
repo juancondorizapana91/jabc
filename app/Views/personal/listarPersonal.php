@@ -7,9 +7,9 @@
                     <span class="text-muted mt-1 fw-bold fs-7">Personal agregado</span>
                 </h3>
                 <div class="card-toolbar">
-                    <button type="button" class="btn btn-sm btn-icon btn-color-primary btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-flip="top-end">
-                        <span class="svg-icon svg-icon-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                    <button type="button" class="btn btn-md btn-icon btn-color-primary btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-flip="top-end">
+                        <span class="svg-icon">
+                            <svg class=" h-30px w-30px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
                                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                     <rect x="5" y="5" width="5" height="5" rx="1" fill="#000000"></rect>
                                     <rect x="14" y="5" width="5" height="5" rx="1" fill="#000000" opacity="0.3"></rect>
@@ -73,10 +73,22 @@
             </div>
             <div id="modal-body" class="modal-body scroll-y px-10 px-lg-10 pt-0 pb-10">
                 <form id="modal_form" class="form" action="#">
-                    <div class="mb-13 text-center">
-                        <h1 id="modal-title" class="mb-3">Agregar Personal</h1>
-                        <div class="text-gray-400 fw-bold fs-5">Escriba correctamente los
-                            <a href="#" class="fw-bolder link-primary">Datos</a>.
+                    <div class="row">
+                        <div class="col-8 mb-5 text-center">
+                            <h1 id="modal-title" class="mb-3">Agregar Personal</h1>
+                            <div class="text-gray-400 fw-bold fs-5">Escriba correctamente los
+                                <a href="#" class="fw-bolder link-primary">Datos</a>.
+                            </div>
+                        </div>
+                        <div class="col-4 d-flex justify-content-center">
+                            <!-- <input type="radio" class="btn-check" name="account_type" value="" checked="checked" id="sede" /> -->
+                            <label class="btn btn-outline btn-outline-dashed btn-outline-default p-7 d-flex align-items-center mb-10" for="sede">
+                                <span class="svg-icon svg-icon-3x">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                    </svg>
+                                </span>
+                            </label>
                         </div>
                     </div>
                     <div class="row d-flex mb-8 fv-row fv-plugins-icon-container">
@@ -133,11 +145,10 @@
                             <label for="fecha_nacimiento" class="required fs-6 fw-bold mb-2">Fecha Nacimiento</label>
                             <div class="position-relative d-flex align-items-center">
                                 <div class="position-absolute ms-4"><i class="las la-calendar-alt fs-1"></i></div>
-                                <input id="fecha_nacimiento" class="form-control form-control-solid ps-12 flatpickr-input" placeholder="dia / mes / año" name="fecha_nacimiento" />
+                                <input id="fecha_nacimiento" class="form-control form-control-solid ps-12 flatpickr-input" placeholder="año / mes / dia " name="fecha_nacimiento" />
                             </div>
                         </div>
-
-                        <div class="col-md-5 fv-row">
+                        <div class="col-md-6 fv-row">
                             <label for="genero" class="required fs-6 fw-bold mb-2">Genero</label>
                             <select id="genero" class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Seleccione genero" name="genero">
                                 <option value="" selected></option>
