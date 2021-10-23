@@ -206,88 +206,89 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xxl-4">
-                    <div class="card card-xxl-stretch">
-                        <div class="card-header align-items-center border-0 mt-4">
-                            <h3 class="card-title align-items-start flex-column">
-                                <span class="fw-bolder mb-2 text-dark">Actividades</span>
-                                <span class="text-muted fw-bold fs-7">Este dia</span>
-                            </h3>
-                            <div class="card-toolbar">
-                                <button type="button" class="btn btn-sm btn-icon btn-color-primary btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-flip="top-end">
-                                    <span class="svg-icon svg-icon-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
-                                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                <rect x="5" y="5" width="5" height="5" rx="1" fill="#000000" />
-                                                <rect x="14" y="5" width="5" height="5" rx="1" fill="#000000" opacity="0.3" />
-                                                <rect x="5" y="14" width="5" height="5" rx="1" fill="#000000" opacity="0.3" />
-                                                <rect x="14" y="14" width="5" height="5" rx="1" fill="#000000" opacity="0.3" />
-                                            </g>
-                                        </svg>
-                                    </span>
-                                </button>
-                                <div class="menu menu-sub menu-sub-dropdown w-250px w-md-300px" data-kt-menu="true">
-                                    <div class="px-7 py-5">
-                                        <div class="fs-5 text-dark fw-bolder">Filter Options</div>
-                                    </div>
-                                    <div class="separator border-gray-200"></div>
-                                    <div class="px-7 py-5">
-                                        <div class="mb-10">
-                                            <label class="form-label fw-bold">Status:</label>
-                                            <div>
-                                                <select class="form-select form-select-solid" data-kt-select2="true" data-placeholder="Select option" data-allow-clear="true">
-                                                    <option></option>
-                                                    <option value="1">Approved</option>
-                                                    <option value="2">Pending</option>
-                                                    <option value="2">In Process</option>
-                                                    <option value="2">Rejected</option>
-                                                </select>
-                                            </div>
+                <?php if (es('ADMINISTRADOR')) : ?>
+                    <div class="col-xxl-4">
+                        <div class="card card-xxl-stretch">
+                            <div class="card-header align-items-center border-0 mt-4">
+                                <h3 class="card-title align-items-start flex-column">
+                                    <span class="fw-bolder mb-2 text-dark">Actividades</span>
+                                    <span class="text-muted fw-bold fs-7">Este dia</span>
+                                </h3>
+                                <div class="card-toolbar">
+                                    <button type="button" class="btn btn-sm btn-icon btn-color-primary btn-active-light-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-flip="top-end">
+                                        <span class="svg-icon svg-icon-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 24 24" version="1.1">
+                                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                    <rect x="5" y="5" width="5" height="5" rx="1" fill="#000000" />
+                                                    <rect x="14" y="5" width="5" height="5" rx="1" fill="#000000" opacity="0.3" />
+                                                    <rect x="5" y="14" width="5" height="5" rx="1" fill="#000000" opacity="0.3" />
+                                                    <rect x="14" y="14" width="5" height="5" rx="1" fill="#000000" opacity="0.3" />
+                                                </g>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <div class="menu menu-sub menu-sub-dropdown w-250px w-md-300px" data-kt-menu="true">
+                                        <div class="px-7 py-5">
+                                            <div class="fs-5 text-dark fw-bolder">Filter Options</div>
                                         </div>
-                                        <div class="mb-10">
-                                            <label class="form-label fw-bold">Member Type:</label>
-                                            <div class="d-flex">
-                                                <label class="form-check form-check-sm form-check-custom form-check-solid me-5">
-                                                    <input class="form-check-input" type="checkbox" value="1" />
-                                                    <span class="form-check-label">Author</span>
-                                                </label>
-                                                <label class="form-check form-check-sm form-check-custom form-check-solid">
-                                                    <input class="form-check-input" type="checkbox" value="2" checked="checked" />
-                                                    <span class="form-check-label">Customer</span>
-                                                </label>
+                                        <div class="separator border-gray-200"></div>
+                                        <div class="px-7 py-5">
+                                            <div class="mb-10">
+                                                <label class="form-label fw-bold">Status:</label>
+                                                <div>
+                                                    <select class="form-select form-select-solid" data-kt-select2="true" data-placeholder="Select option" data-allow-clear="true">
+                                                        <option></option>
+                                                        <option value="1">Approved</option>
+                                                        <option value="2">Pending</option>
+                                                        <option value="2">In Process</option>
+                                                        <option value="2">Rejected</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="mb-10">
-                                            <label class="form-label fw-bold">Notifications:</label>
-                                            <div class="form-check form-switch form-switch-sm form-check-custom form-check-solid">
-                                                <input class="form-check-input" type="checkbox" value="" name="notifications" checked="checked" />
-                                                <label class="form-check-label">Enabled</label>
+                                            <div class="mb-10">
+                                                <label class="form-label fw-bold">Member Type:</label>
+                                                <div class="d-flex">
+                                                    <label class="form-check form-check-sm form-check-custom form-check-solid me-5">
+                                                        <input class="form-check-input" type="checkbox" value="1" />
+                                                        <span class="form-check-label">Author</span>
+                                                    </label>
+                                                    <label class="form-check form-check-sm form-check-custom form-check-solid">
+                                                        <input class="form-check-input" type="checkbox" value="2" checked="checked" />
+                                                        <span class="form-check-label">Customer</span>
+                                                    </label>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="d-flex justify-content-end">
-                                            <button type="reset" class="btn btn-sm btn-white btn-active-light-primary me-2" data-kt-menu-dismiss="true">Reset</button>
-                                            <button type="submit" class="btn btn-sm btn-primary" data-kt-menu-dismiss="true">Apply</button>
+                                            <div class="mb-10">
+                                                <label class="form-label fw-bold">Notifications:</label>
+                                                <div class="form-check form-switch form-switch-sm form-check-custom form-check-solid">
+                                                    <input class="form-check-input" type="checkbox" value="" name="notifications" checked="checked" />
+                                                    <label class="form-check-label">Enabled</label>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-end">
+                                                <button type="reset" class="btn btn-sm btn-white btn-active-light-primary me-2" data-kt-menu-dismiss="true">Reset</button>
+                                                <button type="submit" class="btn btn-sm btn-primary" data-kt-menu-dismiss="true">Apply</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="card-body pt-5">
-                            <div class="timeline-label">
-                                <?php $colores = ['text-success', 'text-danger', 'text-warning', 'text-primary'];
-                                foreach ($sesion as $s) : ?>
-                                    <div class="timeline-item">
-                                        <div class="timeline-label fw-bolder text-gray-800 fs-6"><?= $dt = DateTime::createFromFormat("Y-m-d H:i:s", $s['fecha_registro_sesion'])->format('H:i'); ?></div>
-                                        <div class="timeline-badge">
-                                            <i class="fa fa-genderless <?= $colores[rand(0, count($colores) - 1)]; ?> fs-1"></i>
-                                        </div>
+                            <div class="card-body pt-5">
+                                <div class="timeline-label">
+                                    <?php $colores = ['text-success', 'text-danger', 'text-warning', 'text-primary'];
+                                    foreach ($sesion as $s) : ?>
+                                        <div class="timeline-item">
+                                            <div class="timeline-label fw-bolder text-gray-800 fs-6"><?= $dt = DateTime::createFromFormat("Y-m-d H:i:s", $s['fecha_registro_sesion'])->format('H:i'); ?></div>
+                                            <div class="timeline-badge">
+                                                <i class="fa fa-genderless <?= $colores[rand(0, count($colores) - 1)]; ?> fs-1"></i>
+                                            </div>
 
-                                        <div class="timeline-content fw-bolder text-gray-800 ps-3">Inicio sesión en el sistema <?= $dt = DateTime::createFromFormat("Y-m-d H:i:s", $s['fecha_registro_sesion'])->format('d/M/Y'); ?>
-                                            <a href="#" class="text-primary"><?= ucwords(mb_convert_case($s['nombre_completo'], MB_CASE_LOWER))  ?></a>, ingreso desde <?= is_null($s['es_movil']) ? "una computadora, navegador {$s['navegador']}." : "un celular, navegador {$s['navegador']}." ?>
+                                            <div class="timeline-content fw-bolder text-gray-800 ps-3">Inicio sesión en el sistema <?= $dt = DateTime::createFromFormat("Y-m-d H:i:s", $s['fecha_registro_sesion'])->format('d/M/Y'); ?>
+                                                <a href="#" class="text-primary"><?= ucwords(mb_convert_case($s['nombre_completo'], MB_CASE_LOWER))  ?></a>, ingreso desde <?= is_null($s['es_movil']) ? "una computadora, navegador {$s['navegador']}." : "un celular, navegador {$s['navegador']}." ?>
+                                            </div>
                                         </div>
-                                    </div>
-                                <?php endforeach ?>
-                                <!-- <div class="timeline-item">
+                                    <?php endforeach ?>
+                                    <!-- <div class="timeline-item">
                                     <div class="timeline-label fw-bolder text-gray-800 fs-6">08:42</div>
                                     <div class="timeline-badge">
                                         <i class="fa fa-genderless text-warning fs-1"></i>
@@ -320,10 +321,11 @@
                                     <div class="timeline-content fw-mormal text-muted ps-3">Indulging in poorly driving and keep structure keep great</div>
                                 </div> -->
 
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                <?php endif ?>
                 <div class="row g-5 gx-xxl-8">
                     <div class="col-xxl-4">
                         <div class="card card-xxl-stretch mb-xl-3">

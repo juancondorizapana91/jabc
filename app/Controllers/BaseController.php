@@ -67,11 +67,11 @@ class BaseController extends Controller
 		//--------------------------------------------------------------------
 		// E.g.: $this->session = \Config\Services::session();
 		// return var_dump($request, $response, $logger);
-		$this->user = authenticated();
+		$this->user = autentificado();
 		if (!$this->user) {
 			return $this->response->redirect(base_url('auth/login'));
 		}
 		$this->data['user'] = $this->user;
-		$this->data['access'] = (new Querys())->verifyUser(['id_persona' => (\Config\Services::session())->get('id_persona')])->getResultArray();
+		$this->data['access'] = (new Querys())->verificarUsuario(['id_persona' => (\Config\Services::session())->get('id_persona')])->getResultArray();
 	}
 }

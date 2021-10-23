@@ -34,7 +34,7 @@ class Auth extends Controller
 
 	public function authenticate($user, $password)
 	{
-		$userSearched = $this->querys->view_users(['nombre_usuario' => trim($user), 'clave_usuario' => md5(trim($password))]);
+		$userSearched = $this->querys->vistaUsuario(['nombre_usuario' => trim($user), 'clave_usuario' => md5(trim($password))]);
 
 		// var_dump($this->db->getLastQuercmy());
 		// return var_dump($userSearched);

@@ -2,26 +2,30 @@
 
 use App\Models\Querys;
 
-if (!function_exists('authenticated')) {
-    function authenticated()
+if (!function_exists('autentificado')) {
+    function autentificado()
     {
-        $idUser = (\Config\Services::session())->get('id_persona');
-        $nameGroup = (\Config\Services::session())->get('nombre_grupo');
-        $user = (new Querys())->verifyUser(['id_persona' => $idUser, 'nombre_grupo' => $nameGroup])->getRowArray();
-        return (is_null($user) ? FALSE : $user);
+        $idUsuario = (\Config\Services::session())->get('id_persona');
+        $nombreGrupo = (\Config\Services::session())->get('nombre_grupo');
+        $usuario = (new Querys())->verificarUsuario(['id_persona' => $idUsuario, 'nombre_grupo' => $nombreGrupo])->getRowArray();
+        return (is_null($usuario) ? FALSE : $usuario);
     }
 }
-if (!function_exists('is')) {
-    function is($nameGroup = [])
+if (!function_exists('es')) {
+    function es($nombreGrupo = [])
     {
-        $roles = (new Querys())->verifyUser(['id_persona' => (\Config\Services::session())->get('id_persona'), 'nombre_grupo' => (\Config\Services::session())->get('nombre_grupo')])->getRowArray();
-        if ($roles != null) {
-            if (is_array($nameGroup)) {
-                return in_array($roles['nombre_grupo'], $nameGroup);
-            } else {
-                // return in_array($nombre_grupo, explode(',', preg_replace('/\s+/', '', $CI->load->get_var('usuario')['nombre_grupo'])));
-                return ($roles['nombre_grupo'] === $nameGroup);
+        $session = \Config\Services::session();
+        $roles = (new Querys())->verificarUsuario(['id_persona' => $session->get('id_persona')])->getResultArray();
+        if (!empty($roles)) {
+            $roles = array_column($roles, 'nombre_grupo');
+            is_array($nombreGrupo) ?: $nombreGrupo =  array_map('trim', explode(',', $nombreGrupo));
+
+            foreach ($nombreGrupo as $key => $value) {
+                if (in_array($value, $roles)) {
+                    return true;
+                }
             }
+            return false;
         } else return false;
     }
 }

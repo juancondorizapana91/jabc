@@ -331,9 +331,9 @@ var KTModalNewTarget = (function () {
 				Swal.fire({
 					title: '¿Está seguro de eliminar?',
 					icon: 'warning',
-					showDenyButton: true,
+					showCancelButton: true,
 					confirmButtonText: '¡Eliminar!',
-					denyButtonText: `Cancelar`,
+					cancelButtonText: `Cancelar`,
 				}).then((result) => {
 					if (result.isConfirmed) {
 						$.post(

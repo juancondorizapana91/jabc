@@ -11,7 +11,7 @@ class Querys extends Database
     {
         $this->db = \Config\Database::connect();
     }
-    public function view_users($condicion = null, $busqueda = null)
+    public function vistaUsuario($condicion = null, $busqueda = null)
     {
         $builder = $this->db->table('view_users');
         if (is_array($condicion)) {
@@ -21,7 +21,7 @@ class Querys extends Database
         }
     }
 
-    public function verifyUser($condition)
+    public function verificarUsuario($condition)
     {
         $builder = $this->db->table('view_users');
 
@@ -47,7 +47,7 @@ class Querys extends Database
 
         return empty($condicion) ? $builder->get() : $builder->getWhere($condicion);
     }
-    public function verifyRol($condition)
+    public function verificarRol($condition)
     {
         $builder = $this->db->table('pb_view_users');
         if (is_array($condition)) {
