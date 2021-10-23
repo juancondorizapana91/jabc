@@ -32,12 +32,12 @@ class Validation
 		'nombre' => 'required|min_length[3]|max_length[40]|alpha_space',
 		'paterno' => 'required|min_length[3]|max_length[40]|alpha_space',
 		'materno' => 'max_length[40]',
-		'fecha_nacimiento' => 'required|valid_date',
+		'fecha_nacimiento' => 'valid_date',
 		'genero' => 'required',
-		'estado_civil' => 'required',
+		// 'estado_civil' => 'required',
 		'domicilio' => 'min_length[5]|max_length[150]',
-		'correo' => 'required|valid_email',
-		'celular' => 'required|min_length[8]|max_length[8]|is_natural_no_zero',
+		'correo' => 'valid_email',
+		'celular' => 'min_length[8]|max_length[8]|is_natural_no_zero',
 		'lugar_nacimiento' => 'min_length[5]|max_length[90]'
 	];
 	/**

@@ -9,17 +9,17 @@ class Principal extends BaseController
 
 	public function index()
 	{
-		if (isset($this->data['user'])) {
+		if (isset($this->data['usuario'])) {
 			if (($this->q->seleccionarTabla(
 				'sesion',
 				'fecha_registro_sesion',
 				[
 					"date_format(fecha_registro_sesion, '%Y-%m-%d')" => date('Y-m-d'),
-					'id_usuario' => $this->data['user']['id_usuario']
+					'id_usuario' => $this->data['usuario']['id_usuario']
 				]
 			))->getRowArray() == null) {
 				$this->q->insertarTabla('sesion', [
-					'id_usuario' => $this->data['user']['id_usuario'],
+					'id_usuario' => $this->data['usuario']['id_usuario'],
 					'ip' => nuloSiVacio($this->request->getIPAddress()),
 					'navegador' => nuloSiVacio($this->request->getUserAgent()->getBrowser()),
 					'plataforma' => nuloSiVacio($this->request->getUserAgent()->getPlatform()),

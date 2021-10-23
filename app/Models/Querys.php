@@ -25,13 +25,9 @@ class Querys extends Database
     {
         $builder = $this->db->table('view_users');
 
-        if (is_array($condition)) {
-            $builder->where($condition);
-            $builder->where('estado_grupo_usuario', 'ACTIVO');
-            return $builder->get();
-        } else {
-            return null;
-        }
+        $builder->where($condition);
+        $builder->where('estado_grupo_usuario', 'ACTIVO');
+        return !is_array($condition) ?: $builder->get();
     }
     public function insertarTabla($tabla, $datos)
     {

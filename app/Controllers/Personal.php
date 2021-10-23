@@ -14,7 +14,7 @@ class Personal extends BaseController
 
 	public function index()
 	{
-		return $this->templater->view('personal/listarPersonal');
+		return $this->templater->view('personal/listarPersonal', $this->data);
 	}
 	public function ajaxListarPersonal()
 	{
@@ -73,7 +73,7 @@ class Personal extends BaseController
 					'lugar_nacimiento' => $this->nuloSiVacio($this->request->getPost('lugar_nacimiento')),
 					'correo' => $this->nuloSiVacio($this->request->getPost('correo')),
 					'celular' => $this->request->getPost('celular'),
-					'id_usuario_registro' => $this->data['user']['id_persona'],
+					'id_usuario_registro' => $this->data['usuario']['id_persona'],
 					'estado_persona' => 'REGISTRADO'
 				]);
 				return is_numeric($idPersona) ? $this->response->setJSON(['exito' => 'Persona agregada correctamente, ¿Desea agregarle algun permiso o usuario?']) : $this->response->setStatusCode(500)->setJSON(['error' => '¡Oh no ha ocurrido no error al agregar personal!']);
@@ -96,15 +96,13 @@ class Personal extends BaseController
 					'paterno' => $this->nuloSiVacio($this->request->getPost('paterno')),
 					'materno' => $this->nuloSiVacio($this->request->getPost('materno')),
 					'nombre' => $this->nuloSiVacio($this->request->getPost('nombre')),
-					'fecha_nacimiento' => $this->request->getPost('fecha_nacimiento'),
-					'genero' => $this->request->getPost('genero'),
-					'estado_civil' => $this->request->getPost('estado_civil'),
+					'fecha_nacimiento' => $this->nuloSiVacio($this->request->getPost('fecha_nacimiento')),
+					'genero' => $this->nuloSiVacio($this->request->getPost('genero')),
+					'estado_civil' => $this->nuloSiVacio($this->request->getPost('estado_civil')),
 					'domicilio' => $this->nuloSiVacio($this->request->getPost('domicilio')),
-					'lugar_nacimiento' => $this->nuloSiVacio($this->request->getPost('lugar_nacimiento')),
+					'lugar_nacimiento' => $this->nuloSiVacio($this->nuloSiVacio($this->request->getPost('lugar_nacimiento'))),
 					'correo' => $this->nuloSiVacio($this->request->getPost('correo')),
-					'celular' => $this->request->getPost('celular'),
-					'id_usuario_registro' => $this->data['user']['id_persona'],
-					'estado_persona' => 'REGISTRADO'
+					'celular' => $this->nuloSiVacio($this->request->getPost('celular')),
 				]);
 				return $idPersona == true ? $this->response->setJSON(['exito' => 'Persona actualizada correctamente']) : $this->response->setStatusCode(500)->setJSON(['error' => '¡Oh no ha ocurrido no error al actualizar personal!']);
 			} else {

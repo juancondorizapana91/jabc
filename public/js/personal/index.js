@@ -25,7 +25,7 @@ var KTModalNewTarget = (function () {
 
 	var estadoBotones = {
 		agregar: function () {
-			form.reset();
+			// form.reset();
 			$(submitButton).removeAttr('data-id-persona');
 			$(submitButton).text('Agregar');
 		},
@@ -325,7 +325,7 @@ var KTModalNewTarget = (function () {
 						estadoBotones.editar(r.id_persona);
 					},
 					'json'
-				).fail(function () { });
+				).fail(function () {});
 			})
 			.on('click', '.eliminar-personal', function () {
 				Swal.fire({

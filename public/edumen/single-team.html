@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edumen - LMS & Online Courses Html Template</title>
+    <link rel=icon href="assets/img/favicon.png" sizes="20x20" type="image/png">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/vendor.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+<body>
+
+    <!-- preloader area start -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader area end -->
+
+    <!-- search popup start-->
+    <div class="td-search-popup" id="td-search-popup">
+        <form action="index.html" class="search-form">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search.....">
+            </div>
+            <button type="submit" class="submit-btn"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+    <!-- search popup end-->
+    <div class="body-overlay" id="body-overlay"></div>
+    
+    <!-- navbar start -->
+    <div class="navbar-area">
+        <!-- navbar top start -->
+        <div class="navbar-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 align-self-center text-md-left text-center">
+                        <ul>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Support</a></li>
+                            <li class="d-none d-md-inline-block"><p><i class="fa fa-envelope-o"></i>  info@website.com</p></li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul class="text-right">
+                            <li class="d-lg-inline-block d-none"><p><i class="fa fa-info-circle"></i> Become An Instructor</p></li>
+                            <li class="d-lg-inline-block d-none"><p><i class="fa fa-briefcase"></i> For Business</p></li>
+                            <li><p class="add-to-cart-icon">My Cart <i class="fa fa-cart-arrow-down ml-2"></i> <span class="count">0</span></p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-area-1 navbar-area navbar-expand-lg">
+            <div class="container nav-container">
+                <div class="responsive-mobile-menu">
+                    <button class="menu toggle-btn d-block d-lg-none" data-target="#edumint_main_menu" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-left"></span>
+                        <span class="icon-right"></span>
+                    </button>
+                </div>
+                <div class="logo">
+                    <a href="index.html"><img src="assets/img/logo-2.png" alt="img"></a>
+                </div>
+                <div class="nav-left-part nav-right-part-desktop">
+                    <label class="single-input-inner right-side-icon">
+                        <input type="text" placeholder="Search Courses">
+                        <i class="fa fa-search"></i>
+                    </label>
+                </div>
+                <div class="nav-right-part nav-right-part-mobile">
+                    <a class="search-bar-btn" href="#"><i class="fa fa-search"></i></a>
+                </div>
+                <div class="collapse navbar-collapse" id="edumint_main_menu">
+                    <ul class="navbar-nav menu-open">
+                        <li class="menu-item-has-children current-menu-item">
+                            <a href="#">Home</a>
+                            <ul class="sub-menu">
+                                <li><a href="index.html">Home 01</a></li>
+                                <li><a href="home-2.html">Home 02</a></li>
+                                <li><a href="home-3.html">Home 03</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#">Pages</a>
+                            <ul class="sub-menu">
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="course.html">Course</a></li>
+                                <li><a href="course-single.html">Course Single</a></li>
+                                <li><a href="event.html">Event</a></li>
+                                <li><a href="single-event.html">Event Details</a></li>
+                                <li><a href="team.html">Instructors</a></li>
+                                <li><a href="single-team.html">Instructors Single</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="signin.html">Sign In</a></li>
+                                <li><a href="signup.html">Sign Up</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item-has-children">
+                            <a href="#">Blog</a>
+                            <ul class="sub-menu">
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="single-blog.html">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="nav-right-part nav-right-part-desktop style-white">
+                    <ul class="mb-0">
+                        <li><a href="signup.html">Create Account</a></li>
+                        <li class="ml-2"><a class="btn btn-red" href="signin.html">Get Started</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- navbar end -->
+
+    <!-- page title start -->
+    <div class="page-title-area bg-overlay" style="background-image: url('./assets/img/bg/3.png')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="breadcrumb-inner">
+                        <h2 class="page-title">Have a look Our Instructors Details</h2>
+                        <ul class="page-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li>Instructors Single</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- page title end -->
+
+    <!-- single blog page -->
+    <div class="main-blog-area pd-top-120 pd-bottom-90">
+        <div class="container">
+            <div class="team-details-page">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="thumb mb-4 mb-0">
+                            <img src="assets/img/team/7.png" alt="img">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 align-self-center">
+                        <div class="details">
+                            <h3 class="mb-1">Alexandra</h3>
+                            <span>Teaches Communication</span>
+                            <p class="mt-3">we believe everyone should have the opportunity to create progress through technology and develop the skills of tomorrow. assessments, learning paths and courses authored.</p>
+                            <ul class="social-media style-base pt-4">
+                                <li>
+                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="single-counter-inner after-bg">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <div class="thumb">
+                                                <img src="assets/img/icon/1.png" alt="img">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="details">
+                                                <h2><span>89</span>K+</h2>
+                                                <p>Online Learners</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-counter-inner after-bg">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <div class="thumb">
+                                                <img src="assets/img/icon/2.png" alt="img">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="details">
+                                                <h2><span>43</span>K+</h2>
+                                                <p>Earned Certificate</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="single-counter-inner after-bg">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <div class="thumb">
+                                                <img src="assets/img/icon/3.png" alt="img">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="details">
+                                                <h2><span>35</span>K+</h2>
+                                                <p>Career Benifitited</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="section-title mb-0">
+                            <h4 class="title">Every course on edumen is taught by top instructors</h4>
+                            <p class="content">You can start and finish one of these popular courses in under a day - for free! Check out the list below.  so you can learn something new anytime, anywhere. Practical Project Management from University of Glasgow. Nobis voluptatum praesentium accusantium perspiciatis ullam! Delectus a magnam laborum temporibus optio error explicabo laboriosam illo. Deleniti rerum enim voluptatum nulla ipsum? </p>
+                            <div class="single-list-inner mt-4">
+                                <ul> 
+                                    <li><i class="fa fa-check"></i> Unlimited access to 4,000+ of our top courses</li>
+                                    <li><i class="fa fa-check"></i> Explore a variety of fresh topics</li>
+                                    <li><i class="fa fa-check"></i> Find the right instructor for you </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="course-area pd-top-100">
+                <h4 class="mb-4">Course by : artincorsese</h4>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course-inner">
+                            <div class="thumb">
+                                <img src="assets/img/course/1.png" alt="img">
+                                <div class="cat-area">
+                                    <a class="cat bg-base" href="course.html">Data</a>
+                                    <a class="cat bg-red" href="course.html">Marketing</a>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <span class="price">$50</span>
+                                <p class="status"><i class="fa fa-signal"></i> Expart</p>
+                                <div class="details-inner">
+                                    <h5><a href="course-single.html">People Management Skills development</a></h5>
+                                    <div class="author media">
+                                        <div class="media-left">
+                                            <img src="assets/img/team/1.png" alt="img">
+                                        </div>
+                                        <div class="media-body align-self-center">
+                                            <p>Mithila Hedge</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-area">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <div class="rating-inner">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 align-self-center text-right">
+                                            <a class="readmore-text" href="course-single.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course-inner">
+                            <div class="thumb">
+                                <img src="assets/img/course/2.png" alt="img">
+                                <div class="cat-area">
+                                    <a class="cat bg-base" href="course.html">Art</a>
+                                    <a class="cat bg-red" href="course.html">Design</a>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <span class="price">$60</span>
+                                <p class="status"><i class="fa fa-signal"></i> Beginner</p>
+                                <div class="details-inner">
+                                    <h5><a href="course-single.html">Skills development People Management</a></h5>
+                                    <div class="author media">
+                                        <div class="media-left">
+                                            <img src="assets/img/team/1.png" alt="img">
+                                        </div>
+                                        <div class="media-body align-self-center">
+                                            <p>Fonix Fedry</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-area">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <div class="rating-inner">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 align-self-center text-right">
+                                            <a class="readmore-text" href="course-single.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-course-inner">
+                            <div class="thumb">
+                                <img src="assets/img/course/3.png" alt="img">
+                                <div class="cat-area">
+                                    <a class="cat bg-purple" href="course.html">Data</a>
+                                    <a class="cat bg-blue" href="course.html">Business</a>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <span class="price">$90</span>
+                                <p class="status"><i class="fa fa-signal"></i> Expart</p>
+                                <div class="details-inner">
+                                    <h5><a href="course-single.html">Business Management Skills development</a></h5>
+                                    <div class="author media">
+                                        <div class="media-left">
+                                            <img src="assets/img/team/1.png" alt="img">
+                                        </div>
+                                        <div class="media-body align-self-center">
+                                            <p>Sofia Jong</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bottom-area">
+                                    <div class="row">
+                                        <div class="col-6 align-self-center">
+                                            <div class="rating-inner">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 align-self-center text-right">
+                                            <a class="readmore-text" href="course-single.html">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- single blog page end -->
+
+    <!-- footer area start -->
+    <footer class="footer-area">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="widget widget_contact pr-lg-3">
+                            <div class="widget-title">
+                                <a href="index.html"><img src="assets/img/logo-2.png" alt="img"></a>
+                            </div>
+                            <ul class="details">
+                                <li>You can start and finish one of these popular courses in under a day - for free! Check out the list below.. </li>
+                            </ul>
+                            <ul class="social-media-2">
+                                <li><strong>Follow Us :</strong> </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-6">
+                        <div class="widget widget_nav_menu">
+                            <h4 class="widget-title">Company</h4>
+                            <ul>
+                                <li><a href="course.html">Course</a></li>
+                                <li><a href="team.html">Instructors</a></li>
+                                <li><a href="signin.html">Sign In </a></li>
+                                <li><a href="signup.html">Sign Up</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="widget widget_nav_menu">
+                            <h4 class="widget-title">Categorys</h4>
+                            <ul>
+                                <li><a href="course.html">Branding design</a></li>
+                                <li><a href="course.html">Ui/Ux designing </a></li>
+                                <li><a href="course.html">Make Elements</a></li>
+                                <li><a href="course.html">Business</a></li>
+                                <li><a href="course.html">Graphics design</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 pl-lg-5 pr-5 pr-lg-0">
+                        <div class="widget widget_contact pr-lg-3">
+                            <h4 class="widget-title">Contact Us</h4>
+                            <ul class="details style-icon">
+                                <li><i class="fa fa-phone"></i> +91 458 654 528</li>
+                                <li><i class="fa fa-envelope-o"></i> info@example.com</li>
+                                <li><i class="fa fa-map-marker"></i> 500 Treat Ave, Suite 200 San CA 94110</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 align-self-center">
+                        <p>Designed & Developed By Love</p>
+                    </div>
+                    <div class="col-md-7 text-md-right align-self-center mt-lg-0 mt-3">
+                        <p>© Copyrights 2021 Edumen All rights reserved. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+
+    <!-- back to top area start -->
+    <div class="back-to-top">
+        <span class="back-top"><i class="fa fa-angle-up"></i></span>
+    </div>
+    <!-- back to top area end -->
+
+
+    <!-- all plugins here -->
+    <script src="assets/js/vendor.js"></script>
+    <!-- main js  -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

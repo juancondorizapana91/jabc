@@ -24,7 +24,7 @@ class Auth extends Controller
 
 	public function login()
 	{
-		if (authenticated()) {
+		if (autentificado()) {
 			return redirect()->to(base_url('/principal'));
 		} else {
 			$this->templater->login();
@@ -55,7 +55,7 @@ class Auth extends Controller
 		return redirect()->to(base_url('/principal'));
 	}
 	// funcion para cerrar sesion
-	public function logout()
+	public function cerrarSesion()
 	{
 		$this->session->destroy();
 		return redirect()->to(base_url('/'));
