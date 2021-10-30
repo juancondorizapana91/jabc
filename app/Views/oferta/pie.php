@@ -1,5 +1,5 @@
 <!-- footer area start -->
-<div class="footer-call-to-action">
+<!-- <div class="footer-call-to-action">
     <div class="container">
         <div class="call-to-action bg-red">
             <div class="row">
@@ -15,9 +15,9 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <footer class="footer-area">
-    <div class="footer-top pd-top-115">
+    <div class="footer-top">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6">

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="<?= base_url('edumen/assets/css/vendor.css') ?>">
     <link rel="stylesheet" href="<?= base_url('edumen/assets/css/style.css') ?>">
     <link rel="stylesheet" href="<?= base_url('edumen/assets/css/responsive.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('css/style.css') ?>">
 
 </head>
 
@@ -58,6 +59,7 @@
     <script src="<?= base_url('edumen/assets/js/counter.js') ?>"></script>
     <!-- main js  -->
     <script src="<?= base_url('edumen/assets/js/main.js') ?>"></script>
+    <script src="<?= base_url('js/oferta/formulario.js') ?>"></script>
 </body>
 
 </html>
