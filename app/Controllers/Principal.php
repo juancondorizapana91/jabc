@@ -33,7 +33,7 @@ class Principal extends BaseController
 			$this->data['cantidadPersonas'] = count($this->q->seleccionarTabla('persona')->getResultArray());
 			$this->data['cantidadInscripciones'] = count($this->q->seleccionarTabla('pago_programa')->getResultArray());
 			$this->data['cantidadProgramas'] = count($this->q->seleccionarTabla('programa')->getResultArray());
-			// $this->data['pagosPrograma'] = $this->q->recaudacionPorPrograma([], 'pp.id_planificacion_programa DESC', 'p.id_programa, p.nombre_programa, round(IFNULL(sum(monto_deposito),0),2) as monto, descripcion_grado_academico, gestion, proper(denominacion_sede) as denominacion_sede', 'pp.id_planificacion_programa')->getResultArray();
+			$this->data['pagosPrograma'] = []; // $this->q->recaudacionPorPrograma([], 'pp.id_planificacion_programa DESC', 'p.id_programa, p.nombre_programa, round(IFNULL(sum(monto_deposito),0),2) as monto, descripcion_grado_academico, gestion, proper(denominacion_sede) as denominacion_sede', 'pp.id_planificacion_programa')->getResultArray();
 			// var_dump($this->data['pagosPrograma']);
 			return $this->templater->view('principal', $this->data);
 		}
