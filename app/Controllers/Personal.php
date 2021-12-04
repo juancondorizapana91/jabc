@@ -16,14 +16,14 @@ class Personal extends BaseController
 	{
 		return $this->templater->view('personal/listarPersonal', $this->data);
 	}
-	public function ajaxListarPersonal()
+	public function ajaxListarPersonal($with = '')
 	{
 		// print_r($_REQUEST);
 		$table = <<<EOT
         (SELECT * from pb_persona) temp
         EOT;
 		$primaryKey = 'id_persona';
-		// $where = "estado = 1 and gestion = " . date('Y');
+		$where = html_entity_decode(preg_replace("/%u([0-9a-f]{3,4})/i", "&#x\\1;", urldecode($with)), ENT_COMPAT, 'UTF-8');
 		$columns = array(
 			array('db' => 'id_persona', 'dt' => 0),
 			array('db' => 'ci', 'dt' => 1),
@@ -41,7 +41,7 @@ class Personal extends BaseController
 		);
 
 		$sql_details = array('user' => $this->db->username, 'pass' => $this->db->password, 'db'   => $this->db->database, 'host' => $this->db->hostname);
-		return $this->response->setJSON(json_encode(SSP::complex($_GET, $sql_details, $table, $primaryKey, $columns)));
+		return $this->response->setJSON(json_encode(SSP::complex($_GET, $sql_details, $table, $primaryKey, $columns, empty($with) ? null : $where)));
 	}
 
 	public function eliminarPersonal()

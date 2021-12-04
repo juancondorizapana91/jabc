@@ -169,19 +169,6 @@ var KTModalNewTarget = (function () {
 										modal.hide();
 										Swal.fire({ title: '¡Exito!', icon: 'success', html: r.exito, buttonsStyling: false, customClass: { confirmButton: 'btn btn-primary' } });
 										$('#table').DataTable().ajax.reload();
-										// Swal.fire({
-										// 	title: r.exito,
-										// 	icon: 'success',
-										// 	showCancelButton: true,
-										// 	confirmButtonText: '¡Si deseo agregar roles!',
-										// 	cancelButtonText: `No, mas tarde`,
-										// }).then((result) => {
-										// 	if (result.isConfirmed) {
-										// 		Swal.fire('Saved!', '', 'success');
-										// 	} else if (result.isCanceled) {
-										// 		modal.hide();
-										// 	}
-										// });
 									},
 									error: function (xhr, textStatus, errorThrown) {
 										Swal.fire({ title: '¡Error!', icon: 'error', html: xhr.responseJSON.error, buttonsStyling: false, customClass: { confirmButton: 'btn btn-primary' } });
@@ -203,7 +190,11 @@ var KTModalNewTarget = (function () {
 									complete: function () {
 										submitButton.removeAttribute('data-kt-indicator');
 										submitButton.disabled = false;
-										$('#table').DataTable().ajax.reload();
+										// $('#table').DataTable().ajax.reload();
+										// $.get(`'personal/ajaxListarPersonal/${encodeURIComponent(`id_persona=${$(e).data('id-publicacion')}`)}`, function (r) {
+										// 	if (r.data.length == 1) recargarFilaDataTable(elemento, ':eq(1)', r.data[0], fila);
+										// 	else dataTableListarPublicacion.draw(false);
+										// });
 									},
 									error: function (xhr, textStatus, errorThrown) {
 										Swal.fire({ title: '¡Error!', icon: 'error', html: xhr.responseJSON.error, buttonsStyling: false, customClass: { confirmButton: 'btn btn-primary' } });
@@ -302,6 +293,7 @@ var KTModalNewTarget = (function () {
 				ajax: 'personal/ajaxListarPersonal',
 			})
 			.on('click', '.editar-personal', function () {
+				document.getElementById('spinner').style.display = '';
 				$.get(
 					`/personal/editarPersonal/${$(this).data('id-persona')}`,
 					function (r) {
@@ -350,6 +342,24 @@ var KTModalNewTarget = (function () {
 					}
 				});
 			});
+		var row;
+		var element;
+		$('#table tbody').on('click', 'tr', function () {
+			row = dataTable.row(this).index();
+			element = this;
+		});
+
+		let rechargeRowDataTable = (element, exceptColumns, newData, row, icon = 'fa fa-spin fa-spinner') => {
+			$(element)
+				.find('td')
+				.not(exceptColumns)
+				.each(function (index, element) {
+					$(element).html(`<i class="${icon}"></i>`);
+				});
+			setTimeout(function () {
+				dataTable.row(row).data(newData);
+			}, 1000);
+		};
 	};
 	return {
 		// Public functions

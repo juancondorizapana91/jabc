@@ -18,7 +18,6 @@ class Inscripcion extends BaseController
 	}
 	public function index()
 	{
-
 		return $this->templater->vistaOferta('oferta/inscripcion/formulario', $this->data);
 	}
 }
