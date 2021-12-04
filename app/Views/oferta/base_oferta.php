@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Edumen - LMS & Online Courses Html Template</title>
+    <title>Posgrado Bolivia</title>
     <link rel=icon href="edumen/assets/img/favicon.png" sizes="20x20" type="image/png">
 
     <!-- Stylesheet -->
