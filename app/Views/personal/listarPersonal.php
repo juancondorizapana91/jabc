@@ -1,7 +1,3 @@
-<div id="spinner" class="spinner spinner-primary spinner-lg mr-15"></div>
-<button type="button" class="btn btn-primary spinner spinner-white spinner-right">
-    Primary
-</button>
 <div class="post d-flex flex-column-fluid" id="kt_post">
     <div id="kt_content_container" class="container">
         <div class="card mb-5 mb-xl-8">
