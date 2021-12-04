@@ -88,7 +88,7 @@
              <div class="nav-right-part nav-right-part-desktop style-white">
                  <ul class="mb-0">
                      <li><a href="signup.html">Create Account</a></li>
-                     <li class="ml-2"><a class="btn btn-red" href="signin.html">Get Started</a></li>
+                     <li class="ml-2"><a class="btn btn-red" href="<?= base_url('auth/login') ?>">Iniciar Sesión</a></li>
                  </ul>
              </div>
          </div>
