@@ -38,7 +38,7 @@
                  </button>
              </div>
              <div class="logo">
-                 <a href="index.html"><img src="<?= base_url('edumen/assets/img/logo-2.png') ?>" alt="img"></a>
+                 <!-- <a href="index.html"><img src="<?= base_url('edumen/assets/img/logo-2.png') ?>" alt="img"></a> -->
              </div>
              <div class="nav-left-part nav-right-part-desktop">
                  <label class="single-input-inner right-side-icon">
