@@ -293,7 +293,6 @@ var KTModalNewTarget = (function () {
 				ajax: 'personal/ajaxListarPersonal',
 			})
 			.on('click', '.editar-personal', function () {
-				document.getElementById('spinner').style.display = '';
 				$.get(
 					`/personal/editarPersonal/${$(this).data('id-persona')}`,
 					function (r) {
