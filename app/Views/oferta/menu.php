@@ -59,28 +59,16 @@
                         </ul>
                     </li>
                     <li class="menu-item-has-children">
-                        <a href="#">Pages</a>
+                        <a href="#">Programas</a>
                         <ul class="sub-menu">
-                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="">About Us</a></li>
                             <li><a href="course.html">Course</a></li>
                             <li><a href="course-single.html">Course Single</a></li>
                             <li><a href="event.html">Event</a></li>
                             <li><a href="single-event.html">Event Details</a></li>
-                            <li><a href="team.html">Instructors</a></li>
-                            <li><a href="single-team.html">Instructors Single</a></li>
-                            <li><a href="gallery.html">Gallery</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
-                            <li><a href="signin.html">Sign In</a></li>
-                            <li><a href="signup.html">Sign Up</a></li>
                         </ul>
                     </li>
-                    <li class="menu-item-has-children">
-                        <a href="#">Blog</a>
-                        <ul class="sub-menu">
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="single-blog.html">Blog Details</a></li>
-                        </ul>
-                    </li>
+
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>

@@ -35,6 +35,10 @@ $routes->get('/', 'Oferta::index', ['as' => 'inicioOferta']);
 $routes->get('login', 'Auth::login', ['as' => 'iniciarSesion']);
 $routes->get('oferta/inscripcion', 'Oferta\Inscripcion::index');
 $routes->add('cerrarSesion', 'Auth::cerrarSesion');
+// $routes->get('/', 'Inicio::index');
+// $routes->add('inscripcion/(:num)/(:num)', 'Inscripcion::formulario/$1/$2');
+// $routes->add('verificar/(:num)', 'Inscripcion::formulario/$1');
+// $routes->add('programa/(:num)', 'Oferta::detalle/$1');
 // $routes->group('admin', ['namespace' => 'App\Controllers\Admin', 'filter' => 'auth:admin'], function ($routes) {
 // $routes->get('articulos','Posts	')
 // });
