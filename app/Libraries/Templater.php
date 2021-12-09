@@ -27,7 +27,7 @@ class Templater extends BaseController
             return view($base, $data);
         }
     }
-    function vistaOferta($content, $data = [], $base = "oferta/base_oferta")
+    function vistaOferta($content, $data = [], $base = "oferta/baseOferta")
     {
         if ($this->request->isAJAX()) {
             $ajax = view($content, $data);

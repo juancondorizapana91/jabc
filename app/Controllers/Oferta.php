@@ -17,4 +17,8 @@ class Oferta extends Controller
     {
         return $this->templater->vistaOferta('oferta/inicio', $this->data);
     }
+    function programas()
+    {
+        return $this->templater->vistaOferta('oferta/programa/oferta', $this->data);
+    }
 }
