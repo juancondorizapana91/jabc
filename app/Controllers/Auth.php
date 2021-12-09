@@ -17,10 +17,7 @@ class Auth extends Controller
 		$this->querys = new Querys();
 		$this->db = \Config\Database::connect();
 	}
-	public function index()
-	{
-		return redirect()->to(base_url('/auth/login'));
-	}
+
 
 	public function login()
 	{

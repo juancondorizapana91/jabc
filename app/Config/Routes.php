@@ -31,7 +31,8 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Oferta::index');
+$routes->get('/', 'Oferta::index', ['as' => 'inicioOferta']);
+$routes->get('login', 'Auth::login', ['as' => 'iniciarSesion']);
 $routes->get('oferta/inscripcion', 'Oferta\Inscripcion::index');
 $routes->add('cerrarSesion', 'Auth::cerrarSesion');
 // $routes->group('admin', ['namespace' => 'App\Controllers\Admin', 'filter' => 'auth:admin'], function ($routes) {

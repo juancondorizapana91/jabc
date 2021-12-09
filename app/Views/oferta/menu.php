@@ -37,7 +37,7 @@
                 </button>
             </div>
             <div class="logo">
-                <a href="index.html"><img src="<?= base_url('edumen/assets/img/logo-2.png') ?>" alt="img"></a>
+                <a href="<?= route_to('inicioOferta') ?>"><img src="<?= base_url('edumen/assets/img/logo-2.png') ?>" alt="img"></a>
             </div>
             <div class="nav-left-part nav-right-part-desktop">
                 <label class="single-input-inner right-side-icon">
@@ -87,7 +87,7 @@
             <div class="nav-right-part nav-right-part-desktop style-white">
                 <ul class="mb-0">
                     <li><a href="signup.html">Create Account</a></li>
-                    <li class="ml-2"><a class="btn btn-red" href="signin.html">Get Started</a></li>
+                    <li class="ml-2"><a class="btn btn-red" href="<?= route_to('iniciarSesion') ?>">Iniciar Sesión</a></li>
                 </ul>
             </div>
         </div>
