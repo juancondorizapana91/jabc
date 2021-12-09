@@ -23,7 +23,7 @@
                <div class="col-lg-4 col-md-6">
                    <div class="single-course-inner">
                        <div class="thumb">
-                           <img src="assets/img/course/1.png" alt="img">
+                           <img src="<?= base_url('edumen/assets/img/course/1.png') ?>" alt="img">
                            <div class="cat-area">
                                <a class="cat bg-base" href="course.html">Data</a>
                                <a class="cat bg-red" href="course.html">Marketing</a>
@@ -36,7 +36,7 @@
                                <h5><a href="course-single.html">People Management Skills development</a></h5>
                                <div class="author media">
                                    <div class="media-left">
-                                       <img src="assets/img/team/1.png" alt="img">
+                                       <img src="<?= base_url('edumen/assets/img/team/1.png') ?>" alt="img">
                                    </div>
                                    <div class="media-body align-self-center">
                                        <p>Mithila Hedge</p>
@@ -65,7 +65,7 @@
                <div class="col-lg-4 col-md-6">
                    <div class="single-course-inner">
                        <div class="thumb">
-                           <img src="assets/img/course/2.png" alt="img">
+                           <img src="<?= base_url('edumen/assets/img/course/2.png') ?>" alt="img">
                            <div class="cat-area">
                                <a class="cat bg-base" href="course.html">Art</a>
                                <a class="cat bg-red" href="course.html">Design</a>
@@ -78,7 +78,7 @@
                                <h5><a href="course-single.html">Skills development People Management</a></h5>
                                <div class="author media">
                                    <div class="media-left">
-                                       <img src="assets/img/team/1.png" alt="img">
+                                       <img src="<?= base_url('edumen/assets/img/team/1.png') ?>" alt="img">
                                    </div>
                                    <div class="media-body align-self-center">
                                        <p>Fonix Fedry</p>
@@ -107,7 +107,7 @@
                <div class="col-lg-4 col-md-6">
                    <div class="single-course-inner">
                        <div class="thumb">
-                           <img src="assets/img/course/3.png" alt="img">
+                           <img src="<?= base_url('edumen/assets/img/course/3.png') ?>" alt="img">
                            <div class="cat-area">
                                <a class="cat bg-purple" href="course.html">Data</a>
                                <a class="cat bg-blue" href="course.html">Business</a>
@@ -120,7 +120,7 @@
                                <h5><a href="course-single.html">Business Management Skills development</a></h5>
                                <div class="author media">
                                    <div class="media-left">
-                                       <img src="assets/img/team/1.png" alt="img">
+                                       <img src="<?= base_url('edumen/assets/img/team/1.png') ?>" alt="img">
                                    </div>
                                    <div class="media-body align-self-center">
                                        <p>Sofia Jong</p>
@@ -149,7 +149,7 @@
                <div class="col-lg-4 col-md-6">
                    <div class="single-course-inner">
                        <div class="thumb">
-                           <img src="assets/img/course/4.png" alt="img">
+                           <img src="<?= base_url('edumen/assets/img/course/4.png') ?>" alt="img">
                            <div class="cat-area">
                                <a class="cat bg-base" href="course.html">Agency</a>
                                <a class="cat bg-yellow" href="course.html">Creative</a>
@@ -162,7 +162,7 @@
                                <h5><a href="course-single.html">Design Management Skills development</a></h5>
                                <div class="author media">
                                    <div class="media-left">
-                                       <img src="assets/img/team/1.png" alt="img">
+                                       <img src="<?= base_url('edumen/assets/img/team/1.png') ?>" alt="img">
                                    </div>
                                    <div class="media-body align-self-center">
                                        <p>Carle Jofe</p>
@@ -191,7 +191,7 @@
                <div class="col-lg-4 col-md-6">
                    <div class="single-course-inner">
                        <div class="thumb">
-                           <img src="assets/img/course/5.png" alt="img">
+                           <img src="<?= base_url('edumen/assets/img/course/5.png') ?>" alt="img">
                            <div class="cat-area">
                                <a class="cat bg-purple" href="course.html">Ui/UX</a>
                                <a class="cat bg-blue" href="course.html">Creative</a>
@@ -204,7 +204,7 @@
                                <h5><a href="course-single.html">Creative Design Skills development</a></h5>
                                <div class="author media">
                                    <div class="media-left">
-                                       <img src="assets/img/team/1.png" alt="img">
+                                       <img src="<?= base_url('edumen/assets/img/team/1.png') ?>" alt="img">
                                    </div>
                                    <div class="media-body align-self-center">
                                        <p>Jon Hedge</p>
@@ -233,7 +233,7 @@
                <div class="col-lg-4 col-md-6">
                    <div class="single-course-inner">
                        <div class="thumb">
-                           <img src="assets/img/course/6.png" alt="img">
+                           <img src="<?= base_url('edumen/assets/img/course/6.png') ?>" alt="img">
                            <div class="cat-area">
                                <a class="cat bg-pink" href="course.html">Digital</a>
                                <a class="cat bg-base" href="course.html">Creative</a>
@@ -246,7 +246,7 @@
                                <h5><a href="course-single.html">Digital Skills development Course</a></h5>
                                <div class="author media">
                                    <div class="media-left">
-                                       <img src="assets/img/team/1.png" alt="img">
+                                       <img src="<?= base_url('edumen/assets/img/team/1.png') ?>" alt="img">
                                    </div>
                                    <div class="media-body align-self-center">
                                        <p>Fonix Fedry</p>
